@@ -1,0 +1,1734 @@
+{
+  "summary": {
+    "n": 40,
+    "recall": 0.8,
+    "precision": 0.17583333333333334,
+    "mrr": 0.43375,
+    "empty_after_filter": 0
+  },
+  "per_query": [
+    {
+      "id": "gs_valid_001",
+      "question": "정보보호 관리체계 인증을 계속 유지하려면 어떻게 해야 하나요?",
+      "retrieved": [
+        {
+          "id": "750781b5e8132957_chunk_141",
+          "confidence": 0.4285,
+          "relevant": false
+        },
+        {
+          "id": "0e330b9c24c086e8_chunk_330",
+          "confidence": 0.696,
+          "relevant": false
+        },
+        {
+          "id": "750781b5e8132957_chunk_164",
+          "confidence": 0.4046,
+          "relevant": false
+        },
+        {
+          "id": "0e330b9c24c086e8_chunk_332",
+          "confidence": 0.6925,
+          "relevant": true
+        },
+        {
+          "id": "0e330b9c24c086e8_chunk_334",
+          "confidence": 0.6782,
+          "relevant": false
+        }
+      ],
+      "retrieved_ids": [
+        "750781b5e8132957_chunk_141",
+        "0e330b9c24c086e8_chunk_330",
+        "750781b5e8132957_chunk_164",
+        "0e330b9c24c086e8_chunk_332",
+        "0e330b9c24c086e8_chunk_334"
+      ],
+      "relevant_ids": [
+        "0e330b9c24c086e8_chunk_332",
+        "0e330b9c24c086e8_chunk_333"
+      ],
+      "recall_hit": true,
+      "precision": 0.2,
+      "reciprocal_rank": 0.25
+    },
+    {
+      "id": "gs_valid_002",
+      "question": "정보통신서비스 제공자가 개인정보 유출 시 통지해야 하는 항목은 뭔가요?",
+      "retrieved": [
+        {
+          "id": "0e330b9c24c086e8_chunk_367",
+          "confidence": 0.7408,
+          "relevant": false
+        },
+        {
+          "id": "0e330b9c24c086e8_chunk_372",
+          "confidence": 0.7733,
+          "relevant": false
+        },
+        {
+          "id": "0e330b9c24c086e8_chunk_377",
+          "confidence": 0.7557,
+          "relevant": true
+        },
+        {
+          "id": "0e330b9c24c086e8_chunk_374",
+          "confidence": 0.7549,
+          "relevant": false
+        }
+      ],
+      "retrieved_ids": [
+        "0e330b9c24c086e8_chunk_367",
+        "0e330b9c24c086e8_chunk_372",
+        "0e330b9c24c086e8_chunk_377",
+        "0e330b9c24c086e8_chunk_374"
+      ],
+      "relevant_ids": [
+        "0e330b9c24c086e8_chunk_377",
+        "0e330b9c24c086e8_chunk_378"
+      ],
+      "recall_hit": true,
+      "precision": 0.25,
+      "reciprocal_rank": 0.3333333333333333
+    },
+    {
+      "id": "gs_valid_003",
+      "question": "집단분쟁조정 신청자 중 일부가 따로 소송을 제기하면 나머지 사람들 조정 절차도 중단되나요?",
+      "retrieved": [
+        {
+          "id": "0e330b9c24c086e8_chunk_420",
+          "confidence": 0.7511,
+          "relevant": true
+        },
+        {
+          "id": "0e330b9c24c086e8_chunk_421",
+          "confidence": 0.7008,
+          "relevant": false
+        },
+        {
+          "id": "0e330b9c24c086e8_chunk_428",
+          "confidence": 0.7098,
+          "relevant": false
+        },
+        {
+          "id": "0e330b9c24c086e8_chunk_419",
+          "confidence": 0.6754,
+          "relevant": false
+        }
+      ],
+      "retrieved_ids": [
+        "0e330b9c24c086e8_chunk_420",
+        "0e330b9c24c086e8_chunk_421",
+        "0e330b9c24c086e8_chunk_428",
+        "0e330b9c24c086e8_chunk_419"
+      ],
+      "relevant_ids": [
+        "0e330b9c24c086e8_chunk_420"
+      ],
+      "recall_hit": true,
+      "precision": 0.25,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "gs_valid_004",
+      "question": "구청에 설치된 CCTV 영상을 훈련 목적으로 군부대에 제공해도 되나요?",
+      "retrieved": [
+        {
+          "id": "ec6e3f7e3e24a82e_chunk_4",
+          "confidence": 0.602,
+          "relevant": false
+        },
+        {
+          "id": "0e330b9c24c086e8_chunk_461",
+          "confidence": 0.7318,
+          "relevant": false
+        },
+        {
+          "id": "0e330b9c24c086e8_chunk_462",
+          "confidence": 0.6989,
+          "relevant": true
+        },
+        {
+          "id": "ec6e3f7e3e24a82e_chunk_27",
+          "confidence": 0.654,
+          "relevant": false
+        }
+      ],
+      "retrieved_ids": [
+        "ec6e3f7e3e24a82e_chunk_4",
+        "0e330b9c24c086e8_chunk_461",
+        "0e330b9c24c086e8_chunk_462",
+        "ec6e3f7e3e24a82e_chunk_27"
+      ],
+      "relevant_ids": [
+        "0e330b9c24c086e8_chunk_462"
+      ],
+      "recall_hit": true,
+      "precision": 0.25,
+      "reciprocal_rank": 0.3333333333333333
+    },
+    {
+      "id": "gs_valid_005",
+      "question": "신용정보회사가 개인신용정보를 수집할 때 항상 동의를 받아야 하나요?",
+      "retrieved": [
+        {
+          "id": "ec6e3f7e3e24a82e_chunk_8",
+          "confidence": 0.5091,
+          "relevant": false
+        },
+        {
+          "id": "894f8dc2aa0bfced_chunk_67",
+          "confidence": 0.6949,
+          "relevant": false
+        },
+        {
+          "id": "894f8dc2aa0bfced_chunk_66",
+          "confidence": 0.6927,
+          "relevant": false
+        },
+        {
+          "id": "750781b5e8132957_chunk_141",
+          "confidence": 0.456,
+          "relevant": false
+        },
+        {
+          "id": "0e330b9c24c086e8_chunk_99",
+          "confidence": 0.6911,
+          "relevant": false
+        }
+      ],
+      "retrieved_ids": [
+        "ec6e3f7e3e24a82e_chunk_8",
+        "894f8dc2aa0bfced_chunk_67",
+        "894f8dc2aa0bfced_chunk_66",
+        "750781b5e8132957_chunk_141",
+        "0e330b9c24c086e8_chunk_99"
+      ],
+      "relevant_ids": [
+        "0e330b9c24c086e8_chunk_98"
+      ],
+      "recall_hit": false,
+      "precision": 0.0,
+      "reciprocal_rank": 0.0
+    },
+    {
+      "id": "gs_valid_006",
+      "question": "우리 회사도 고객한테 개인정보 이용내역을 정기적으로 알려줘야 하나요?",
+      "retrieved": [
+        {
+          "id": "ec6e3f7e3e24a82e_chunk_8",
+          "confidence": 0.5443,
+          "relevant": false
+        },
+        {
+          "id": "0e330b9c24c086e8_chunk_414",
+          "confidence": 0.6416,
+          "relevant": false
+        },
+        {
+          "id": "ec6e3f7e3e24a82e_chunk_41",
+          "confidence": 0.5433,
+          "relevant": false
+        },
+        {
+          "id": "0e330b9c24c086e8_chunk_402",
+          "confidence": 0.6382,
+          "relevant": true
+        },
+        {
+          "id": "750781b5e8132957_chunk_141",
+          "confidence": 0.4985,
+          "relevant": false
+        },
+        {
+          "id": "ec6e3f7e3e24a82e_chunk_56",
+          "confidence": 0.6358,
+          "relevant": false
+        }
+      ],
+      "retrieved_ids": [
+        "ec6e3f7e3e24a82e_chunk_8",
+        "0e330b9c24c086e8_chunk_414",
+        "ec6e3f7e3e24a82e_chunk_41",
+        "0e330b9c24c086e8_chunk_402",
+        "750781b5e8132957_chunk_141",
+        "ec6e3f7e3e24a82e_chunk_56"
+      ],
+      "relevant_ids": [
+        "0e330b9c24c086e8_chunk_401",
+        "0e330b9c24c086e8_chunk_402"
+      ],
+      "recall_hit": true,
+      "precision": 0.16666666666666666,
+      "reciprocal_rank": 0.25
+    },
+    {
+      "id": "gs_valid_007",
+      "question": "다른 회사가 처리하고 있는 개인정보를 저희가 그냥 전달만 해주는 것도 업무위탁에 해당하나요?",
+      "retrieved": [
+        {
+          "id": "750781b5e8132957_chunk_155",
+          "confidence": 0.6747,
+          "relevant": false
+        },
+        {
+          "id": "0e330b9c24c086e8_chunk_197",
+          "confidence": 0.7482,
+          "relevant": false
+        },
+        {
+          "id": "750781b5e8132957_chunk_141",
+          "confidence": 0.4946,
+          "relevant": false
+        },
+        {
+          "id": "0e330b9c24c086e8_chunk_196",
+          "confidence": 0.7312,
+          "relevant": false
+        },
+        {
+          "id": "750781b5e8132957_chunk_153",
+          "confidence": 0.5317,
+          "relevant": false
+        },
+        {
+          "id": "0e330b9c24c086e8_chunk_199",
+          "confidence": 0.7239,
+          "relevant": false
+        }
+      ],
+      "retrieved_ids": [
+        "750781b5e8132957_chunk_155",
+        "0e330b9c24c086e8_chunk_197",
+        "750781b5e8132957_chunk_141",
+        "0e330b9c24c086e8_chunk_196",
+        "750781b5e8132957_chunk_153",
+        "0e330b9c24c086e8_chunk_199"
+      ],
+      "relevant_ids": [
+        "717cd7d7d5784435_chunk_181"
+      ],
+      "recall_hit": false,
+      "precision": 0.0,
+      "reciprocal_rank": 0.0
+    },
+    {
+      "id": "gs_valid_008",
+      "question": "다른 고객이 실수로 가져간 물건을 돌려받으려고 원래 고객 연락처를 이용해도 되나요?",
+      "retrieved": [
+        {
+          "id": "717cd7d7d5784435_chunk_87",
+          "confidence": 0.6419,
+          "relevant": true
+        },
+        {
+          "id": "717cd7d7d5784435_chunk_88",
+          "confidence": 0.6125,
+          "relevant": false
+        },
+        {
+          "id": "717cd7d7d5784435_chunk_86",
+          "confidence": 0.6248,
+          "relevant": false
+        }
+      ],
+      "retrieved_ids": [
+        "717cd7d7d5784435_chunk_87",
+        "717cd7d7d5784435_chunk_88",
+        "717cd7d7d5784435_chunk_86"
+      ],
+      "relevant_ids": [
+        "717cd7d7d5784435_chunk_87"
+      ],
+      "recall_hit": true,
+      "precision": 0.3333333333333333,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "gs_valid_009",
+      "question": "회사가 직원한테 개인정보 처리 동의를 요구하면 직원이 자유롭게 거부할 수 있나요?",
+      "retrieved": [
+        {
+          "id": "717cd7d7d5784435_chunk_141",
+          "confidence": 0.6435,
+          "relevant": false
+        },
+        {
+          "id": "717cd7d7d5784435_chunk_136",
+          "confidence": 0.6589,
+          "relevant": false
+        },
+        {
+          "id": "ec6e3f7e3e24a82e_chunk_8",
+          "confidence": 0.5223,
+          "relevant": false
+        },
+        {
+          "id": "717cd7d7d5784435_chunk_129",
+          "confidence": 0.6586,
+          "relevant": true
+        },
+        {
+          "id": "717cd7d7d5784435_chunk_135",
+          "confidence": 0.6508,
+          "relevant": false
+        }
+      ],
+      "retrieved_ids": [
+        "717cd7d7d5784435_chunk_141",
+        "717cd7d7d5784435_chunk_136",
+        "ec6e3f7e3e24a82e_chunk_8",
+        "717cd7d7d5784435_chunk_129",
+        "717cd7d7d5784435_chunk_135"
+      ],
+      "relevant_ids": [
+        "717cd7d7d5784435_chunk_129"
+      ],
+      "recall_hit": true,
+      "precision": 0.2,
+      "reciprocal_rank": 0.25
+    },
+    {
+      "id": "gs_valid_010",
+      "question": "14세 미만 아이들 개인정보를 다루는 회사는 처리방침을 따로 만들어야 하나요?",
+      "retrieved": [
+        {
+          "id": "750781b5e8132957_chunk_60",
+          "confidence": 0.6411,
+          "relevant": false
+        },
+        {
+          "id": "750781b5e8132957_chunk_59",
+          "confidence": 0.7129,
+          "relevant": false
+        },
+        {
+          "id": "750781b5e8132957_chunk_138",
+          "confidence": 0.6932,
+          "relevant": true
+        },
+        {
+          "id": "750781b5e8132957_chunk_173",
+          "confidence": 0.604,
+          "relevant": false
+        },
+        {
+          "id": "717cd7d7d5784435_chunk_148",
+          "confidence": 0.6816,
+          "relevant": false
+        }
+      ],
+      "retrieved_ids": [
+        "750781b5e8132957_chunk_60",
+        "750781b5e8132957_chunk_59",
+        "750781b5e8132957_chunk_138",
+        "750781b5e8132957_chunk_173",
+        "717cd7d7d5784435_chunk_148"
+      ],
+      "relevant_ids": [
+        "750781b5e8132957_chunk_138"
+      ],
+      "recall_hit": true,
+      "precision": 0.2,
+      "reciprocal_rank": 0.3333333333333333
+    },
+    {
+      "id": "gs_valid_011",
+      "question": "인터넷에 올라간 제 개인정보를 스스로 지우고 싶으면 어디에 도움을 요청할 수 있나요?",
+      "retrieved": [
+        {
+          "id": "750781b5e8132957_chunk_141",
+          "confidence": 0.5218,
+          "relevant": false
+        },
+        {
+          "id": "7dba74058fa6d2da_chunk_64",
+          "confidence": 0.6405,
+          "relevant": false
+        },
+        {
+          "id": "750781b5e8132957_chunk_173",
+          "confidence": 0.6376,
+          "relevant": true
+        },
+        {
+          "id": "ec6e3f7e3e24a82e_chunk_8",
+          "confidence": 0.5232,
+          "relevant": false
+        },
+        {
+          "id": "7dba74058fa6d2da_chunk_116",
+          "confidence": 0.6225,
+          "relevant": false
+        }
+      ],
+      "retrieved_ids": [
+        "750781b5e8132957_chunk_141",
+        "7dba74058fa6d2da_chunk_64",
+        "750781b5e8132957_chunk_173",
+        "ec6e3f7e3e24a82e_chunk_8",
+        "7dba74058fa6d2da_chunk_116"
+      ],
+      "relevant_ids": [
+        "750781b5e8132957_chunk_173"
+      ],
+      "recall_hit": true,
+      "precision": 0.2,
+      "reciprocal_rank": 0.3333333333333333
+    },
+    {
+      "id": "gs_valid_012",
+      "question": "처리방침에 동의 없이 처리하는 개인정보 항목을 적을 때 어떤 정보들을 표로 정리해야 하나요?",
+      "retrieved": [
+        {
+          "id": "750781b5e8132957_chunk_141",
+          "confidence": 0.6199,
+          "relevant": false
+        },
+        {
+          "id": "750781b5e8132957_chunk_39",
+          "confidence": 0.689,
+          "relevant": false
+        },
+        {
+          "id": "750781b5e8132957_chunk_173",
+          "confidence": 0.5293,
+          "relevant": false
+        },
+        {
+          "id": "750781b5e8132957_chunk_35",
+          "confidence": 0.6846,
+          "relevant": false
+        },
+        {
+          "id": "ec6e3f7e3e24a82e_chunk_49",
+          "confidence": 0.5685,
+          "relevant": false
+        },
+        {
+          "id": "717cd7d7d5784435_chunk_134",
+          "confidence": 0.6831,
+          "relevant": false
+        }
+      ],
+      "retrieved_ids": [
+        "750781b5e8132957_chunk_141",
+        "750781b5e8132957_chunk_39",
+        "750781b5e8132957_chunk_173",
+        "750781b5e8132957_chunk_35",
+        "ec6e3f7e3e24a82e_chunk_49",
+        "717cd7d7d5784435_chunk_134"
+      ],
+      "relevant_ids": [
+        "750781b5e8132957_chunk_52"
+      ],
+      "recall_hit": false,
+      "precision": 0.0,
+      "reciprocal_rank": 0.0
+    },
+    {
+      "id": "gs_valid_013",
+      "question": "제 개인신용정보를 한번 전송받고 나서, 그 이후로도 계속 최신 정보로 업데이트해서 받을 수 있나요?",
+      "retrieved": [
+        {
+          "id": "7e72f4596dceb8e0_chunk_53",
+          "confidence": 0.5175,
+          "relevant": false
+        },
+        {
+          "id": "894f8dc2aa0bfced_chunk_72",
+          "confidence": 0.6463,
+          "relevant": false
+        },
+        {
+          "id": "0e330b9c24c086e8_chunk_95",
+          "confidence": 0.4483,
+          "relevant": false
+        },
+        {
+          "id": "894f8dc2aa0bfced_chunk_66",
+          "confidence": 0.632,
+          "relevant": false
+        },
+        {
+          "id": "7e72f4596dceb8e0_chunk_77",
+          "confidence": 0.5634,
+          "relevant": false
+        },
+        {
+          "id": "894f8dc2aa0bfced_chunk_73",
+          "confidence": 0.6319,
+          "relevant": true
+        }
+      ],
+      "retrieved_ids": [
+        "7e72f4596dceb8e0_chunk_53",
+        "894f8dc2aa0bfced_chunk_72",
+        "0e330b9c24c086e8_chunk_95",
+        "894f8dc2aa0bfced_chunk_66",
+        "7e72f4596dceb8e0_chunk_77",
+        "894f8dc2aa0bfced_chunk_73"
+      ],
+      "relevant_ids": [
+        "894f8dc2aa0bfced_chunk_73"
+      ],
+      "recall_hit": true,
+      "precision": 0.16666666666666666,
+      "reciprocal_rank": 0.16666666666666666
+    },
+    {
+      "id": "gs_valid_014",
+      "question": "금융감독원이 신용정보회사를 검사할 때 자료 제출을 요구할 수 있나요?",
+      "retrieved": [
+        {
+          "id": "0e330b9c24c086e8_chunk_488",
+          "confidence": 0.6607,
+          "relevant": false
+        },
+        {
+          "id": "894f8dc2aa0bfced_chunk_107",
+          "confidence": 0.753,
+          "relevant": true
+        },
+        {
+          "id": "8add0a6667f8e333_chunk_30",
+          "confidence": 0.6404,
+          "relevant": false
+        },
+        {
+          "id": "894f8dc2aa0bfced_chunk_106",
+          "confidence": 0.7344,
+          "relevant": false
+        },
+        {
+          "id": "0e330b9c24c086e8_chunk_482",
+          "confidence": 0.7071,
+          "relevant": false
+        }
+      ],
+      "retrieved_ids": [
+        "0e330b9c24c086e8_chunk_488",
+        "894f8dc2aa0bfced_chunk_107",
+        "8add0a6667f8e333_chunk_30",
+        "894f8dc2aa0bfced_chunk_106",
+        "0e330b9c24c086e8_chunk_482"
+      ],
+      "relevant_ids": [
+        "894f8dc2aa0bfced_chunk_107"
+      ],
+      "recall_hit": true,
+      "precision": 0.2,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "id": "gs_valid_015",
+      "question": "마이데이터 서비스에서 본인확인은 어떤 방식으로 이뤄지나요?",
+      "retrieved": [
+        {
+          "id": "7e72f4596dceb8e0_chunk_111",
+          "confidence": 0.5864,
+          "relevant": false
+        },
+        {
+          "id": "d9beef2169e197b3_chunk_113",
+          "confidence": 0.7202,
+          "relevant": false
+        },
+        {
+          "id": "750781b5e8132957_chunk_148",
+          "confidence": 0.5582,
+          "relevant": false
+        },
+        {
+          "id": "d9beef2169e197b3_chunk_114",
+          "confidence": 0.7064,
+          "relevant": false
+        },
+        {
+          "id": "750781b5e8132957_chunk_157",
+          "confidence": 0.5106,
+          "relevant": false
+        },
+        {
+          "id": "d9beef2169e197b3_chunk_97",
+          "confidence": 0.6897,
+          "relevant": false
+        }
+      ],
+      "retrieved_ids": [
+        "7e72f4596dceb8e0_chunk_111",
+        "d9beef2169e197b3_chunk_113",
+        "750781b5e8132957_chunk_148",
+        "d9beef2169e197b3_chunk_114",
+        "750781b5e8132957_chunk_157",
+        "d9beef2169e197b3_chunk_97"
+      ],
+      "relevant_ids": [
+        "d9beef2169e197b3_chunk_111"
+      ],
+      "recall_hit": false,
+      "precision": 0.0,
+      "reciprocal_rank": 0.0
+    },
+    {
+      "id": "gs_valid_016",
+      "question": "정보주체가 마이데이터 전송을 요구할 때 전자서명은 어떻게 검증되나요?",
+      "retrieved": [
+        {
+          "id": "d9beef2169e197b3_chunk_127",
+          "confidence": 0.6955,
+          "relevant": false
+        },
+        {
+          "id": "d9beef2169e197b3_chunk_113",
+          "confidence": 0.7954,
+          "relevant": false
+        },
+        {
+          "id": "d9beef2169e197b3_chunk_126",
+          "confidence": 0.6967,
+          "relevant": false
+        },
+        {
+          "id": "d9beef2169e197b3_chunk_114",
+          "confidence": 0.7872,
+          "relevant": false
+        },
+        {
+          "id": "d9beef2169e197b3_chunk_54",
+          "confidence": 0.7197,
+          "relevant": false
+        },
+        {
+          "id": "d9beef2169e197b3_chunk_112",
+          "confidence": 0.7496,
+          "relevant": true
+        }
+      ],
+      "retrieved_ids": [
+        "d9beef2169e197b3_chunk_127",
+        "d9beef2169e197b3_chunk_113",
+        "d9beef2169e197b3_chunk_126",
+        "d9beef2169e197b3_chunk_114",
+        "d9beef2169e197b3_chunk_54",
+        "d9beef2169e197b3_chunk_112"
+      ],
+      "relevant_ids": [
+        "d9beef2169e197b3_chunk_112"
+      ],
+      "recall_hit": true,
+      "precision": 0.16666666666666666,
+      "reciprocal_rank": 0.16666666666666666
+    },
+    {
+      "id": "gs_valid_017",
+      "question": "유전정보도 생체정보 보호 안내서가 적용되는 생체인식정보에 포함되나요?",
+      "retrieved": [
+        {
+          "id": "7dba74058fa6d2da_chunk_102",
+          "confidence": 0.7614,
+          "relevant": false
+        },
+        {
+          "id": "7dba74058fa6d2da_chunk_103",
+          "confidence": 0.7673,
+          "relevant": true
+        },
+        {
+          "id": "7dba74058fa6d2da_chunk_101",
+          "confidence": 0.6884,
+          "relevant": false
+        }
+      ],
+      "retrieved_ids": [
+        "7dba74058fa6d2da_chunk_102",
+        "7dba74058fa6d2da_chunk_103",
+        "7dba74058fa6d2da_chunk_101"
+      ],
+      "relevant_ids": [
+        "7dba74058fa6d2da_chunk_103"
+      ],
+      "recall_hit": true,
+      "precision": 0.3333333333333333,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "id": "gs_valid_018",
+      "question": "생체인식정보가 비밀번호 같은 다른 개인정보보다 더 조심해야 하는 이유가 뭔가요?",
+      "retrieved": [
+        {
+          "id": "7dba74058fa6d2da_chunk_70",
+          "confidence": 0.6098,
+          "relevant": false
+        },
+        {
+          "id": "7dba74058fa6d2da_chunk_33",
+          "confidence": 0.6839,
+          "relevant": true
+        },
+        {
+          "id": "7dba74058fa6d2da_chunk_91",
+          "confidence": 0.636,
+          "relevant": false
+        },
+        {
+          "id": "7dba74058fa6d2da_chunk_67",
+          "confidence": 0.6773,
+          "relevant": false
+        },
+        {
+          "id": "7dba74058fa6d2da_chunk_35",
+          "confidence": 0.6085,
+          "relevant": false
+        },
+        {
+          "id": "7dba74058fa6d2da_chunk_32",
+          "confidence": 0.6677,
+          "relevant": false
+        }
+      ],
+      "retrieved_ids": [
+        "7dba74058fa6d2da_chunk_70",
+        "7dba74058fa6d2da_chunk_33",
+        "7dba74058fa6d2da_chunk_91",
+        "7dba74058fa6d2da_chunk_67",
+        "7dba74058fa6d2da_chunk_35",
+        "7dba74058fa6d2da_chunk_32"
+      ],
+      "relevant_ids": [
+        "7dba74058fa6d2da_chunk_33"
+      ],
+      "recall_hit": true,
+      "precision": 0.16666666666666666,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "id": "gs_valid_019",
+      "question": "물리적 망분리는 방화벽 정책만 잘 설정하면 되는 건가요?",
+      "retrieved": [
+        {
+          "id": "60b1b202d9f53788_chunk_103",
+          "confidence": 0.5937,
+          "relevant": true
+        },
+        {
+          "id": "60b1b202d9f53788_chunk_65",
+          "confidence": 0.4921,
+          "relevant": false
+        },
+        {
+          "id": "60b1b202d9f53788_chunk_70",
+          "confidence": 0.4906,
+          "relevant": false
+        }
+      ],
+      "retrieved_ids": [
+        "60b1b202d9f53788_chunk_103",
+        "60b1b202d9f53788_chunk_65",
+        "60b1b202d9f53788_chunk_70"
+      ],
+      "relevant_ids": [
+        "60b1b202d9f53788_chunk_103"
+      ],
+      "recall_hit": true,
+      "precision": 0.3333333333333333,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "gs_valid_020",
+      "question": "은행이 전자화폐를 발행하려면 항상 금융위원회 허가를 받아야 하나요?",
+      "retrieved": [
+        {
+          "id": "60b1b202d9f53788_chunk_111",
+          "confidence": 0.6964,
+          "relevant": true
+        },
+        {
+          "id": "60b1b202d9f53788_chunk_110",
+          "confidence": 0.658,
+          "relevant": false
+        },
+        {
+          "id": "60b1b202d9f53788_chunk_122",
+          "confidence": 0.5732,
+          "relevant": false
+        },
+        {
+          "id": "60b1b202d9f53788_chunk_113",
+          "confidence": 0.6451,
+          "relevant": false
+        }
+      ],
+      "retrieved_ids": [
+        "60b1b202d9f53788_chunk_111",
+        "60b1b202d9f53788_chunk_110",
+        "60b1b202d9f53788_chunk_122",
+        "60b1b202d9f53788_chunk_113"
+      ],
+      "relevant_ids": [
+        "60b1b202d9f53788_chunk_111"
+      ],
+      "recall_hit": true,
+      "precision": 0.25,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "gs_valid_021",
+      "question": "의사가 진료 과정에서 작성한 진료기록부도 마이데이터로 전송 요구할 수 있는 정보인가요?",
+      "retrieved": [
+        {
+          "id": "7e72f4596dceb8e0_chunk_50",
+          "confidence": 0.6774,
+          "relevant": true
+        },
+        {
+          "id": "717cd7d7d5784435_chunk_43",
+          "confidence": 0.6257,
+          "relevant": false
+        },
+        {
+          "id": "7e72f4596dceb8e0_chunk_122",
+          "confidence": 0.6604,
+          "relevant": false
+        },
+        {
+          "id": "7e72f4596dceb8e0_chunk_49",
+          "confidence": 0.5866,
+          "relevant": false
+        },
+        {
+          "id": "7e72f4596dceb8e0_chunk_38",
+          "confidence": 0.6441,
+          "relevant": false
+        }
+      ],
+      "retrieved_ids": [
+        "7e72f4596dceb8e0_chunk_50",
+        "717cd7d7d5784435_chunk_43",
+        "7e72f4596dceb8e0_chunk_122",
+        "7e72f4596dceb8e0_chunk_49",
+        "7e72f4596dceb8e0_chunk_38"
+      ],
+      "relevant_ids": [
+        "7e72f4596dceb8e0_chunk_50"
+      ],
+      "recall_hit": true,
+      "precision": 0.2,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "gs_valid_022",
+      "question": "보험회사 같은 금융기관도 마이데이터 특수전문기관으로 지정받을 수 있나요?",
+      "retrieved": [
+        {
+          "id": "7e72f4596dceb8e0_chunk_77",
+          "confidence": 0.569,
+          "relevant": false
+        },
+        {
+          "id": "d9beef2169e197b3_chunk_36",
+          "confidence": 0.6276,
+          "relevant": false
+        },
+        {
+          "id": "7e72f4596dceb8e0_chunk_99",
+          "confidence": 0.5315,
+          "relevant": false
+        },
+        {
+          "id": "7e72f4596dceb8e0_chunk_82",
+          "confidence": 0.6271,
+          "relevant": false
+        },
+        {
+          "id": "7e72f4596dceb8e0_chunk_78",
+          "confidence": 0.5987,
+          "relevant": true
+        },
+        {
+          "id": "d9beef2169e197b3_chunk_37",
+          "confidence": 0.6202,
+          "relevant": false
+        }
+      ],
+      "retrieved_ids": [
+        "7e72f4596dceb8e0_chunk_77",
+        "d9beef2169e197b3_chunk_36",
+        "7e72f4596dceb8e0_chunk_99",
+        "7e72f4596dceb8e0_chunk_82",
+        "7e72f4596dceb8e0_chunk_78",
+        "d9beef2169e197b3_chunk_37"
+      ],
+      "relevant_ids": [
+        "7e72f4596dceb8e0_chunk_78"
+      ],
+      "recall_hit": true,
+      "precision": 0.16666666666666666,
+      "reciprocal_rank": 0.2
+    },
+    {
+      "id": "gs_valid_023",
+      "question": "은행 직원 단말기는 아무나 사용할 수 있나요?",
+      "retrieved": [
+        {
+          "id": "60b1b202d9f53788_chunk_70",
+          "confidence": 0.6513,
+          "relevant": false
+        },
+        {
+          "id": "ec6e3f7e3e24a82e_chunk_8",
+          "confidence": 0.4255,
+          "relevant": false
+        },
+        {
+          "id": "2c41b9da60df53dd_chunk_17",
+          "confidence": 0.6449,
+          "relevant": false
+        },
+        {
+          "id": "60b1b202d9f53788_chunk_71",
+          "confidence": 0.6147,
+          "relevant": false
+        }
+      ],
+      "retrieved_ids": [
+        "60b1b202d9f53788_chunk_70",
+        "ec6e3f7e3e24a82e_chunk_8",
+        "2c41b9da60df53dd_chunk_17",
+        "60b1b202d9f53788_chunk_71"
+      ],
+      "relevant_ids": [
+        "2c41b9da60df53dd_chunk_18"
+      ],
+      "recall_hit": false,
+      "precision": 0.0,
+      "reciprocal_rank": 0.0
+    },
+    {
+      "id": "gs_valid_024",
+      "question": "소액후불결제 서비스 이용자의 연체정보는 아무 금액이나 신용정보에 제공되나요?",
+      "retrieved": [
+        {
+          "id": "2c41b9da60df53dd_chunk_35",
+          "confidence": 0.6281,
+          "relevant": false
+        },
+        {
+          "id": "2c41b9da60df53dd_chunk_36",
+          "confidence": 0.7422,
+          "relevant": true
+        },
+        {
+          "id": "8add0a6667f8e333_chunk_56",
+          "confidence": 0.559,
+          "relevant": false
+        },
+        {
+          "id": "8ebbc3a51ae9f81f_chunk_37",
+          "confidence": 0.6205,
+          "relevant": false
+        }
+      ],
+      "retrieved_ids": [
+        "2c41b9da60df53dd_chunk_35",
+        "2c41b9da60df53dd_chunk_36",
+        "8add0a6667f8e333_chunk_56",
+        "8ebbc3a51ae9f81f_chunk_37"
+      ],
+      "relevant_ids": [
+        "2c41b9da60df53dd_chunk_36"
+      ],
+      "recall_hit": true,
+      "precision": 0.25,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "id": "gs_valid_025",
+      "question": "ARS로 예금잔액을 조회하려면 어떤 정보가 필요한가요?",
+      "retrieved": [
+        {
+          "id": "8ef82846bf955ef2_chunk_56",
+          "confidence": 0.5819,
+          "relevant": false
+        },
+        {
+          "id": "ec6e3f7e3e24a82e_chunk_7",
+          "confidence": 0.4162,
+          "relevant": false
+        },
+        {
+          "id": "60b1b202d9f53788_chunk_134",
+          "confidence": 0.5729,
+          "relevant": false
+        },
+        {
+          "id": "8ef82846bf955ef2_chunk_57",
+          "confidence": 0.5677,
+          "relevant": true
+        },
+        {
+          "id": "8ef82846bf955ef2_chunk_25",
+          "confidence": 0.5688,
+          "relevant": false
+        }
+      ],
+      "retrieved_ids": [
+        "8ef82846bf955ef2_chunk_56",
+        "ec6e3f7e3e24a82e_chunk_7",
+        "60b1b202d9f53788_chunk_134",
+        "8ef82846bf955ef2_chunk_57",
+        "8ef82846bf955ef2_chunk_25"
+      ],
+      "relevant_ids": [
+        "8ef82846bf955ef2_chunk_57"
+      ],
+      "recall_hit": true,
+      "precision": 0.2,
+      "reciprocal_rank": 0.25
+    },
+    {
+      "id": "gs_valid_026",
+      "question": "통장이나 도장을 분실하면 어떻게 신고해야 하나요?",
+      "retrieved": [
+        {
+          "id": "8ef82846bf955ef2_chunk_40",
+          "confidence": 0.6466,
+          "relevant": true
+        },
+        {
+          "id": "8ef82846bf955ef2_chunk_39",
+          "confidence": 0.5817,
+          "relevant": false
+        },
+        {
+          "id": "ec6e3f7e3e24a82e_chunk_8",
+          "confidence": 0.4218,
+          "relevant": false
+        },
+        {
+          "id": "020c91df8ea06179_chunk_37",
+          "confidence": 0.5673,
+          "relevant": false
+        }
+      ],
+      "retrieved_ids": [
+        "8ef82846bf955ef2_chunk_40",
+        "8ef82846bf955ef2_chunk_39",
+        "ec6e3f7e3e24a82e_chunk_8",
+        "020c91df8ea06179_chunk_37"
+      ],
+      "relevant_ids": [
+        "8ef82846bf955ef2_chunk_40"
+      ],
+      "recall_hit": true,
+      "precision": 0.25,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "gs_valid_027",
+      "question": "고객이 동의한 보유기간이 지났는데 개인정보를 계속 갖고 있어도 되나요?",
+      "retrieved": [
+        {
+          "id": "ec6e3f7e3e24a82e_chunk_8",
+          "confidence": 0.5877,
+          "relevant": false
+        },
+        {
+          "id": "ec6e3f7e3e24a82e_chunk_52",
+          "confidence": 0.7534,
+          "relevant": true
+        },
+        {
+          "id": "0e330b9c24c086e8_chunk_132",
+          "confidence": 0.6739,
+          "relevant": false
+        },
+        {
+          "id": "ec6e3f7e3e24a82e_chunk_51",
+          "confidence": 0.7284,
+          "relevant": false
+        },
+        {
+          "id": "717cd7d7d5784435_chunk_113",
+          "confidence": 0.6467,
+          "relevant": false
+        },
+        {
+          "id": "0e330b9c24c086e8_chunk_119",
+          "confidence": 0.7186,
+          "relevant": false
+        }
+      ],
+      "retrieved_ids": [
+        "ec6e3f7e3e24a82e_chunk_8",
+        "ec6e3f7e3e24a82e_chunk_52",
+        "0e330b9c24c086e8_chunk_132",
+        "ec6e3f7e3e24a82e_chunk_51",
+        "717cd7d7d5784435_chunk_113",
+        "0e330b9c24c086e8_chunk_119"
+      ],
+      "relevant_ids": [
+        "ec6e3f7e3e24a82e_chunk_52"
+      ],
+      "recall_hit": true,
+      "precision": 0.16666666666666666,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "id": "gs_valid_028",
+      "question": "1회성으로 짧게 위탁하는 업무라 수탁자를 직접 교육하기 어려운데 어떻게 해야 하나요?",
+      "retrieved": [
+        {
+          "id": "ec6e3f7e3e24a82e_chunk_54",
+          "confidence": 0.7725,
+          "relevant": false
+        },
+        {
+          "id": "ec6e3f7e3e24a82e_chunk_53",
+          "confidence": 0.6096,
+          "relevant": false
+        },
+        {
+          "id": "ec6e3f7e3e24a82e_chunk_55",
+          "confidence": 0.6879,
+          "relevant": false
+        },
+        {
+          "id": "717cd7d7d5784435_chunk_194",
+          "confidence": 0.6841,
+          "relevant": false
+        }
+      ],
+      "retrieved_ids": [
+        "ec6e3f7e3e24a82e_chunk_54",
+        "ec6e3f7e3e24a82e_chunk_53",
+        "ec6e3f7e3e24a82e_chunk_55",
+        "717cd7d7d5784435_chunk_194"
+      ],
+      "relevant_ids": [
+        "ec6e3f7e3e24a82e_chunk_66"
+      ],
+      "recall_hit": false,
+      "precision": 0.0,
+      "reciprocal_rank": 0.0
+    },
+    {
+      "id": "gs_valid_029",
+      "question": "추심이체를 하려면 지급인 동의를 미리 받아야 하나요?",
+      "retrieved": [
+        {
+          "id": "8add0a6667f8e333_chunk_13",
+          "confidence": 0.7431,
+          "relevant": true
+        },
+        {
+          "id": "8add0a6667f8e333_chunk_12",
+          "confidence": 0.6409,
+          "relevant": false
+        },
+        {
+          "id": "60b1b202d9f53788_chunk_38",
+          "confidence": 0.655,
+          "relevant": false
+        },
+        {
+          "id": "ec6e3f7e3e24a82e_chunk_36",
+          "confidence": 0.4349,
+          "relevant": false
+        }
+      ],
+      "retrieved_ids": [
+        "8add0a6667f8e333_chunk_13",
+        "8add0a6667f8e333_chunk_12",
+        "60b1b202d9f53788_chunk_38",
+        "ec6e3f7e3e24a82e_chunk_36"
+      ],
+      "relevant_ids": [
+        "8add0a6667f8e333_chunk_13"
+      ],
+      "recall_hit": true,
+      "precision": 0.25,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "gs_valid_030",
+      "question": "가맹점이 아닌 사람이 가맹점 이름을 빌려서 전자화폐 거래를 해도 되나요?",
+      "retrieved": [
+        {
+          "id": "8add0a6667f8e333_chunk_26",
+          "confidence": 0.7307,
+          "relevant": true
+        },
+        {
+          "id": "8add0a6667f8e333_chunk_25",
+          "confidence": 0.6443,
+          "relevant": false
+        },
+        {
+          "id": "8add0a6667f8e333_chunk_57",
+          "confidence": 0.6671,
+          "relevant": false
+        },
+        {
+          "id": "8add0a6667f8e333_chunk_56",
+          "confidence": 0.5755,
+          "relevant": false
+        }
+      ],
+      "retrieved_ids": [
+        "8add0a6667f8e333_chunk_26",
+        "8add0a6667f8e333_chunk_25",
+        "8add0a6667f8e333_chunk_57",
+        "8add0a6667f8e333_chunk_56"
+      ],
+      "relevant_ids": [
+        "8add0a6667f8e333_chunk_26"
+      ],
+      "recall_hit": true,
+      "precision": 0.25,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "gs_valid_031",
+      "question": "개인정보가 유출된 걸 알게 되면 정확히 며칠 이내에 신고해야 하나요?",
+      "retrieved": [
+        {
+          "id": "ec6e3f7e3e24a82e_chunk_8",
+          "confidence": 0.5494,
+          "relevant": false
+        },
+        {
+          "id": "2b862c05d291708e_chunk_37",
+          "confidence": 0.7751,
+          "relevant": false
+        },
+        {
+          "id": "ec6e3f7e3e24a82e_chunk_7",
+          "confidence": 0.526,
+          "relevant": false
+        },
+        {
+          "id": "2b862c05d291708e_chunk_38",
+          "confidence": 0.7659,
+          "relevant": true
+        },
+        {
+          "id": "2b862c05d291708e_chunk_22",
+          "confidence": 0.7421,
+          "relevant": false
+        }
+      ],
+      "retrieved_ids": [
+        "ec6e3f7e3e24a82e_chunk_8",
+        "2b862c05d291708e_chunk_37",
+        "ec6e3f7e3e24a82e_chunk_7",
+        "2b862c05d291708e_chunk_38",
+        "2b862c05d291708e_chunk_22"
+      ],
+      "relevant_ids": [
+        "2b862c05d291708e_chunk_38"
+      ],
+      "recall_hit": true,
+      "precision": 0.2,
+      "reciprocal_rank": 0.25
+    },
+    {
+      "id": "gs_valid_032",
+      "question": "개인정보 유출 통지는 언제까지 해야 하고, 예외적으로 늦출 수 있는 경우도 있나요?",
+      "retrieved": [
+        {
+          "id": "750781b5e8132957_chunk_141",
+          "confidence": 0.5109,
+          "relevant": false
+        },
+        {
+          "id": "2b862c05d291708e_chunk_22",
+          "confidence": 0.729,
+          "relevant": false
+        },
+        {
+          "id": "2b862c05d291708e_chunk_35",
+          "confidence": 0.7252,
+          "relevant": true
+        },
+        {
+          "id": "0e330b9c24c086e8_chunk_374",
+          "confidence": 0.7288,
+          "relevant": false
+        },
+        {
+          "id": "ec6e3f7e3e24a82e_chunk_7",
+          "confidence": 0.5621,
+          "relevant": false
+        },
+        {
+          "id": "0e330b9c24c086e8_chunk_375",
+          "confidence": 0.7278,
+          "relevant": false
+        }
+      ],
+      "retrieved_ids": [
+        "750781b5e8132957_chunk_141",
+        "2b862c05d291708e_chunk_22",
+        "2b862c05d291708e_chunk_35",
+        "0e330b9c24c086e8_chunk_374",
+        "ec6e3f7e3e24a82e_chunk_7",
+        "0e330b9c24c086e8_chunk_375"
+      ],
+      "relevant_ids": [
+        "2b862c05d291708e_chunk_35"
+      ],
+      "recall_hit": true,
+      "precision": 0.16666666666666666,
+      "reciprocal_rank": 0.3333333333333333
+    },
+    {
+      "id": "gs_valid_033",
+      "question": "농협이 전자금융서비스 이용수수료를 바꾸려면 어떻게 안내하나요?",
+      "retrieved": [
+        {
+          "id": "750781b5e8132957_chunk_164",
+          "confidence": 0.4474,
+          "relevant": false
+        },
+        {
+          "id": "020c91df8ea06179_chunk_32",
+          "confidence": 0.7869,
+          "relevant": false
+        },
+        {
+          "id": "020c91df8ea06179_chunk_34",
+          "confidence": 0.7683,
+          "relevant": false
+        },
+        {
+          "id": "750781b5e8132957_chunk_141",
+          "confidence": 0.401,
+          "relevant": false
+        },
+        {
+          "id": "020c91df8ea06179_chunk_31",
+          "confidence": 0.7179,
+          "relevant": true
+        }
+      ],
+      "retrieved_ids": [
+        "750781b5e8132957_chunk_164",
+        "020c91df8ea06179_chunk_32",
+        "020c91df8ea06179_chunk_34",
+        "750781b5e8132957_chunk_141",
+        "020c91df8ea06179_chunk_31"
+      ],
+      "relevant_ids": [
+        "020c91df8ea06179_chunk_31"
+      ],
+      "recall_hit": true,
+      "precision": 0.2,
+      "reciprocal_rank": 0.2
+    },
+    {
+      "id": "gs_valid_034",
+      "question": "제 생체정보가 유출된 것 같으면 어떻게 해야 하나요?",
+      "retrieved": [
+        {
+          "id": "750781b5e8132957_chunk_164",
+          "confidence": 0.4709,
+          "relevant": false
+        },
+        {
+          "id": "020c91df8ea06179_chunk_39",
+          "confidence": 0.6941,
+          "relevant": true
+        },
+        {
+          "id": "750781b5e8132957_chunk_141",
+          "confidence": 0.4891,
+          "relevant": false
+        },
+        {
+          "id": "2b862c05d291708e_chunk_38",
+          "confidence": 0.6702,
+          "relevant": false
+        },
+        {
+          "id": "750781b5e8132957_chunk_165",
+          "confidence": 0.4141,
+          "relevant": false
+        },
+        {
+          "id": "020c91df8ea06179_chunk_40",
+          "confidence": 0.6693,
+          "relevant": false
+        }
+      ],
+      "retrieved_ids": [
+        "750781b5e8132957_chunk_164",
+        "020c91df8ea06179_chunk_39",
+        "750781b5e8132957_chunk_141",
+        "2b862c05d291708e_chunk_38",
+        "750781b5e8132957_chunk_165",
+        "020c91df8ea06179_chunk_40"
+      ],
+      "relevant_ids": [
+        "020c91df8ea06179_chunk_38",
+        "020c91df8ea06179_chunk_39"
+      ],
+      "recall_hit": true,
+      "precision": 0.16666666666666666,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "id": "gs_valid_035",
+      "question": "온라인 금융상품 설명에서 이해 못한 용어가 있으면 소비자가 확인할 방법을 제공해야 하나요?",
+      "retrieved": [
+        {
+          "id": "f286646c3e49be29_chunk_28",
+          "confidence": 0.7321,
+          "relevant": true
+        },
+        {
+          "id": "f286646c3e49be29_chunk_9",
+          "confidence": 0.7339,
+          "relevant": false
+        },
+        {
+          "id": "f286646c3e49be29_chunk_27",
+          "confidence": 0.7048,
+          "relevant": false
+        },
+        {
+          "id": "f286646c3e49be29_chunk_10",
+          "confidence": 0.7323,
+          "relevant": false
+        },
+        {
+          "id": "f286646c3e49be29_chunk_31",
+          "confidence": 0.6938,
+          "relevant": false
+        }
+      ],
+      "retrieved_ids": [
+        "f286646c3e49be29_chunk_28",
+        "f286646c3e49be29_chunk_9",
+        "f286646c3e49be29_chunk_27",
+        "f286646c3e49be29_chunk_10",
+        "f286646c3e49be29_chunk_31"
+      ],
+      "relevant_ids": [
+        "f286646c3e49be29_chunk_28"
+      ],
+      "recall_hit": true,
+      "precision": 0.2,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "gs_valid_036",
+      "question": "대출상품을 온라인으로 설명할 때 가장 먼저 강조해야 하는 내용은 뭔가요?",
+      "retrieved": [
+        {
+          "id": "f286646c3e49be29_chunk_41",
+          "confidence": 0.6256,
+          "relevant": false
+        },
+        {
+          "id": "f286646c3e49be29_chunk_11",
+          "confidence": 0.6382,
+          "relevant": false
+        },
+        {
+          "id": "f286646c3e49be29_chunk_42",
+          "confidence": 0.635,
+          "relevant": false
+        },
+        {
+          "id": "f286646c3e49be29_chunk_0",
+          "confidence": 0.6372,
+          "relevant": false
+        },
+        {
+          "id": "f286646c3e49be29_chunk_14",
+          "confidence": 0.6139,
+          "relevant": false
+        }
+      ],
+      "retrieved_ids": [
+        "f286646c3e49be29_chunk_41",
+        "f286646c3e49be29_chunk_11",
+        "f286646c3e49be29_chunk_42",
+        "f286646c3e49be29_chunk_0",
+        "f286646c3e49be29_chunk_14"
+      ],
+      "relevant_ids": [
+        "f286646c3e49be29_chunk_13"
+      ],
+      "recall_hit": false,
+      "precision": 0.0,
+      "reciprocal_rank": 0.0
+    },
+    {
+      "id": "gs_valid_037",
+      "question": "손실 위험을 설명할 때 그냥 '손실이 발생할 수 있다'고만 말해도 충분한가요?",
+      "retrieved": [
+        {
+          "id": "8ebbc3a51ae9f81f_chunk_35",
+          "confidence": 0.5666,
+          "relevant": false
+        },
+        {
+          "id": "8ebbc3a51ae9f81f_chunk_15",
+          "confidence": 0.5833,
+          "relevant": false
+        },
+        {
+          "id": "8ebbc3a51ae9f81f_chunk_36",
+          "confidence": 0.5696,
+          "relevant": false
+        },
+        {
+          "id": "8ebbc3a51ae9f81f_chunk_14",
+          "confidence": 0.557,
+          "relevant": false
+        },
+        {
+          "id": "8ebbc3a51ae9f81f_chunk_34",
+          "confidence": 0.5669,
+          "relevant": true
+        }
+      ],
+      "retrieved_ids": [
+        "8ebbc3a51ae9f81f_chunk_35",
+        "8ebbc3a51ae9f81f_chunk_15",
+        "8ebbc3a51ae9f81f_chunk_36",
+        "8ebbc3a51ae9f81f_chunk_14",
+        "8ebbc3a51ae9f81f_chunk_34"
+      ],
+      "relevant_ids": [
+        "8ebbc3a51ae9f81f_chunk_34"
+      ],
+      "recall_hit": true,
+      "precision": 0.2,
+      "reciprocal_rank": 0.2
+    },
+    {
+      "id": "gs_valid_038",
+      "question": "약관에 있는 내용이면 회사가 따로 설명 안 해줘도 법적으로 문제없나요?",
+      "retrieved": [
+        {
+          "id": "ec6e3f7e3e24a82e_chunk_8",
+          "confidence": 0.4427,
+          "relevant": false
+        },
+        {
+          "id": "8ebbc3a51ae9f81f_chunk_25",
+          "confidence": 0.6778,
+          "relevant": true
+        },
+        {
+          "id": "ec6e3f7e3e24a82e_chunk_4",
+          "confidence": 0.4285,
+          "relevant": false
+        },
+        {
+          "id": "8ebbc3a51ae9f81f_chunk_40",
+          "confidence": 0.6564,
+          "relevant": false
+        },
+        {
+          "id": "ec6e3f7e3e24a82e_chunk_45",
+          "confidence": 0.5234,
+          "relevant": false
+        },
+        {
+          "id": "8ebbc3a51ae9f81f_chunk_20",
+          "confidence": 0.6522,
+          "relevant": false
+        }
+      ],
+      "retrieved_ids": [
+        "ec6e3f7e3e24a82e_chunk_8",
+        "8ebbc3a51ae9f81f_chunk_25",
+        "ec6e3f7e3e24a82e_chunk_4",
+        "8ebbc3a51ae9f81f_chunk_40",
+        "ec6e3f7e3e24a82e_chunk_45",
+        "8ebbc3a51ae9f81f_chunk_20"
+      ],
+      "relevant_ids": [
+        "8ebbc3a51ae9f81f_chunk_24",
+        "8ebbc3a51ae9f81f_chunk_25"
+      ],
+      "recall_hit": true,
+      "precision": 0.16666666666666666,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "id": "gs_valid_039",
+      "question": "이 발췌 문서는 왜 만들어진 건가요?",
+      "retrieved": [
+        {
+          "id": "750781b5e8132957_chunk_143",
+          "confidence": 0.5264,
+          "relevant": false
+        },
+        {
+          "id": "750781b5e8132957_chunk_186",
+          "confidence": 0.5163,
+          "relevant": false
+        },
+        {
+          "id": "ec6e3f7e3e24a82e_chunk_8",
+          "confidence": 0.4189,
+          "relevant": false
+        },
+        {
+          "id": "2b862c05d291708e_chunk_25",
+          "confidence": 0.5037,
+          "relevant": false
+        }
+      ],
+      "retrieved_ids": [
+        "750781b5e8132957_chunk_143",
+        "750781b5e8132957_chunk_186",
+        "ec6e3f7e3e24a82e_chunk_8",
+        "2b862c05d291708e_chunk_25"
+      ],
+      "relevant_ids": [
+        "02753eae87f15578_chunk_1"
+      ],
+      "recall_hit": false,
+      "precision": 0.0,
+      "reciprocal_rank": 0.0
+    },
+    {
+      "id": "gs_valid_040",
+      "question": "보장성 상품 광고에서 보장한도나 면책사항을 생략해도 되나요?",
+      "retrieved": [
+        {
+          "id": "02753eae87f15578_chunk_6",
+          "confidence": 0.5843,
+          "relevant": true
+        },
+        {
+          "id": "f286646c3e49be29_chunk_13",
+          "confidence": 0.5975,
+          "relevant": false
+        },
+        {
+          "id": "f286646c3e49be29_chunk_12",
+          "confidence": 0.5746,
+          "relevant": false
+        }
+      ],
+      "retrieved_ids": [
+        "02753eae87f15578_chunk_6",
+        "f286646c3e49be29_chunk_13",
+        "f286646c3e49be29_chunk_12"
+      ],
+      "relevant_ids": [
+        "02753eae87f15578_chunk_6"
+      ],
+      "recall_hit": true,
+      "precision": 0.3333333333333333,
+      "reciprocal_rank": 1.0
+    }
+  ]
+}

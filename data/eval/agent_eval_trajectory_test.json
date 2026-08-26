@@ -1,0 +1,2377 @@
+[
+  {
+    "id": "m1_t01",
+    "category": "m1",
+    "category_label": "이력+Tier2 조건이어받기 - SBI저축은행 주택담보대출(empty)→신용대출(empty, Tier2)[test]",
+    "metric_type": "mechanism",
+    "question": "그럼 신용대출은 되나요?",
+    "history": [
+      {
+        "role": "human",
+        "content": "SBI저축은행 주택담보대출 좀 찾아봐줘"
+      },
+      {
+        "role": "ai",
+        "content": "SBI저축은행 주택담보대출 상품을 찾지 못했습니다."
+      }
+    ],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route": "product_recommendation",
+      "tool_name": "recommend_credit_loan_products",
+      "answer_contains_any": [
+        "SBI저축은행",
+        "SBI은행",
+        "SBI저축"
+      ]
+    },
+    "source": "신규(held-out — train과 다른 기관·상품쌍, m1 완화기준 적용)"
+  },
+  {
+    "id": "m1_t02",
+    "category": "m1",
+    "category_label": "이력+Tier2 조건이어받기 - 국민은행 전세자금대출(성공)→사업자대출(empty, Tier2)[test]",
+    "metric_type": "mechanism",
+    "question": "사업자대출 상품도 있나요?",
+    "history": [
+      {
+        "role": "human",
+        "content": "국민은행 전세자금대출 알아봐줘"
+      },
+      {
+        "role": "ai",
+        "content": "국민은행 전세자금대출 상품 안내드립니다."
+      }
+    ],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route": "product_recommendation",
+      "tool_name": "recommend_business_loan_products",
+      "answer_contains_any": [
+        "국민은행",
+        "국민"
+      ]
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "m1_t03",
+    "category": "m1",
+    "category_label": "이력+Tier2 조건이어받기 - 카카오뱅크 예금(성공)→사업자대출(empty, Tier2)[test]",
+    "metric_type": "mechanism",
+    "question": "혹시 사업자대출도 있어요?",
+    "history": [
+      {
+        "role": "human",
+        "content": "카카오뱅크 정기예금 좀 알아봐줘"
+      },
+      {
+        "role": "ai",
+        "content": "카카오뱅크 정기예금 상품 안내드립니다."
+      }
+    ],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route": "product_recommendation",
+      "tool_name": "recommend_business_loan_products",
+      "answer_contains_any": [
+        "카카오뱅크",
+        "카카오"
+      ]
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "m1_t04",
+    "category": "m1",
+    "category_label": "이력+Tier2 조건이어받기 - 신한은행 주택담보대출(성공)→사업자대출(empty, Tier2)[test]",
+    "metric_type": "mechanism",
+    "question": "그럼 사업자대출도 취급하나요?",
+    "history": [
+      {
+        "role": "human",
+        "content": "신한은행 주택담보대출 조건 알려줘"
+      },
+      {
+        "role": "ai",
+        "content": "신한은행 주택담보대출 상품 안내드립니다."
+      }
+    ],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route": "product_recommendation",
+      "tool_name": "recommend_business_loan_products",
+      "answer_contains_any": [
+        "신한은행",
+        "신한"
+      ]
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "m2_t01",
+    "category": "m2",
+    "category_label": "모호질문+disambiguation없는 tool_call도달 - 신용대출 이력, '그거 진짜예요?'[test]",
+    "metric_type": "mechanism",
+    "question": "그거 진짜예요?",
+    "history": [
+      {
+        "role": "human",
+        "content": "신용대출 상품 좀 알아봐줘"
+      },
+      {
+        "role": "ai",
+        "content": "신용대출 상품 3건을 안내드립니다."
+      }
+    ],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route": "product_recommendation",
+      "tool_name": "recommend_credit_loan_products"
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "m2_t02",
+    "category": "m2",
+    "category_label": "모호질문+disambiguation없는 tool_call도달 - 정기예금 이력, '다시 봐줄래요?'[test]",
+    "metric_type": "mechanism",
+    "question": "다시 봐줄래요?",
+    "history": [
+      {
+        "role": "human",
+        "content": "정기예금 상품 알아봐줘"
+      },
+      {
+        "role": "ai",
+        "content": "정기예금 상품 3건을 안내드립니다."
+      }
+    ],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route": "product_recommendation",
+      "tool_name": "recommend_deposit_products"
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "m2_t03",
+    "category": "m2",
+    "category_label": "모호질문+disambiguation없는 tool_call도달 - 사업자대출 이력, '그거 언제 되나요?'[test]",
+    "metric_type": "mechanism",
+    "question": "그거 언제 되나요?",
+    "history": [
+      {
+        "role": "human",
+        "content": "개인사업자대출 알아봐줘"
+      },
+      {
+        "role": "ai",
+        "content": "개인사업자대출 상품 3건을 안내드립니다."
+      }
+    ],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route": "product_recommendation",
+      "tool_name": "recommend_business_loan_products"
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "m2_t04",
+    "category": "m2",
+    "category_label": "모호질문+disambiguation없는 tool_call도달 - 전세자금대출 이력, '확실해요?'[test]",
+    "metric_type": "mechanism",
+    "question": "확실해요?",
+    "history": [
+      {
+        "role": "human",
+        "content": "전세자금대출 알아봐줘"
+      },
+      {
+        "role": "ai",
+        "content": "전세자금대출 상품 3건을 안내드립니다."
+      }
+    ],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route": "product_recommendation",
+      "tool_name": "recommend_jeonse_loan_products"
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "m3_t01",
+    "category": "m3",
+    "category_label": "가드레일 규칙조합 - ①PII+④숫자검증(product_recommendation, business_loan)[test]",
+    "metric_type": "mechanism",
+    "question": null,
+    "history": [],
+    "seed_state": {
+      "route": "product_recommendation",
+      "tool_name": "recommend_business_loan_products",
+      "answer": "계좌번호 601-3322-115599로 안내드립니다. 아이엠뱅크 사업자대출 금리는 9.0%입니다.",
+      "tool_result": [
+        {
+          "bank_name": "아이엠뱅크",
+          "product_name": "사업자대출",
+          "credit_score_band": "701~800점",
+          "interest_rate": 5.2
+        }
+      ]
+    },
+    "fault_injection": null,
+    "expected": {
+      "guardrail_rule_triggered_contains": [
+        "pii_masking",
+        "numeric_self_check"
+      ]
+    },
+    "source": "신규(held-out — train과 다른 tool)"
+  },
+  {
+    "id": "m3_t02",
+    "category": "m3",
+    "category_label": "가드레일 규칙조합 - ②고지누락+③금지표현(product_recommendation, deposit)[test]",
+    "metric_type": "mechanism",
+    "question": null,
+    "history": [],
+    "seed_state": {
+      "route": "product_recommendation",
+      "tool_name": "recommend_deposit_products",
+      "answer": "이 상품은 최고의 혜택을 드립니다. 제주은행 정기예금 금리는 3.1%입니다.",
+      "tool_result": [
+        {
+          "bank_name": "제주은행",
+          "product_name": "정기예금",
+          "save_term_months": 12,
+          "interest_rate": 3.1,
+          "interest_rate_preferential": 3.1
+        }
+      ]
+    },
+    "fault_injection": null,
+    "expected": {
+      "guardrail_rule_triggered_contains": [
+        "disclosure_missing",
+        "prohibited_terms"
+      ]
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "m3_t03",
+    "category": "m3",
+    "category_label": "가드레일 규칙조합 - ①PII+⑤citation grounding(policy_qa)[test]",
+    "metric_type": "mechanism",
+    "question": null,
+    "history": [],
+    "seed_state": {
+      "route": "policy_qa",
+      "answer": "계좌번호 733-4488-990011 고객님께 안내드립니다. 제14조에 따르면 질권설정은 어떤 예금이든 자유롭게 가능합니다.",
+      "retrieved_chunks": [
+        {
+          "content": "제14조(양도 및 질권설정)\n① 거래처가 예금을 양도하거나 질권설정하려면 사전에 은행에 통지하고 동의를 받아야 한다. 다만, 법령에 의하여 금지되는 경우에는 양도나 질권설정을 할 수 없다.\n② 입출금이 자유로운 예금은 질권설정할 수 없다.",
+          "source": "예금거래기본약관.txt"
+        }
+      ]
+    },
+    "fault_injection": null,
+    "expected": {
+      "guardrail_rule_triggered_contains": [
+        "pii_masking",
+        "citation_grounding"
+      ]
+    },
+    "source": "신규(held-out — 다른 조항내용 오귀속: 실제론 입출금자유예금은 질권설정 불가인데 반대로 주장)"
+  },
+  {
+    "id": "m3_t04",
+    "category": "m3",
+    "category_label": "가드레일 규칙조합 - ③금지표현+④숫자검증(product_recommendation, mortgage_loan)[test]",
+    "metric_type": "mechanism",
+    "question": null,
+    "history": [],
+    "seed_state": {
+      "route": "product_recommendation",
+      "tool_name": "recommend_mortgage_loan_products",
+      "answer": "이 상품은 업계 최고 수준입니다. 경남은행 주택담보대출 금리는 8.5%입니다.",
+      "tool_result": [
+        {
+          "bank_name": "경남은행",
+          "product_name": "주택담보대출",
+          "lend_rate_min": 3.6,
+          "lend_rate_max": 4.3
+        }
+      ]
+    },
+    "fault_injection": null,
+    "expected": {
+      "guardrail_rule_triggered_contains": [
+        "prohibited_terms",
+        "numeric_self_check"
+      ]
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "m4_t01",
+    "category": "m4",
+    "category_label": "다턴모순 정정 - 신용점수 720→590(credit_loan)[test]",
+    "metric_type": "mechanism",
+    "question": "죄송해요, 사실 590점이었어요",
+    "history": [
+      {
+        "role": "human",
+        "content": "신용점수 720인 고객 신용대출 알아봐줘"
+      },
+      {
+        "role": "ai",
+        "content": "신용대출 상품 안내드립니다."
+      }
+    ],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route": "product_recommendation",
+      "tool_name": "recommend_credit_loan_products",
+      "tool_params_contains": {
+        "credit_score": 590
+      }
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "m4_t02",
+    "category": "m4",
+    "category_label": "다턴모순 정정 - 예치기간 18개월→9개월(deposit)[test]",
+    "metric_type": "mechanism",
+    "question": "아 9개월로 다시 봐주세요",
+    "history": [
+      {
+        "role": "human",
+        "content": "18개월 정기예금 알아봐줘"
+      },
+      {
+        "role": "ai",
+        "content": "정기예금 상품 안내드립니다."
+      }
+    ],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route": "product_recommendation",
+      "tool_name": "recommend_deposit_products",
+      "tool_params_contains": {
+        "save_term_months": 9
+      }
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "m4_t03",
+    "category": "m4",
+    "category_label": "다턴모순 정정 - 은행 케이뱅크→카카오뱅크(credit_loan)[test]",
+    "metric_type": "mechanism",
+    "question": "아 케이뱅크 말고 카카오뱅크로 봐주세요",
+    "history": [
+      {
+        "role": "human",
+        "content": "케이뱅크 신용대출 알아봐줘"
+      },
+      {
+        "role": "ai",
+        "content": "케이뱅크 신용대출 상품 안내드립니다."
+      }
+    ],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route": "product_recommendation",
+      "tool_name": "recommend_credit_loan_products",
+      "tool_params_contains": {
+        "bank_name_filter": "카카오뱅크"
+      }
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "m4_t04",
+    "category": "m4",
+    "category_label": "다턴모순 정정 - 신용점수 550→800(business_loan, 역방향)[test]",
+    "metric_type": "mechanism",
+    "question": "다시 확인해보니 800점이 맞네요",
+    "history": [
+      {
+        "role": "human",
+        "content": "신용점수 550인 사업자 대출 알아봐줘"
+      },
+      {
+        "role": "ai",
+        "content": "사업자대출 상품 안내드립니다."
+      }
+    ],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route": "product_recommendation",
+      "tool_name": "recommend_business_loan_products",
+      "tool_params_contains": {
+        "credit_score": 800
+      }
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "m5_t01",
+    "category": "m5",
+    "category_label": "Tier1복구+가드레일 조합 - 정기예금(다른 은행) fail_once복구+②[test]",
+    "metric_type": "mechanism",
+    "question": "카카오뱅크 정기예금 알아봐줘",
+    "history": [],
+    "seed_state": null,
+    "fault_injection": {
+      "tool": "recommend_deposit_products",
+      "mode": "fail_once"
+    },
+    "expected": {
+      "route": "product_recommendation",
+      "tool_name": "recommend_deposit_products",
+      "tier1_recovered": true,
+      "guardrail_rule_triggered_contains": [
+        "disclosure_missing"
+      ]
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "m5_t02",
+    "category": "m5",
+    "category_label": "Tier1복구+가드레일 조합 - 신용대출(다른 신용점수) fail_once복구+②[test]",
+    "metric_type": "mechanism",
+    "question": "신용점수 620인 고객 신용대출 알아봐줘",
+    "history": [],
+    "seed_state": null,
+    "fault_injection": {
+      "tool": "recommend_credit_loan_products",
+      "mode": "fail_once"
+    },
+    "expected": {
+      "route": "product_recommendation",
+      "tool_name": "recommend_credit_loan_products",
+      "tier1_recovered": true,
+      "guardrail_rule_triggered_contains": [
+        "disclosure_missing"
+      ]
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "m5_t03",
+    "category": "m5",
+    "category_label": "Tier1복구+가드레일 조합 - 사업자대출(은행필터) fail_once복구[test]",
+    "metric_type": "mechanism",
+    "question": "전북은행 사업자대출 알아봐줘",
+    "history": [],
+    "seed_state": null,
+    "fault_injection": {
+      "tool": "recommend_business_loan_products",
+      "mode": "fail_once"
+    },
+    "expected": {
+      "route": "product_recommendation",
+      "tool_name": "recommend_business_loan_products",
+      "tier1_recovered": true,
+      "answer_type": "normal"
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "m5_t04",
+    "category": "m5",
+    "category_label": "Tier1복구+가드레일 조합 - 주택담보대출(다른 은행) fail_once복구[test]",
+    "metric_type": "mechanism",
+    "question": "수협은행 주택담보대출 알아봐줘",
+    "history": [],
+    "seed_state": null,
+    "fault_injection": {
+      "tool": "recommend_mortgage_loan_products",
+      "mode": "fail_once"
+    },
+    "expected": {
+      "route": "product_recommendation",
+      "tool_name": "recommend_mortgage_loan_products",
+      "tier1_recovered": true,
+      "answer_type": "normal"
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "m6_t01",
+    "category": "m6",
+    "category_label": "다턴모순+Tier2 결합 - 신한은행→웰컴저축은행 정정(deposit, empty)[test]",
+    "metric_type": "mechanism",
+    "question": "신한은행 말고 웰컴저축은행으로 봐주세요",
+    "history": [
+      {
+        "role": "human",
+        "content": "신한은행 정기예금 알아봐줘"
+      },
+      {
+        "role": "ai",
+        "content": "신한은행 정기예금 상품 안내드립니다."
+      }
+    ],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route": "product_recommendation",
+      "tool_name": "recommend_deposit_products",
+      "answer_contains_any": [
+        "웰컴저축은행",
+        "웰컴은행",
+        "웰컴저축"
+      ]
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "m6_t02",
+    "category": "m6",
+    "category_label": "다턴모순+Tier2 결합 - 국민은행→신협 정정(credit_loan, empty)[test]",
+    "metric_type": "mechanism",
+    "question": "국민은행 말고 신협으로 다시 봐주세요",
+    "history": [
+      {
+        "role": "human",
+        "content": "국민은행 신용대출 알아봐줘"
+      },
+      {
+        "role": "ai",
+        "content": "국민은행 신용대출 상품 안내드립니다."
+      }
+    ],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route": "product_recommendation",
+      "tool_name": "recommend_credit_loan_products",
+      "answer_contains_any": [
+        "신협"
+      ]
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "m6_t03",
+    "category": "m6",
+    "category_label": "다턴모순+Tier2 결합 - 토스뱅크→한국씨티은행 정정(mortgage_loan, empty)[test]",
+    "metric_type": "mechanism",
+    "question": "토스뱅크 말고 한국씨티은행으로 봐주세요",
+    "history": [
+      {
+        "role": "human",
+        "content": "토스뱅크 주택담보대출 알아봐줘"
+      },
+      {
+        "role": "ai",
+        "content": "토스뱅크 주택담보대출 상품을 찾지 못했습니다."
+      }
+    ],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route": "product_recommendation",
+      "tool_name": "recommend_mortgage_loan_products",
+      "answer_contains_any": [
+        "한국씨티은행",
+        "씨티은행",
+        "씨티"
+      ]
+    },
+    "source": "신규(held-out — 이번엔 turn1도 empty였던 경우)"
+  },
+  {
+    "id": "m6_t04",
+    "category": "m6",
+    "category_label": "다턴모순+Tier2 결합 - 카카오뱅크→토스뱅크 정정(business_loan, empty)[test]",
+    "metric_type": "mechanism",
+    "question": "카카오뱅크 말고 토스뱅크로 다시 봐주세요",
+    "history": [
+      {
+        "role": "human",
+        "content": "카카오뱅크 사업자대출 알아봐줘"
+      },
+      {
+        "role": "ai",
+        "content": "카카오뱅크 사업자대출 상품을 찾지 못했습니다."
+      }
+    ],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route": "product_recommendation",
+      "tool_name": "recommend_business_loan_products",
+      "answer_contains_any": [
+        "토스뱅크",
+        "토스"
+      ]
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "m7_t01",
+    "category": "m7",
+    "category_label": "PII 이력재인용 누출 - 계좌번호 이력→주택담보대출 질문[test]",
+    "metric_type": "mechanism",
+    "question": "주택담보대출 상품 알아봐줘",
+    "history": [
+      {
+        "role": "human",
+        "content": "계좌번호 815-2244-990011로 이체한도 문의드려요"
+      },
+      {
+        "role": "ai",
+        "content": "확인해보겠습니다. 이체한도는 별도로 안내드리겠습니다."
+      }
+    ],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route": "product_recommendation",
+      "tool_name": "recommend_mortgage_loan_products",
+      "answer_contains_none": [
+        "815-2244-990011"
+      ]
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "m7_t02",
+    "category": "m7",
+    "category_label": "PII 이력재인용 누출 - 카드번호 이력→환율 질문[test]",
+    "metric_type": "mechanism",
+    "question": "환율 알려줘",
+    "history": [
+      {
+        "role": "human",
+        "content": "카드번호 6677-8899-0011-2233 도난신고 하려고요"
+      },
+      {
+        "role": "ai",
+        "content": "확인해보겠습니다. 도난신고는 별도 절차로 안내드리겠습니다."
+      }
+    ],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route": "exchange_rate",
+      "tool_name": "inquire_exchange_rate",
+      "answer_contains_none": [
+        "6677-8899-0011-2233"
+      ]
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "m7_t03",
+    "category": "m7",
+    "category_label": "PII 이력재인용 누출 - 주민등록번호 이력→사업자대출 질문[test]",
+    "metric_type": "mechanism",
+    "question": "사업자대출 좋은 상품 알아봐줘",
+    "history": [
+      {
+        "role": "human",
+        "content": "주민등록번호 990423-2678901 확인용으로 남겨요"
+      },
+      {
+        "role": "ai",
+        "content": "확인 감사합니다."
+      }
+    ],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route": "product_recommendation",
+      "tool_name": "recommend_business_loan_products",
+      "answer_contains_none": [
+        "990423-2678901"
+      ]
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "m7_t04",
+    "category": "m7",
+    "category_label": "PII 이력재인용 누출 - 계좌번호 이력→policy_qa(마이데이터) 질문[test]",
+    "metric_type": "mechanism",
+    "question": "마이데이터 서비스는 무엇인가요?",
+    "history": [
+      {
+        "role": "human",
+        "content": "계좌번호 244-5566-778899 잔액 문의드려요"
+      },
+      {
+        "role": "ai",
+        "content": "확인해보겠습니다."
+      }
+    ],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route": "policy_qa",
+      "answer_contains_none": [
+        "244-5566-778899"
+      ]
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "m8_t01",
+    "category": "m8",
+    "category_label": "가드레일 규칙 순서의존성 - ③가 ④대상 삼켜버림(credit_loan, 한 문장)[test]",
+    "metric_type": "mechanism",
+    "question": null,
+    "history": [],
+    "seed_state": {
+      "route": "product_recommendation",
+      "tool_name": "recommend_credit_loan_products",
+      "answer": "전북은행 신용대출은 가장 유리한 상품으로 금리 9.9%입니다.",
+      "tool_result": [
+        {
+          "bank_name": "전북은행",
+          "product_name": "신용대출",
+          "loan_type": "신용대출",
+          "credit_score_band": "701~800점",
+          "interest_rate": 4.3
+        }
+      ]
+    },
+    "fault_injection": null,
+    "expected": {
+      "guardrail_rule_triggered": [
+        "disclosure_missing",
+        "prohibited_terms"
+      ]
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "m8_t02",
+    "category": "m8",
+    "category_label": "가드레일 규칙 순서의존성 - ③가 ④대상 삼켜버림(business_loan, 한 문장)[test]",
+    "metric_type": "mechanism",
+    "question": null,
+    "history": [],
+    "seed_state": {
+      "route": "product_recommendation",
+      "tool_name": "recommend_business_loan_products",
+      "answer": "아이엠뱅크 사업자대출은 최고의 혜택으로 금리 9.9%입니다.",
+      "tool_result": [
+        {
+          "bank_name": "아이엠뱅크",
+          "product_name": "사업자대출",
+          "credit_score_band": "701~800점",
+          "interest_rate": 5.4
+        }
+      ]
+    },
+    "fault_injection": null,
+    "expected": {
+      "guardrail_rule_triggered": [
+        "prohibited_terms"
+      ]
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "m8_t03",
+    "category": "m8",
+    "category_label": "가드레일 규칙 순서의존성 - ③가 ⑤대상 삼켜버림 변형(policy_qa, 한 문장)[test]",
+    "metric_type": "mechanism",
+    "question": null,
+    "history": [],
+    "seed_state": {
+      "route": "policy_qa",
+      "answer": "제14조에 따르면 원금 보장 조건으로 예금을 자유롭게 양도할 수 있습니다.",
+      "retrieved_chunks": [
+        {
+          "content": "제14조(양도 및 질권설정)\n① 거래처가 예금을 양도하거나 질권설정하려면 사전에 은행에 통지하고 동의를 받아야 한다. 다만, 법령에 의하여 금지되는 경우에는 양도나 질권설정을 할 수 없다.\n② 입출금이 자유로운 예금은 질권설정할 수 없다.",
+          "source": "예금거래기본약관.txt"
+        }
+      ]
+    },
+    "fault_injection": null,
+    "expected": {
+      "guardrail_rule_triggered": [
+        "prohibited_terms"
+      ]
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "m8_t04",
+    "category": "m8",
+    "category_label": "가드레일 규칙 순서의존성 - ③가 ⑤대상 삼켜버림 변형(policy_qa, 한 문장)[test]",
+    "metric_type": "mechanism",
+    "question": null,
+    "history": [],
+    "seed_state": {
+      "route": "policy_qa",
+      "answer": "제14조에 따르면 무위험으로 예금을 동의 없이 양도할 수 있습니다.",
+      "retrieved_chunks": [
+        {
+          "content": "제14조(양도 및 질권설정)\n① 거래처가 예금을 양도하거나 질권설정하려면 사전에 은행에 통지하고 동의를 받아야 한다. 다만, 법령에 의하여 금지되는 경우에는 양도나 질권설정을 할 수 없다.\n② 입출금이 자유로운 예금은 질권설정할 수 없다.",
+          "source": "예금거래기본약관.txt"
+        }
+      ]
+    },
+    "fault_injection": null,
+    "expected": {
+      "guardrail_rule_triggered": [
+        "prohibited_terms"
+      ]
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "m9_t01",
+    "category": "m9",
+    "category_label": "tool선택 모호성+이력 - 전세만기 문맥→'대출 알아봐줘'[test]",
+    "metric_type": "mechanism",
+    "question": "대출 알아봐줘",
+    "history": [
+      {
+        "role": "human",
+        "content": "전세 만기가 다가와서 자금이 필요해요"
+      },
+      {
+        "role": "ai",
+        "content": "네, 확인해보겠습니다."
+      }
+    ],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route": "product_recommendation",
+      "tool_name": "recommend_jeonse_loan_products"
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "m9_t02",
+    "category": "m9",
+    "category_label": "tool선택 모호성+이력 - 신축아파트 매입 문맥→'대출 좀 봐주세요'[test]",
+    "metric_type": "mechanism",
+    "question": "대출 좀 봐주세요",
+    "history": [
+      {
+        "role": "human",
+        "content": "신축 아파트를 매입하려고 합니다"
+      },
+      {
+        "role": "ai",
+        "content": "네, 확인해보겠습니다."
+      }
+    ],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route": "product_recommendation",
+      "tool_name": "recommend_mortgage_loan_products"
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "m9_t03",
+    "category": "m9",
+    "category_label": "tool선택 모호성+이력 - 폐업위기 자금 문맥→'대출 상품 알아봐줘'[test]",
+    "metric_type": "mechanism",
+    "question": "대출 상품 알아봐줘",
+    "history": [
+      {
+        "role": "human",
+        "content": "가게 운영이 어려워서 자금이 급해요"
+      },
+      {
+        "role": "ai",
+        "content": "네, 확인해보겠습니다."
+      }
+    ],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route": "product_recommendation",
+      "tool_name": "recommend_business_loan_products"
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "m9_t04",
+    "category": "m9",
+    "category_label": "tool선택 모호성+이력 - 신용점수 우수 문맥→'대출 좀 알아봐줘'[test]",
+    "metric_type": "mechanism",
+    "question": "대출 좀 알아봐줘",
+    "history": [
+      {
+        "role": "human",
+        "content": "신용점수가 좋아서 무담보로 받고 싶어요"
+      },
+      {
+        "role": "ai",
+        "content": "네, 확인해보겠습니다."
+      }
+    ],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route": "product_recommendation",
+      "tool_name": "recommend_credit_loan_products"
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "m10_t01",
+    "category": "m10",
+    "category_label": "Tier0 최종거절+이력있는 상태 - 정기예금 이력→계좌비밀번호 재설정 요청[test]",
+    "metric_type": "mechanism",
+    "question": "계좌 비밀번호 재설정해주세요",
+    "history": [
+      {
+        "role": "human",
+        "content": "정기예금 좋은 상품 추천해줘"
+      },
+      {
+        "role": "ai",
+        "content": "정기예금 상품 3건을 안내드립니다."
+      }
+    ],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route": "out_of_scope",
+      "answer_contains": [
+        "죄송합니다, 요청하신 내용은 제가 도와드릴 수 있는 범위 밖입니다."
+      ]
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "m10_t02",
+    "category": "m10",
+    "category_label": "Tier0 최종거절+이력있는 상태 - 사업자대출 이력→기업분석 요청[test]",
+    "metric_type": "mechanism",
+    "question": "이 기업 재무상태 분석해줄 수 있어요?",
+    "history": [
+      {
+        "role": "human",
+        "content": "사업자대출 좋은 상품 알아봐줘"
+      },
+      {
+        "role": "ai",
+        "content": "사업자대출 상품 3건을 안내드립니다."
+      }
+    ],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route": "out_of_scope",
+      "answer_contains": [
+        "죄송합니다, 요청하신 내용은 제가 도와드릴 수 있는 범위 밖입니다."
+      ]
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "m10_t03",
+    "category": "m10",
+    "category_label": "Tier0 최종거절+이력있는 상태 - 주택담보대출 이력→잡담 질문[test]",
+    "metric_type": "mechanism",
+    "question": "요즘 재밌는 영화 있어요?",
+    "history": [
+      {
+        "role": "human",
+        "content": "주택담보대출 좋은 상품 알아봐줘"
+      },
+      {
+        "role": "ai",
+        "content": "주택담보대출 상품 3건을 안내드립니다."
+      }
+    ],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route": "out_of_scope",
+      "answer_contains": [
+        "죄송합니다, 요청하신 내용은 제가 도와드릴 수 있는 범위 밖입니다."
+      ]
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "m10_t04",
+    "category": "m10",
+    "category_label": "Tier0 최종거절+이력있는 상태 - 전세자금대출 이력→여신심사 질문[test]",
+    "metric_type": "mechanism",
+    "question": "이 고객 여신심사 기준에 부합하나요?",
+    "history": [
+      {
+        "role": "human",
+        "content": "전세자금대출 좋은 상품 알아봐줘"
+      },
+      {
+        "role": "ai",
+        "content": "전세자금대출 상품 3건을 안내드립니다."
+      }
+    ],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route": "out_of_scope",
+      "answer_contains": [
+        "죄송합니다, 요청하신 내용은 제가 도와드릴 수 있는 범위 밖입니다."
+      ]
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "b1_t01",
+    "category": "b1",
+    "category_label": "RAG confidence 경계 - 설명의무(대출) 이력→'설명서는 꼭 보관해야 하나요?'[test]",
+    "metric_type": "boundary",
+    "question": "설명한 내용은 꼭 보관해야 하나요?",
+    "history": [
+      {
+        "role": "human",
+        "content": "대출 상품을 안내할 때 고객에게 반드시 설명해야 하는 내용은 무엇인가요?"
+      },
+      {
+        "role": "ai",
+        "content": "대출조건, 금리, 상환방법 등을 설명해야 합니다."
+      }
+    ],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route": "policy_qa"
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "b1_t02",
+    "category": "b1",
+    "category_label": "RAG confidence 경계 - 마이데이터 이력→'제공기관이 거부할 수도 있나요?'[test]",
+    "metric_type": "boundary",
+    "question": "정보제공기관이 요청을 거부할 수도 있나요?",
+    "history": [
+      {
+        "role": "human",
+        "content": "마이데이터 서비스는 무엇인가요?"
+      },
+      {
+        "role": "ai",
+        "content": "본인신용정보관리업을 통해 여러 금융회사에 흩어진 개인신용정보를 한 곳에서 조회할 수 있는 서비스입니다."
+      }
+    ],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route": "policy_qa"
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "b1_t03",
+    "category": "b1",
+    "category_label": "RAG confidence 경계 - 개인정보 목적외이용 이력→'국가기관 요청은 예외인가요?'[test]",
+    "metric_type": "boundary",
+    "question": "국가기관 요청이면 예외가 인정되나요?",
+    "history": [
+      {
+        "role": "human",
+        "content": "개인정보를 수집 목적과 다르게 이용해도 되나요?"
+      },
+      {
+        "role": "ai",
+        "content": "원칙적으로 수집 목적 범위 내에서만 이용해야 합니다."
+      }
+    ],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route": "policy_qa"
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "b1_t04",
+    "category": "b1",
+    "category_label": "RAG confidence 경계 - 생체정보 이력→'제3자 위탁처리도 가능한가요?'[test]",
+    "metric_type": "boundary",
+    "question": "생체정보 처리를 제3자에게 위탁해도 되나요?",
+    "history": [
+      {
+        "role": "human",
+        "content": "생체정보도 개인정보로 보호받나요?"
+      },
+      {
+        "role": "ai",
+        "content": "네, 생체정보는 민감정보로 분류되어 더 엄격하게 보호됩니다."
+      }
+    ],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route": "policy_qa"
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "b1_t05",
+    "category": "b1",
+    "category_label": "RAG confidence 경계 - 신용정보조회 이력→'미성년자 조회는 다른가요?'[test]",
+    "metric_type": "boundary",
+    "question": "미성년자 신용정보 조회는 절차가 다른가요?",
+    "history": [
+      {
+        "role": "human",
+        "content": "고객의 개인신용정보를 조회하려면 어떤 절차가 필요한가요?"
+      },
+      {
+        "role": "ai",
+        "content": "원칙적으로 본인의 동의를 받아야 조회할 수 있습니다."
+      }
+    ],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route": "policy_qa"
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "b1_t06",
+    "category": "b1",
+    "category_label": "RAG confidence 경계 - 전자금융사고 이력→'중과실 기준이 뭔가요?'[test]",
+    "metric_type": "boundary",
+    "question": "중과실 기준이 구체적으로 뭔가요?",
+    "history": [
+      {
+        "role": "human",
+        "content": "전자금융 사고가 발생하면 은행이 책임지나요?"
+      },
+      {
+        "role": "ai",
+        "content": "이용자의 고의·중과실이 없는 경우 금융회사가 책임을 집니다."
+      }
+    ],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route": "policy_qa"
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "b1_t07",
+    "category": "b1",
+    "category_label": "RAG confidence 경계 - 예금약관변경 이력→'기존 거래처는 어떻게 되나요?'[test]",
+    "metric_type": "boundary",
+    "question": "변경 전부터 거래하던 고객은 어떻게 되나요?",
+    "history": [
+      {
+        "role": "human",
+        "content": "예금거래약관이 변경되면 고객에게 어떻게 알리나요?"
+      },
+      {
+        "role": "ai",
+        "content": "변경 시행 1개월 전 영업점과 홈페이지에 게시하여 알립니다."
+      }
+    ],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route": "policy_qa"
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "b1_t08",
+    "category": "b1",
+    "category_label": "RAG confidence 경계 - 전자금융보안절차 이력→'인증서 유효기간이 있나요?'[test]",
+    "metric_type": "boundary",
+    "question": "인증서 유효기간이 따로 있나요?",
+    "history": [
+      {
+        "role": "human",
+        "content": "전자금융거래 시 보안절차는 어떻게 되나요?"
+      },
+      {
+        "role": "ai",
+        "content": "이용자 확인, 거래내용 통지 등의 절차를 거칩니다."
+      }
+    ],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route": "policy_qa"
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "b2_t01",
+    "category": "b2",
+    "category_label": "라우팅 topic-switch 경계 - 사업자대출 이력→policy_qa 전환[test]",
+    "metric_type": "boundary",
+    "question": "그거 관련해서 지켜야 할 규정이 있나요?",
+    "history": [
+      {
+        "role": "human",
+        "content": "사업자대출 좋은 상품 알아봐줘"
+      },
+      {
+        "role": "ai",
+        "content": "사업자대출 상품 3건을 안내드립니다."
+      }
+    ],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route": "policy_qa"
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "b2_t02",
+    "category": "b2",
+    "category_label": "라우팅 topic-switch 경계 - 주택담보대출 이력→policy_qa 전환[test]",
+    "metric_type": "boundary",
+    "question": "그거 계약서에 꼭 들어가야 하는 내용이 있나요?",
+    "history": [
+      {
+        "role": "human",
+        "content": "주택담보대출 좋은 상품 알아봐줘"
+      },
+      {
+        "role": "ai",
+        "content": "주택담보대출 상품 3건을 안내드립니다."
+      }
+    ],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route": "policy_qa"
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "b2_t03",
+    "category": "b2",
+    "category_label": "라우팅 topic-switch 경계 - policy_qa(신용정보) 이력→주택담보대출 전환[test]",
+    "metric_type": "boundary",
+    "question": "그럼 주택담보대출 상품도 봐주세요",
+    "history": [
+      {
+        "role": "human",
+        "content": "고객의 개인신용정보를 조회하려면 어떤 절차가 필요한가요?"
+      },
+      {
+        "role": "ai",
+        "content": "원칙적으로 본인의 동의를 받아야 조회할 수 있습니다."
+      }
+    ],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route": "product_recommendation",
+      "tool_name": "recommend_mortgage_loan_products"
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "b2_t04",
+    "category": "b2",
+    "category_label": "라우팅 topic-switch 경계 - policy_qa(전자금융사고) 이력→사업자대출 전환[test]",
+    "metric_type": "boundary",
+    "question": "그럼 사업자대출 좀 알아봐줘",
+    "history": [
+      {
+        "role": "human",
+        "content": "전자금융 사고가 발생하면 은행이 책임지나요?"
+      },
+      {
+        "role": "ai",
+        "content": "이용자의 고의·중과실이 없는 경우 금융회사가 책임을 집니다."
+      }
+    ],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route": "product_recommendation",
+      "tool_name": "recommend_business_loan_products"
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "b2_t05",
+    "category": "b2",
+    "category_label": "라우팅 topic-switch 경계 - 사업자대출 이력→exchange_rate 전환[test]",
+    "metric_type": "boundary",
+    "question": "그건 그렇고 환율도 궁금해요",
+    "history": [
+      {
+        "role": "human",
+        "content": "사업자대출 좋은 상품 알아봐줘"
+      },
+      {
+        "role": "ai",
+        "content": "사업자대출 상품 3건을 안내드립니다."
+      }
+    ],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route": "exchange_rate",
+      "tool_name": "inquire_exchange_rate"
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "b2_t06",
+    "category": "b2",
+    "category_label": "라우팅 topic-switch 경계 - 주택담보대출 이력→exchange_rate 전환[test]",
+    "metric_type": "boundary",
+    "question": "환율도 좀 봐주실 수 있나요?",
+    "history": [
+      {
+        "role": "human",
+        "content": "주택담보대출 좋은 상품 알아봐줘"
+      },
+      {
+        "role": "ai",
+        "content": "주택담보대출 상품 3건을 안내드립니다."
+      }
+    ],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route": "exchange_rate",
+      "tool_name": "inquire_exchange_rate"
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "b2_t07",
+    "category": "b2",
+    "category_label": "라우팅 topic-switch 경계 - exchange_rate 이력→policy_qa 전환[test]",
+    "metric_type": "boundary",
+    "question": "환율 정보 제공 관련 규정이 있나요?",
+    "history": [
+      {
+        "role": "human",
+        "content": "환율 알려줘"
+      },
+      {
+        "role": "ai",
+        "content": "현재 USD/KRW 환율은 1,350.00원입니다."
+      }
+    ],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route": "policy_qa"
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "b2_t08",
+    "category": "b2",
+    "category_label": "라우팅 topic-switch 경계 - exchange_rate 이력→policy_qa 전환2[test]",
+    "metric_type": "boundary",
+    "question": "환율 관련 개인정보 처리기준이 있나요?",
+    "history": [
+      {
+        "role": "human",
+        "content": "원달러 환율이 어떻게 되나요"
+      },
+      {
+        "role": "ai",
+        "content": "현재 USD/KRW 환율은 1,350.00원입니다."
+      }
+    ],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route": "policy_qa"
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "b3_t01",
+    "category": "b3",
+    "category_label": "Tier0 rewrite 성공률 - 설명의무 이력→'음, 왜요?'[test]",
+    "metric_type": "boundary",
+    "question": "음, 왜요?",
+    "history": [
+      {
+        "role": "human",
+        "content": "금융소비자보호법상 설명의무는 어떤 내용인가요?"
+      },
+      {
+        "role": "ai",
+        "content": "금융상품 판매업자는 계약체결 전 상품의 주요 내용을 소비자가 이해할 수 있도록 설명해야 합니다."
+      }
+    ],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route": "policy_qa"
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "b3_t02",
+    "category": "b3",
+    "category_label": "Tier0 rewrite 성공률 - 마이데이터 이력→'왜죠 그게?'[test]",
+    "metric_type": "boundary",
+    "question": "왜죠 그게?",
+    "history": [
+      {
+        "role": "human",
+        "content": "마이데이터 서비스는 무엇인가요?"
+      },
+      {
+        "role": "ai",
+        "content": "본인신용정보관리업을 통해 개인신용정보를 한 곳에서 조회하는 서비스입니다."
+      }
+    ],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route": "policy_qa"
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "b3_t03",
+    "category": "b3",
+    "category_label": "Tier0 rewrite 성공률 - 생체정보 이력→'그게 왜 그런가요?'[test]",
+    "metric_type": "boundary",
+    "question": "그게 왜 그런가요?",
+    "history": [
+      {
+        "role": "human",
+        "content": "생체정보도 개인정보로 보호받나요?"
+      },
+      {
+        "role": "ai",
+        "content": "네, 생체정보는 민감정보로 분류되어 더 엄격하게 보호됩니다."
+      }
+    ],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route": "policy_qa"
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "b3_t04",
+    "category": "b3",
+    "category_label": "Tier0 rewrite 성공률 - 신용정보조회 이력→'왜 그렇대요?'[test]",
+    "metric_type": "boundary",
+    "question": "왜 그렇대요?",
+    "history": [
+      {
+        "role": "human",
+        "content": "고객의 개인신용정보를 조회하려면 어떤 절차가 필요한가요?"
+      },
+      {
+        "role": "ai",
+        "content": "원칙적으로 본인의 동의를 받아야 조회할 수 있습니다."
+      }
+    ],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route": "policy_qa"
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "b3_t05",
+    "category": "b3",
+    "category_label": "Tier0 rewrite 성공률 - 전자금융사고 이력→'왜인가요?'[test]",
+    "metric_type": "boundary",
+    "question": "왜인가요?",
+    "history": [
+      {
+        "role": "human",
+        "content": "전자금융 사고가 발생하면 은행이 책임지나요?"
+      },
+      {
+        "role": "ai",
+        "content": "이용자의 고의·중과실이 없는 경우 금융회사가 책임을 집니다."
+      }
+    ],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route": "policy_qa"
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "b3_t06",
+    "category": "b3",
+    "category_label": "Tier0 rewrite 성공률 - 예금약관변경 이력→'그건 어째서죠?'[test]",
+    "metric_type": "boundary",
+    "question": "그건 어째서죠?",
+    "history": [
+      {
+        "role": "human",
+        "content": "예금거래약관이 변경되면 고객에게 어떻게 알리나요?"
+      },
+      {
+        "role": "ai",
+        "content": "변경 시행 1개월 전 영업점과 홈페이지에 게시하여 알립니다."
+      }
+    ],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route": "policy_qa"
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "b3_t07",
+    "category": "b3",
+    "category_label": "Tier0 rewrite 성공률 - 전자금융보안절차 이력→'왜 그런거죠 그게?'[test]",
+    "metric_type": "boundary",
+    "question": "왜 그런거죠 그게?",
+    "history": [
+      {
+        "role": "human",
+        "content": "전자금융거래 시 보안절차는 어떻게 되나요?"
+      },
+      {
+        "role": "ai",
+        "content": "이용자 확인, 거래내용 통지 등의 절차를 거칩니다."
+      }
+    ],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route": "policy_qa"
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "b3_t08",
+    "category": "b3",
+    "category_label": "Tier0 rewrite 성공률 - 개인정보목적외이용 이력→'어째서요?'[test]",
+    "metric_type": "boundary",
+    "question": "어째서요?",
+    "history": [
+      {
+        "role": "human",
+        "content": "개인정보를 수집 목적과 다르게 이용해도 되나요?"
+      },
+      {
+        "role": "ai",
+        "content": "원칙적으로 수집 목적 범위 내에서만 이용해야 합니다."
+      }
+    ],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route": "policy_qa"
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "b4_t01",
+    "category": "b4",
+    "category_label": "RAG rewrite 충실도 - 설명의무 이력→시행일 드리프트[test]",
+    "metric_type": "boundary",
+    "question": "이 규정은 언제부터 시행됐나요?",
+    "history": [
+      {
+        "role": "human",
+        "content": "금융소비자보호법상 설명의무는 어떤 내용인가요?"
+      },
+      {
+        "role": "ai",
+        "content": "금융상품 판매업자는 계약체결 전 상품의 주요 내용을 소비자가 이해할 수 있도록 설명해야 합니다."
+      }
+    ],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route_in": [
+        "policy_qa",
+        "out_of_scope"
+      ]
+    },
+    "source": "신규(held-out) [route_in으로 통일완화]"
+  },
+  {
+    "id": "b4_t02",
+    "category": "b4",
+    "category_label": "RAG rewrite 충실도 - 마이데이터 이력→경쟁사비교 드리프트[test]",
+    "metric_type": "boundary",
+    "question": "타사 마이데이터 서비스랑 뭐가 다른가요?",
+    "history": [
+      {
+        "role": "human",
+        "content": "마이데이터 서비스는 무엇인가요?"
+      },
+      {
+        "role": "ai",
+        "content": "본인신용정보관리업을 통해 개인신용정보를 한 곳에서 조회하는 서비스입니다."
+      }
+    ],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route_in": [
+        "policy_qa",
+        "out_of_scope"
+      ]
+    },
+    "source": "신규(held-out) [route_in으로 통일완화]"
+  },
+  {
+    "id": "b4_t03",
+    "category": "b4",
+    "category_label": "RAG rewrite 충실도 - 생체정보 이력→법개정 전망 드리프트[test]",
+    "metric_type": "boundary",
+    "question": "내년에 법이 개정된다는 얘기가 있던데 맞나요?",
+    "history": [
+      {
+        "role": "human",
+        "content": "생체정보도 개인정보로 보호받나요?"
+      },
+      {
+        "role": "ai",
+        "content": "네, 생체정보는 민감정보로 분류되어 더 엄격하게 보호됩니다."
+      }
+    ],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route_in": [
+        "policy_qa",
+        "out_of_scope"
+      ]
+    },
+    "source": "신규(held-out) [route_in으로 통일완화]"
+  },
+  {
+    "id": "b4_t04",
+    "category": "b4",
+    "category_label": "RAG rewrite 충실도 - 신용정보조회 이력→처리시간 드리프트[test]",
+    "metric_type": "boundary",
+    "question": "조회 처리에 시간이 얼마나 걸리나요?",
+    "history": [
+      {
+        "role": "human",
+        "content": "고객의 개인신용정보를 조회하려면 어떤 절차가 필요한가요?"
+      },
+      {
+        "role": "ai",
+        "content": "원칙적으로 본인의 동의를 받아야 조회할 수 있습니다."
+      }
+    ],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route_in": [
+        "policy_qa",
+        "out_of_scope"
+      ]
+    },
+    "source": "신규(held-out) [route_in으로 통일완화]"
+  },
+  {
+    "id": "b4_t05",
+    "category": "b4",
+    "category_label": "RAG rewrite 충실도 - 전자금융사고 이력→보험연계 드리프트[test]",
+    "metric_type": "boundary",
+    "question": "관련 보험상품도 따로 있나요?",
+    "history": [
+      {
+        "role": "human",
+        "content": "전자금융 사고가 발생하면 은행이 책임지나요?"
+      },
+      {
+        "role": "ai",
+        "content": "이용자의 고의·중과실이 없는 경우 금융회사가 책임을 집니다."
+      }
+    ],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route_in": [
+        "policy_qa",
+        "out_of_scope"
+      ]
+    },
+    "source": "신규(held-out) [route_in으로 통일완화]"
+  },
+  {
+    "id": "b4_t06",
+    "category": "b4",
+    "category_label": "RAG rewrite 충실도 - 예금약관변경 이력→담당부서 드리프트[test]",
+    "metric_type": "boundary",
+    "question": "이거 담당하는 부서가 어디예요?",
+    "history": [
+      {
+        "role": "human",
+        "content": "예금거래약관이 변경되면 고객에게 어떻게 알리나요?"
+      },
+      {
+        "role": "ai",
+        "content": "변경 시행 1개월 전 영업점과 홈페이지에 게시하여 알립니다."
+      }
+    ],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route_in": [
+        "policy_qa",
+        "out_of_scope"
+      ]
+    },
+    "source": "신규(held-out) [route_in으로 통일완화]"
+  },
+  {
+    "id": "b4_t07",
+    "category": "b4",
+    "category_label": "RAG rewrite 충실도 - 전자금융보안절차 이력→비용 드리프트[test]",
+    "metric_type": "boundary",
+    "question": "이 보안절차 유지에 비용이 얼마나 드나요?",
+    "history": [
+      {
+        "role": "human",
+        "content": "전자금융거래 시 보안절차는 어떻게 되나요?"
+      },
+      {
+        "role": "ai",
+        "content": "이용자 확인, 거래내용 통지 등의 절차를 거칩니다."
+      }
+    ],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route_in": [
+        "policy_qa",
+        "out_of_scope"
+      ]
+    },
+    "source": "신규(held-out) [route_in으로 통일완화]"
+  },
+  {
+    "id": "b4_t08",
+    "category": "b4",
+    "category_label": "RAG rewrite 충실도 - 개인정보목적외이용 이력→감독기관 드리프트[test]",
+    "metric_type": "boundary",
+    "question": "이거 어느 감독기관이 관리하나요?",
+    "history": [
+      {
+        "role": "human",
+        "content": "개인정보를 수집 목적과 다르게 이용해도 되나요?"
+      },
+      {
+        "role": "ai",
+        "content": "원칙적으로 수집 목적 범위 내에서만 이용해야 합니다."
+      }
+    ],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route_in": [
+        "policy_qa",
+        "out_of_scope"
+      ]
+    },
+    "source": "신규(held-out) [route_in으로 통일완화]"
+  },
+  {
+    "id": "b5_t01",
+    "category": "b5",
+    "category_label": "규칙③ semantic판정 경계 - 양성(단정적오인 파라프레이즈4)[test]",
+    "metric_type": "boundary",
+    "question": null,
+    "history": [],
+    "seed_state": {
+      "route": "product_recommendation",
+      "answer": "이건 백프로 확정된 결과라고 보시면 됩니다."
+    },
+    "fault_injection": null,
+    "expected": {
+      "guardrail_rule_triggered_contains": [
+        "prohibited_terms"
+      ]
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "b5_t02",
+    "category": "b5",
+    "category_label": "규칙③ semantic판정 경계 - 양성(손실보전 파라프레이즈4)[test]",
+    "metric_type": "boundary",
+    "question": null,
+    "history": [],
+    "seed_state": {
+      "route": "product_recommendation",
+      "answer": "이 상품은 손해 볼 걱정 자체가 없습니다."
+    },
+    "fault_injection": null,
+    "expected": {
+      "guardrail_rule_triggered_contains": [
+        "prohibited_terms"
+      ]
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "b5_t03",
+    "category": "b5",
+    "category_label": "규칙③ semantic판정 경계 - 양성(비교우위 파라프레이즈4)[test]",
+    "metric_type": "boundary",
+    "question": null,
+    "history": [],
+    "seed_state": {
+      "route": "product_recommendation",
+      "answer": "타사는 절대 따라올 수 없는 조건입니다."
+    },
+    "fault_injection": null,
+    "expected": {
+      "guardrail_rule_triggered_contains": [
+        "prohibited_terms"
+      ]
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "b5_t04",
+    "category": "b5",
+    "category_label": "규칙③ semantic판정 경계 - 양성(만기지급 파라프레이즈3)[test]",
+    "metric_type": "boundary",
+    "question": null,
+    "history": [],
+    "seed_state": {
+      "route": "product_recommendation",
+      "answer": "만기시 원금은 어떤 상황에서도 보장됩니다."
+    },
+    "fault_injection": null,
+    "expected": {
+      "guardrail_rule_triggered_contains": [
+        "prohibited_terms"
+      ]
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "b5_t05",
+    "category": "b5",
+    "category_label": "규칙③ semantic판정 경계 - 음성(리스크고지3, 오탐 없어야 함)[test]",
+    "metric_type": "boundary",
+    "question": null,
+    "history": [],
+    "seed_state": {
+      "route": "product_recommendation",
+      "answer": "가입 전 상품설명서를 꼭 확인하시길 권해드립니다."
+    },
+    "fault_injection": null,
+    "expected": {
+      "guardrail_rule_triggered": []
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "b5_t06",
+    "category": "b5",
+    "category_label": "규칙③ semantic판정 경계 - 음성(사실진술2, 오탐 없어야 함)[test]",
+    "metric_type": "boundary",
+    "question": null,
+    "history": [],
+    "seed_state": {
+      "route": "product_recommendation",
+      "answer": "이 상품의 우대금리는 최대 0.3%p입니다."
+    },
+    "fault_injection": null,
+    "expected": {
+      "guardrail_rule_triggered": []
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "b5_t07",
+    "category": "b5",
+    "category_label": "규칙③ semantic판정 경계 - 음성(헤지된 비교3, 오탐 없어야 함)[test]",
+    "metric_type": "boundary",
+    "question": null,
+    "history": [],
+    "seed_state": {
+      "route": "product_recommendation",
+      "answer": "업계 평균보다는 나은 편입니다."
+    },
+    "fault_injection": null,
+    "expected": {
+      "guardrail_rule_triggered": [
+        "prohibited_terms"
+      ]
+    },
+    "source": "신규(held-out, '업계'라는 단어가 들어있지만 '업계 최고'와 달리 헤지된 표현이라 오탐 위험 경계) [정정: 규칙정의(GSB-21-4, 비교기준 미공개) 문자 그대로 해당 확인, 정답 라벨을 위반으로 수정]"
+  },
+  {
+    "id": "b5_t08",
+    "category": "b5",
+    "category_label": "규칙③ semantic판정 경계 - 음성(정직한 조건부진술, 오탐 없어야 함)[test]",
+    "metric_type": "boundary",
+    "question": null,
+    "history": [],
+    "seed_state": {
+      "route": "product_recommendation",
+      "answer": "신용점수에 따라 금리가 달라질 수 있습니다."
+    },
+    "fault_injection": null,
+    "expected": {
+      "guardrail_rule_triggered": []
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "b6_t01",
+    "category": "b6",
+    "category_label": "규칙⑤ grounding판정 경계 - 정확(제14조 통지의무)[test]",
+    "metric_type": "boundary",
+    "question": null,
+    "history": [],
+    "seed_state": {
+      "route": "policy_qa",
+      "answer": "제14조에 따르면 예금을 양도하려면 은행에 사전 통지해야 합니다.",
+      "retrieved_chunks": [
+        {
+          "content": "제14조(양도 및 질권설정)\n① 거래처가 예금을 양도하거나 질권설정하려면 사전에 은행에 통지하고 동의를 받아야 한다. 다만, 법령에 의하여 금지되는 경우에는 양도나 질권설정을 할 수 없다.\n② 입출금이 자유로운 예금은 질권설정할 수 없다.",
+          "source": "예금거래기본약관.txt"
+        }
+      ]
+    },
+    "fault_injection": null,
+    "expected": {
+      "guardrail_rule_triggered": []
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "b6_t02",
+    "category": "b6",
+    "category_label": "규칙⑤ grounding판정 경계 - 정확(제22조 홈페이지게시)[test]",
+    "metric_type": "boundary",
+    "question": null,
+    "history": [],
+    "seed_state": {
+      "route": "policy_qa",
+      "answer": "제22조에 따르면 약관 변경 내용은 인터넷 홈페이지에도 게시됩니다.",
+      "retrieved_chunks": [
+        {
+          "content": "제22조(약관의 변경)\n① 은행이 이 약관을 변경하고자 하는 경우에는 변경되는 약관등의 시행 1개월 전에 그 내용을 영업점과 인터넷 홈페이지에 게시하여 거래처에 알린다.",
+          "source": "예금거래기본약관.txt"
+        }
+      ]
+    },
+    "fault_injection": null,
+    "expected": {
+      "guardrail_rule_triggered": []
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "b6_t03",
+    "category": "b6",
+    "category_label": "규칙⑤ grounding판정 경계 - 정확(제8조 연락처통지)[test]",
+    "metric_type": "boundary",
+    "question": null,
+    "history": [],
+    "seed_state": {
+      "route": "policy_qa",
+      "answer": "제8조에 따르면 증권이 지급거절되면 거래처가 신고한 연락처로 통지합니다.",
+      "retrieved_chunks": [
+        {
+          "content": "제8조(증권의 부도) ① 제6조제1항에 따라 입금한 증권이 지급거절되었을 때는 은행은 그 금액을 예금원장에서 뺀 뒤, 거래처가 신고한 연락처로 그 사실을 알린다.",
+          "source": "예금거래기본약관.txt"
+        }
+      ]
+    },
+    "fault_injection": null,
+    "expected": {
+      "guardrail_rule_triggered": []
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "b6_t04",
+    "category": "b6",
+    "category_label": "규칙⑤ grounding판정 경계 - 정확(제15조 훼손도 포함)[test]",
+    "metric_type": "boundary",
+    "question": null,
+    "history": [],
+    "seed_state": {
+      "route": "policy_qa",
+      "answer": "제15조에 따르면 통장이 훼손된 경우도 신고 대상입니다.",
+      "retrieved_chunks": [
+        {
+          "content": "제15조(사고·변경사항의 신고)\n① 거래처는 통장·도장·카드 또는 증권이나 그 용지를 분실·도난·멸실·훼손했을 때는 곧 서면으로 신고하여야 한다.",
+          "source": "예금거래기본약관.txt"
+        }
+      ]
+    },
+    "fault_injection": null,
+    "expected": {
+      "guardrail_rule_triggered": []
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "b6_t05",
+    "category": "b6",
+    "category_label": "규칙⑤ grounding판정 경계 - 왜곡(제14조 동의주체 오귀속)[test]",
+    "metric_type": "boundary",
+    "question": null,
+    "history": [],
+    "seed_state": {
+      "route": "policy_qa",
+      "answer": "제14조에 따르면 은행이 아니라 거래처의 동의만 있으면 양도할 수 있습니다.",
+      "retrieved_chunks": [
+        {
+          "content": "제14조(양도 및 질권설정)\n① 거래처가 예금을 양도하거나 질권설정하려면 사전에 은행에 통지하고 동의를 받아야 한다.",
+          "source": "예금거래기본약관.txt"
+        }
+      ]
+    },
+    "fault_injection": null,
+    "expected": {
+      "guardrail_rule_triggered_contains": [
+        "citation_grounding"
+      ]
+    },
+    "source": "신규(held-out — 동의 주체가 은행인데 거래처로 뒤바뀐 미묘한 왜곡)"
+  },
+  {
+    "id": "b6_t06",
+    "category": "b6",
+    "category_label": "규칙⑤ grounding판정 경계 - 왜곡(제22조 홈페이지만 오귀속)[test]",
+    "metric_type": "boundary",
+    "question": null,
+    "history": [],
+    "seed_state": {
+      "route": "policy_qa",
+      "answer": "제22조에 따르면 약관 변경은 인터넷 홈페이지에만 게시하면 충분합니다.",
+      "retrieved_chunks": [
+        {
+          "content": "제22조(약관의 변경)\n① 은행이 이 약관을 변경하고자 하는 경우에는 변경되는 약관등의 시행 1개월 전에 그 내용을 영업점과 인터넷 홈페이지에 게시하여 거래처에 알린다.",
+          "source": "예금거래기본약관.txt"
+        }
+      ]
+    },
+    "fault_injection": null,
+    "expected": {
+      "guardrail_rule_triggered_contains": [
+        "citation_grounding"
+      ]
+    },
+    "source": "신규(held-out — 영업점 게시도 필요한데 홈페이지만으로 충분하다고 왜곡)"
+  },
+  {
+    "id": "b6_t07",
+    "category": "b6",
+    "category_label": "규칙⑤ grounding판정 경계 - 왜곡(제8조 통지의무 없음 오귀속)[test]",
+    "metric_type": "boundary",
+    "question": null,
+    "history": [],
+    "seed_state": {
+      "route": "policy_qa",
+      "answer": "제8조에 따르면 증권이 지급거절돼도 은행은 거래처에 알릴 의무가 없습니다.",
+      "retrieved_chunks": [
+        {
+          "content": "제8조(증권의 부도) ① 제6조제1항에 따라 입금한 증권이 지급거절되었을 때는 은행은 그 금액을 예금원장에서 뺀 뒤, 거래처가 신고한 연락처로 그 사실을 알린다.",
+          "source": "예금거래기본약관.txt"
+        }
+      ]
+    },
+    "fault_injection": null,
+    "expected": {
+      "guardrail_rule_triggered_contains": [
+        "citation_grounding"
+      ]
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "b6_t08",
+    "category": "b6",
+    "category_label": "규칙⑤ grounding판정 경계 - 왜곡(제15조 구두신고만으로 충분 오귀속)[test]",
+    "metric_type": "boundary",
+    "question": null,
+    "history": [],
+    "seed_state": {
+      "route": "policy_qa",
+      "answer": "제15조에 따르면 구두로만 알려도 신고 의무를 다한 것으로 봅니다.",
+      "retrieved_chunks": [
+        {
+          "content": "제15조(사고·변경사항의 신고)\n① 거래처는 통장·도장·카드 또는 증권이나 그 용지를 분실·도난·멸실·훼손했을 때는 곧 서면으로 신고하여야 한다.",
+          "source": "예금거래기본약관.txt"
+        }
+      ]
+    },
+    "fault_injection": null,
+    "expected": {
+      "guardrail_rule_triggered_contains": [
+        "citation_grounding"
+      ]
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "b7_t01",
+    "category": "b7",
+    "category_label": "tool선택 모호성의 경계 - 약한힌트(전세연장)[test]",
+    "metric_type": "boundary",
+    "question": "전세 연장할 때 쓸 대출 좀 봐주세요",
+    "history": [],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route": "product_recommendation",
+      "tool_name": "recommend_jeonse_loan_products"
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "b7_t02",
+    "category": "b7",
+    "category_label": "tool선택 모호성의 경계 - 약한힌트(신규창업)[test]",
+    "metric_type": "boundary",
+    "question": "신규 창업자금으로 쓸 대출 알아봐줘",
+    "history": [],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route": "product_recommendation",
+      "tool_name": "recommend_business_loan_products"
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "b7_t03",
+    "category": "b7",
+    "category_label": "tool선택 모호성의 경계 - 약한힌트(아파트구입)[test]",
+    "metric_type": "boundary",
+    "question": "아파트 구입자금 대출 좀 봐주세요",
+    "history": [],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route": "product_recommendation",
+      "tool_name": "recommend_mortgage_loan_products"
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "b7_t04",
+    "category": "b7",
+    "category_label": "tool선택 모호성의 경계 - 약한힌트(급전신용)[test]",
+    "metric_type": "boundary",
+    "question": "급하게 신용으로만 받을 수 있는 대출 알아봐줘",
+    "history": [],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route": "product_recommendation",
+      "tool_name": "recommend_credit_loan_products"
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "b7_t05",
+    "category": "b7",
+    "category_label": "tool선택 모호성의 경계 - 무힌트(관찰용9)[test]",
+    "metric_type": "boundary",
+    "question": "대출 좀 상담받고 싶어요",
+    "history": [],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route": "product_recommendation"
+    },
+    "source": "신규(held-out, 관찰용)"
+  },
+  {
+    "id": "b7_t06",
+    "category": "b7",
+    "category_label": "tool선택 모호성의 경계 - 무힌트(관찰용10)[test]",
+    "metric_type": "boundary",
+    "question": "대출 안내 좀 부탁드려요",
+    "history": [],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route": "product_recommendation"
+    },
+    "source": "신규(held-out, 관찰용)"
+  },
+  {
+    "id": "b7_t07",
+    "category": "b7",
+    "category_label": "tool선택 모호성의 경계 - 무힌트(관찰용11)[test]",
+    "metric_type": "boundary",
+    "question": "대출 관련 상품 좀 볼 수 있을까요",
+    "history": [],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route": "product_recommendation"
+    },
+    "source": "신규(held-out, 관찰용)"
+  },
+  {
+    "id": "b7_t08",
+    "category": "b7",
+    "category_label": "tool선택 모호성의 경계 - 무힌트(관찰용12)[test]",
+    "metric_type": "boundary",
+    "question": "대출 좀 소개해주세요",
+    "history": [],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route": "product_recommendation"
+    },
+    "source": "신규(held-out, 관찰용)"
+  },
+  {
+    "id": "b8_t01",
+    "category": "b8",
+    "category_label": "단일턴 route경계 - 신용정보+대출가능성(out_of_scope 정답)[test]",
+    "metric_type": "boundary",
+    "question": "제 신용정보로 대출이 가능할지 미리 알 수 있나요?",
+    "history": [],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route": "out_of_scope"
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "b8_t02",
+    "category": "b8",
+    "category_label": "단일턴 route경계 - 신용정보보관기간(policy_qa 정답)[test]",
+    "metric_type": "boundary",
+    "question": "신용정보는 얼마나 보관되나요?",
+    "history": [],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route": "policy_qa"
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "b8_t03",
+    "category": "b8",
+    "category_label": "단일턴 route경계 - 환전수수료규정(policy_qa 정답)[test]",
+    "metric_type": "boundary",
+    "question": "환전 수수료는 법으로 정해져 있나요?",
+    "history": [],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route": "policy_qa"
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "b8_t04",
+    "category": "b8",
+    "category_label": "단일턴 route경계 - 환율단순조회(exchange_rate 정답, 대조군)[test]",
+    "metric_type": "boundary",
+    "question": "지금 환율 어떻게 되죠?",
+    "history": [],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route": "exchange_rate",
+      "tool_name": "inquire_exchange_rate"
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "b8_t05",
+    "category": "b8",
+    "category_label": "단일턴 route경계 - 대출승인확률(out_of_scope 정답)[test]",
+    "metric_type": "boundary",
+    "question": "제가 이 대출 승인받을 확률이 얼마나 될까요?",
+    "history": [],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route": "out_of_scope"
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "b8_t06",
+    "category": "b8",
+    "category_label": "단일턴 route경계 - 주택담보대출추천(product_recommendation 정답, 대조군)[test]",
+    "metric_type": "boundary",
+    "question": "주택담보대출 상품 추천해줘",
+    "history": [],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route": "product_recommendation",
+      "tool_name": "recommend_mortgage_loan_products"
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "b8_t07",
+    "category": "b8",
+    "category_label": "단일턴 route경계 - 계좌비밀번호변경(out_of_scope 정답)[test]",
+    "metric_type": "boundary",
+    "question": "계좌 비밀번호는 어떻게 변경하나요?",
+    "history": [],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route": "out_of_scope"
+    },
+    "source": "신규(held-out)"
+  },
+  {
+    "id": "b8_t08",
+    "category": "b8",
+    "category_label": "단일턴 route경계 - DART공시요청(out_of_scope 명확, 대조군)[test]",
+    "metric_type": "boundary",
+    "question": "이 기업 DART 공시자료 찾아주세요",
+    "history": [],
+    "seed_state": null,
+    "fault_injection": null,
+    "expected": {
+      "route": "out_of_scope"
+    },
+    "source": "신규(held-out)"
+  }
+]

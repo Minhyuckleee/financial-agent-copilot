@@ -1,0 +1,20 @@
+{
+  "creation_time": "2026-08-11 20:20:08",
+  "config": {
+    "chunk_size": 2300,
+    "chunk_overlap": 200,
+    "boundary_overlap": 300
+  },
+  "statistics": {
+    "total_chunks": 2130,
+    "regular_chunks": 1192,
+    "boundary_chunks": 938,
+    "avg_chunk_size": 749.2582159624413,
+    "min_chunk_size": 50,
+    "max_chunk_size": 2298,
+    "total_characters": 1595920,
+    "unique_docs": 17
+  },
+  "embedder": "KURE-v1",
+  "total_documents": 17
+}
