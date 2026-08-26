@@ -1,0 +1,25 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+
+# 작업 프로세스 문서 — 로컬 참고용, 공개 repo엔 포함 안 함
+docs/CLAUDE.md
+docs/note.md
+docs/milestone.md
+docs/start.md
+docs/financial-ax-notes.md
+docs/agent-build-considerations.md
+docs/agents/domain.md
+docs/agents/issue-tracker.md
+.scratch/
+
+# 원본 소스문서(재현용, data/rag가 이미 빌드산출물 포함해서 불필요) / 미사용 데이터
+data/raw/
+data/guardrail/injection_patterns.json
+
+# 세션/worktree 작업 흔적
+.claude/
