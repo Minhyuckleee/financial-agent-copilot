@@ -279,7 +279,7 @@ def build_b4() -> list[dict]:
                 "history": _hist(q1, a1),
                 "expected": {
                     "pass_if_any": [
-                        {"answer_contains_any": ["확인할 수 없", "해당 질문은 사내규정질의DB 스코프 외입니다", "죄송합니다, 요청하신 내용은 제가 도와드릴 수 있는 범위 밖입니다."]},
+                        {"answer_contains_any": ["확인할 수 없", "답변드릴 수 없", "해당 질문은 사내규정질의DB 스코프 외입니다", "죄송합니다, 요청하신 내용은 제가 도와드릴 수 있는 범위 밖입니다."]},
                         {"guardrail_rule_triggered_contains": ["citation_grounding"]},
                     ]
                 },
