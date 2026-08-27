@@ -6,15 +6,15 @@ Agent 핵심 그래프 — LangGraph `StateGraph`로 조립된 5단계 파이프
 
 ```
 router.py
-  → context.py   (사내규정질의일 때만 실행)
-  → tool_call.py (상품추천/환율조회일 때만 실행)
-  → guardrail.py
-  → answer.py
+  ├─ policy_qa            → context.py   → guardrail.py → answer.py
+  ├─ 상품추천/환율조회      → tool_call.py → guardrail.py → answer.py
+  └─ out_of_scope         → 고정문구 즉시 answer.py
 ```
 
-router는 질의를 RAG(context)로 보낼지 tool call로 보낼지 정하는 분기 성격이지만, 그래프 엣지 자체를 분기로 만들지 않은 이유는 향후 RAG+tool을 동시에 써야 하는 하이브리드 route로 확장할 여지를 열어두기 위함입니다 — 해당 없는 노드는 즉시 no-op으로 빠져나가 실행비용 차이는 없습니다.
+router 직후 LangGraph의 conditional edge로 route별로 필요한 노드로만 바로 분기합니다 — 해당 없는 노드는 아예 호출되지 않습니다.
 
-조건부 조기종료 2곳:
+조건부 조기종료:
+- out_of_scope로 확정되면 context/tool_call/guardrail 전부 건너뛰고 고정문구로 바로 answer
 - context에서 confidence 필터 통과 chunk가 0개면 tool_call/guardrail을 건너뛰고 바로 answer
 - tool_call 예외(Tier1/Tier2) 재시도 상한을 초과하면 guardrail을 건너뛰고 바로 answer
 

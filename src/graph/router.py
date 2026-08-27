@@ -87,6 +87,16 @@ def route_query(state: AgentState) -> dict:
     }
 
 
+OUT_OF_SCOPE_ANSWER = "죄송합니다, 요청하신 내용은 제가 도와드릴 수 있는 범위 밖입니다."
+
+
+def answer_out_of_scope(state: AgentState) -> dict:
+    """LLM 호출 없이 고정 문구로 즉시 종료 — 정적 문자열이라 build_context·call_tool·
+    run_guardrail 통과가 애초에 불필요해서 그래프 레벨에서 건너뛴다(context.py의
+    answer_no_context와 같은 논리)."""
+    return {"answer": OUT_OF_SCOPE_ANSWER}
+
+
 def _rewrite_for_retry(query: str, history: list[BaseMessage]) -> str:
     llm = get_llm()
     prompt = (

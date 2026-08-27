@@ -21,7 +21,7 @@ router.py
   → answer.py
 ```
 
-라우터가 발화를 4클래스(상품추천/환율조회/사내규정질의/범위외)로 분류하면, context와 tool_call은 항상 순서대로 지나가되 해당 없는 route에선 즉시 빠져나갑니다 — 향후 RAG+tool을 동시에 써야 하는 하이브리드 route로 확장할 여지를 열어두기 위한 선택이고, 실행비용 차이는 없습니다. 자세한 내용은 [src/graph/README.md](src/graph/README.md)를 참고해 주세요.
+라우터가 발화를 4클래스(상품추천/환율조회/사내규정질의/범위외)로 분류하면, route별로 필요한 노드로만 바로 분기합니다(LangGraph의 conditional edge 패턴) — 해당 없는 노드는 아예 호출되지 않습니다. 자세한 내용은 [src/graph/README.md](src/graph/README.md)를 참고해 주세요.
 
 ## 주요 기능
 

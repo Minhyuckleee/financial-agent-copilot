@@ -47,9 +47,9 @@ def _template_exchange_rate_answer(tool_result: dict | list | None) -> str:
 
 
 def _draft_answer(state: AgentState) -> str:
+    """out_of_scope는 route_query 직후 answer_out_of_scope로 바로 빠져 이 함수를
+    타지 않는다(router.py 참고) — 여기선 policy_qa/tool route만 다룬다."""
     llm = get_llm()
-    if state.route == "out_of_scope":
-        return "죄송합니다, 요청하신 내용은 제가 도와드릴 수 있는 범위 밖입니다."
     if state.route == "exchange_rate":
         return _template_exchange_rate_answer(state.tool_result)
     if state.route == "policy_qa":
