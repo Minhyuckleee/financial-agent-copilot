@@ -28,5 +28,6 @@ Agent 런타임에 필요한 데이터 + 평가용 골든셋/결과.
 | `tool_selection_strategy_results.json` | 100건 기준 naive vs 목적재정의 프롬프트 비교 결과 |
 | `tool_selection_strategy_testset_results.json` | 추가 50건 기준 비교 결과 |
 | `threshold_calibration_results.json`, `threshold_negative_probes_{train,test,valid}.json` | RAG confidence threshold 캘리브레이션 과정에서 만든 실험 데이터 |
-| `agent_eval_v1.json` / `_results.json` | 1차 평가셋(기능별 최소 1건씩)의 케이스+결과 |
-| `agent_eval_trajectory_{train,test}.json` / `_results.json` | 복합 시나리오 평가셋(여러 조건이 동시에 겹치는 케이스)의 케이스+결과 |
+| [`agent_eval_v1.json`](eval/agent_eval_v1.json) / [`_results.json`](eval/agent_eval_v1_results.json) | 1차 평가셋(기능별 최소 1건씩)의 케이스+결과 |
+| [`agent_quality_train.json`](eval/agent_quality_train.json) / [`_results.json`](eval/agent_quality_train_results.json) | 2차 복합 시나리오 평가셋(이력·예외분기·가드레일이 동시에 겹치는 케이스) train의 케이스+결과 |
+| [`agent_quality_test.json`](eval/agent_quality_test.json) / [`_results.json`](eval/agent_quality_test_results.json) | 같은 평가셋의 개발에 안 쓴 별도 검증용 test 케이스+결과 |
