@@ -5,10 +5,22 @@ Agent 핵심 그래프 — LangGraph `StateGraph`로 조립된 5단계 파이프
 ## 그래프 흐름
 
 ```
-router.py
-  ├─ policy_qa            → context.py   → guardrail.py → answer.py
-  ├─ 상품추천/환율조회      → tool_call.py → guardrail.py → answer.py
-  └─ out_of_scope         → 고정문구 즉시 answer.py
+                     query
+                       │
+                  router ← Tier0
+       ┌───────────────┼───────────────┐
+상품추천/환율조회   사내규정질의(RAG)   out_of_scope
+       │                   │              │
+  ┌─→ tool call ← Tier1/2  │              │
+  │      │  │              │              │
+  └──────┘  └─────┬────────┘              │
+                  │                       │
+              guardrail                   │
+                  │                       │
+                answer ───────────────────┘
+
+Tier0 — 라우팅 실패 시 노드 내부에서 1회 재작성 후 재분류
+Tier1/2 — API레벨 예외처리(tool call 그래프 self-loop 재시도)
 ```
 
 router 직후 LangGraph의 conditional edge로 route별로 필요한 노드로만 바로 분기합니다 — 해당 없는 노드는 아예 호출되지 않습니다.
