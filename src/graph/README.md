@@ -1,6 +1,6 @@
 # graph
 
-Agent 핵심 그래프 — LangGraph `StateGraph`로 조립된 5단계 파이프라인(라우팅 → context → tool call → 가드레일 → answer).
+Agent 핵심 그래프 — LangGraph `StateGraph`로 조립된 분기형 파이프라인(routing → (RAG / tool call) → 가드레일 → answer).
 
 ## 그래프 흐름
 

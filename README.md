@@ -4,7 +4,7 @@
 
 ## 핵심 요약
 
-- **Agent 설계·구현** — LangGraph StateGraph로 라우팅→컨텍스트구성→tool call→가드레일→answer 5단계 그래프 구현
+- **Agent 설계·구현** — LangGraph StateGraph를 기반으로 사용자 query에 대해 routing → (RAG / tool call) → 가드레일 → answer로 이어지는 분기형 파이프라인 구현
 - **의도·대화상태 라우팅** — 4클래스 분류 + 대화이력 반영 + 저신뢰 시 재작성 복구(Tier0)
 - **컨텍스트 조합** — 대화이력 재사용(멀티턴) + RAG 검색결과 + tool 호출 결과(API 응답)를 결합해 답변 생성
 - **Tool/API 예외처리** — 실API 6개 연동. Tier1(라우팅·tool선택은 맞다고 전제, 외부 API 자체 문제 — fail/delay)·Tier2(API는 정상인데 Agent의 해석이 잘못됐을 가능성 — 결과없음/파라미터무효/tool미선택) 두 계층으로 나눠 재시도·복구
