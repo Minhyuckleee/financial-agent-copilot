@@ -1,0 +1,652 @@
+[
+  {
+    "id": "test_deposit_procedural_1",
+    "product": "deposit",
+    "phrasing_type": "procedural",
+    "complexity": "complex",
+    "turn1_query": "12개월짜리 정기예금 좋은 상품 추천해줘",
+    "turn1_answer": "정기예금 상품 3건을 안내드립니다.",
+    "turn2_query": "가입 방법을 알려주세요",
+    "expected_tool_name": "recommend_deposit_products",
+    "expected_tool_params_contains": {
+      "save_term_months": 12
+    }
+  },
+  {
+    "id": "test_deposit_procedural_2",
+    "product": "deposit",
+    "phrasing_type": "procedural",
+    "complexity": "complex",
+    "turn1_query": "12개월짜리 정기예금 좋은 상품 추천해줘",
+    "turn1_answer": "정기예금 상품 3건을 안내드립니다.",
+    "turn2_query": "심사는 얼마나 걸리나요?",
+    "expected_tool_name": "recommend_deposit_products",
+    "expected_tool_params_contains": {
+      "save_term_months": 12
+    }
+  },
+  {
+    "id": "test_deposit_procedural_3",
+    "product": "deposit",
+    "phrasing_type": "procedural",
+    "complexity": "complex",
+    "turn1_query": "12개월짜리 정기예금 좋은 상품 추천해줘",
+    "turn1_answer": "정기예금 상품 3건을 안내드립니다.",
+    "turn2_query": "온라인으로도 신청 가능한가요?",
+    "expected_tool_name": "recommend_deposit_products",
+    "expected_tool_params_contains": {
+      "save_term_months": 12
+    }
+  },
+  {
+    "id": "test_deposit_procedural_4",
+    "product": "deposit",
+    "phrasing_type": "procedural",
+    "complexity": "complex",
+    "turn1_query": "12개월짜리 정기예금 좋은 상품 추천해줘",
+    "turn1_answer": "정기예금 상품 3건을 안내드립니다.",
+    "turn2_query": "지금 바로 신청할 수 있나요?",
+    "expected_tool_name": "recommend_deposit_products",
+    "expected_tool_params_contains": {
+      "save_term_months": 12
+    }
+  },
+  {
+    "id": "test_deposit_procedural_5",
+    "product": "deposit",
+    "phrasing_type": "procedural",
+    "complexity": "complex",
+    "turn1_query": "12개월짜리 정기예금 좋은 상품 추천해줘",
+    "turn1_answer": "정기예금 상품 3건을 안내드립니다.",
+    "turn2_query": "가입하려면 뭐가 필요해요?",
+    "expected_tool_name": "recommend_deposit_products",
+    "expected_tool_params_contains": {
+      "save_term_months": 12
+    }
+  },
+  {
+    "id": "test_deposit_procedural_6",
+    "product": "deposit",
+    "phrasing_type": "procedural",
+    "complexity": "complex",
+    "turn1_query": "12개월짜리 정기예금 좋은 상품 추천해줘",
+    "turn1_answer": "정기예금 상품 3건을 안내드립니다.",
+    "turn2_query": "어디로 연락하면 되나요?",
+    "expected_tool_name": "recommend_deposit_products",
+    "expected_tool_params_contains": {
+      "save_term_months": 12
+    }
+  },
+  {
+    "id": "test_deposit_procedural_7",
+    "product": "deposit",
+    "phrasing_type": "procedural",
+    "complexity": "complex",
+    "turn1_query": "12개월짜리 정기예금 좋은 상품 추천해줘",
+    "turn1_answer": "정기예금 상품 3건을 안내드립니다.",
+    "turn2_query": "방문 안 하고도 되나요?",
+    "expected_tool_name": "recommend_deposit_products",
+    "expected_tool_params_contains": {
+      "save_term_months": 12
+    }
+  },
+  {
+    "id": "test_deposit_procedural_8",
+    "product": "deposit",
+    "phrasing_type": "procedural",
+    "complexity": "complex",
+    "turn1_query": "12개월짜리 정기예금 좋은 상품 추천해줘",
+    "turn1_answer": "정기예금 상품 3건을 안내드립니다.",
+    "turn2_query": "가입 조건이 따로 있나요?",
+    "expected_tool_name": "recommend_deposit_products",
+    "expected_tool_params_contains": {
+      "save_term_months": 12
+    }
+  },
+  {
+    "id": "test_deposit_procedural_9",
+    "product": "deposit",
+    "phrasing_type": "procedural",
+    "complexity": "complex",
+    "turn1_query": "12개월짜리 정기예금 좋은 상품 추천해줘",
+    "turn1_answer": "정기예금 상품 3건을 안내드립니다.",
+    "turn2_query": "처리 기간이 얼마나 걸려요?",
+    "expected_tool_name": "recommend_deposit_products",
+    "expected_tool_params_contains": {
+      "save_term_months": 12
+    }
+  },
+  {
+    "id": "test_deposit_procedural_10",
+    "product": "deposit",
+    "phrasing_type": "procedural",
+    "complexity": "complex",
+    "turn1_query": "12개월짜리 정기예금 좋은 상품 추천해줘",
+    "turn1_answer": "정기예금 상품 3건을 안내드립니다.",
+    "turn2_query": "지금 신청하면 언제 되나요?",
+    "expected_tool_name": "recommend_deposit_products",
+    "expected_tool_params_contains": {
+      "save_term_months": 12
+    }
+  },
+  {
+    "id": "test_credit_loan_procedural_1",
+    "product": "credit_loan",
+    "phrasing_type": "procedural",
+    "complexity": "complex",
+    "turn1_query": "신용점수 720인 고객 신용대출 알아봐줘",
+    "turn1_answer": "신용대출 상품 3건을 안내드립니다.",
+    "turn2_query": "가입 방법을 알려주세요",
+    "expected_tool_name": "recommend_credit_loan_products",
+    "expected_tool_params_contains": {
+      "credit_score": 720
+    }
+  },
+  {
+    "id": "test_credit_loan_procedural_2",
+    "product": "credit_loan",
+    "phrasing_type": "procedural",
+    "complexity": "complex",
+    "turn1_query": "신용점수 720인 고객 신용대출 알아봐줘",
+    "turn1_answer": "신용대출 상품 3건을 안내드립니다.",
+    "turn2_query": "심사는 얼마나 걸리나요?",
+    "expected_tool_name": "recommend_credit_loan_products",
+    "expected_tool_params_contains": {
+      "credit_score": 720
+    }
+  },
+  {
+    "id": "test_credit_loan_procedural_3",
+    "product": "credit_loan",
+    "phrasing_type": "procedural",
+    "complexity": "complex",
+    "turn1_query": "신용점수 720인 고객 신용대출 알아봐줘",
+    "turn1_answer": "신용대출 상품 3건을 안내드립니다.",
+    "turn2_query": "온라인으로도 신청 가능한가요?",
+    "expected_tool_name": "recommend_credit_loan_products",
+    "expected_tool_params_contains": {
+      "credit_score": 720
+    }
+  },
+  {
+    "id": "test_credit_loan_procedural_4",
+    "product": "credit_loan",
+    "phrasing_type": "procedural",
+    "complexity": "complex",
+    "turn1_query": "신용점수 720인 고객 신용대출 알아봐줘",
+    "turn1_answer": "신용대출 상품 3건을 안내드립니다.",
+    "turn2_query": "지금 바로 신청할 수 있나요?",
+    "expected_tool_name": "recommend_credit_loan_products",
+    "expected_tool_params_contains": {
+      "credit_score": 720
+    }
+  },
+  {
+    "id": "test_credit_loan_procedural_5",
+    "product": "credit_loan",
+    "phrasing_type": "procedural",
+    "complexity": "complex",
+    "turn1_query": "신용점수 720인 고객 신용대출 알아봐줘",
+    "turn1_answer": "신용대출 상품 3건을 안내드립니다.",
+    "turn2_query": "가입하려면 뭐가 필요해요?",
+    "expected_tool_name": "recommend_credit_loan_products",
+    "expected_tool_params_contains": {
+      "credit_score": 720
+    }
+  },
+  {
+    "id": "test_credit_loan_procedural_6",
+    "product": "credit_loan",
+    "phrasing_type": "procedural",
+    "complexity": "complex",
+    "turn1_query": "신용점수 720인 고객 신용대출 알아봐줘",
+    "turn1_answer": "신용대출 상품 3건을 안내드립니다.",
+    "turn2_query": "어디로 연락하면 되나요?",
+    "expected_tool_name": "recommend_credit_loan_products",
+    "expected_tool_params_contains": {
+      "credit_score": 720
+    }
+  },
+  {
+    "id": "test_credit_loan_procedural_7",
+    "product": "credit_loan",
+    "phrasing_type": "procedural",
+    "complexity": "complex",
+    "turn1_query": "신용점수 720인 고객 신용대출 알아봐줘",
+    "turn1_answer": "신용대출 상품 3건을 안내드립니다.",
+    "turn2_query": "방문 안 하고도 되나요?",
+    "expected_tool_name": "recommend_credit_loan_products",
+    "expected_tool_params_contains": {
+      "credit_score": 720
+    }
+  },
+  {
+    "id": "test_credit_loan_procedural_8",
+    "product": "credit_loan",
+    "phrasing_type": "procedural",
+    "complexity": "complex",
+    "turn1_query": "신용점수 720인 고객 신용대출 알아봐줘",
+    "turn1_answer": "신용대출 상품 3건을 안내드립니다.",
+    "turn2_query": "가입 조건이 따로 있나요?",
+    "expected_tool_name": "recommend_credit_loan_products",
+    "expected_tool_params_contains": {
+      "credit_score": 720
+    }
+  },
+  {
+    "id": "test_credit_loan_procedural_9",
+    "product": "credit_loan",
+    "phrasing_type": "procedural",
+    "complexity": "complex",
+    "turn1_query": "신용점수 720인 고객 신용대출 알아봐줘",
+    "turn1_answer": "신용대출 상품 3건을 안내드립니다.",
+    "turn2_query": "처리 기간이 얼마나 걸려요?",
+    "expected_tool_name": "recommend_credit_loan_products",
+    "expected_tool_params_contains": {
+      "credit_score": 720
+    }
+  },
+  {
+    "id": "test_credit_loan_procedural_10",
+    "product": "credit_loan",
+    "phrasing_type": "procedural",
+    "complexity": "complex",
+    "turn1_query": "신용점수 720인 고객 신용대출 알아봐줘",
+    "turn1_answer": "신용대출 상품 3건을 안내드립니다.",
+    "turn2_query": "지금 신청하면 언제 되나요?",
+    "expected_tool_name": "recommend_credit_loan_products",
+    "expected_tool_params_contains": {
+      "credit_score": 720
+    }
+  },
+  {
+    "id": "test_jeonse_loan_procedural_1",
+    "product": "jeonse_loan",
+    "phrasing_type": "procedural",
+    "complexity": "complex",
+    "turn1_query": "신한은행 전세자금대출 상품 알아봐줘",
+    "turn1_answer": "전세자금대출 상품 3건을 안내드립니다.",
+    "turn2_query": "가입 방법을 알려주세요",
+    "expected_tool_name": "recommend_jeonse_loan_products",
+    "expected_tool_params_contains": {
+      "bank_name_filter": "신한은행"
+    }
+  },
+  {
+    "id": "test_jeonse_loan_procedural_2",
+    "product": "jeonse_loan",
+    "phrasing_type": "procedural",
+    "complexity": "complex",
+    "turn1_query": "신한은행 전세자금대출 상품 알아봐줘",
+    "turn1_answer": "전세자금대출 상품 3건을 안내드립니다.",
+    "turn2_query": "심사는 얼마나 걸리나요?",
+    "expected_tool_name": "recommend_jeonse_loan_products",
+    "expected_tool_params_contains": {
+      "bank_name_filter": "신한은행"
+    }
+  },
+  {
+    "id": "test_jeonse_loan_procedural_3",
+    "product": "jeonse_loan",
+    "phrasing_type": "procedural",
+    "complexity": "complex",
+    "turn1_query": "신한은행 전세자금대출 상품 알아봐줘",
+    "turn1_answer": "전세자금대출 상품 3건을 안내드립니다.",
+    "turn2_query": "온라인으로도 신청 가능한가요?",
+    "expected_tool_name": "recommend_jeonse_loan_products",
+    "expected_tool_params_contains": {
+      "bank_name_filter": "신한은행"
+    }
+  },
+  {
+    "id": "test_jeonse_loan_procedural_4",
+    "product": "jeonse_loan",
+    "phrasing_type": "procedural",
+    "complexity": "complex",
+    "turn1_query": "신한은행 전세자금대출 상품 알아봐줘",
+    "turn1_answer": "전세자금대출 상품 3건을 안내드립니다.",
+    "turn2_query": "지금 바로 신청할 수 있나요?",
+    "expected_tool_name": "recommend_jeonse_loan_products",
+    "expected_tool_params_contains": {
+      "bank_name_filter": "신한은행"
+    }
+  },
+  {
+    "id": "test_jeonse_loan_procedural_5",
+    "product": "jeonse_loan",
+    "phrasing_type": "procedural",
+    "complexity": "complex",
+    "turn1_query": "신한은행 전세자금대출 상품 알아봐줘",
+    "turn1_answer": "전세자금대출 상품 3건을 안내드립니다.",
+    "turn2_query": "가입하려면 뭐가 필요해요?",
+    "expected_tool_name": "recommend_jeonse_loan_products",
+    "expected_tool_params_contains": {
+      "bank_name_filter": "신한은행"
+    }
+  },
+  {
+    "id": "test_jeonse_loan_procedural_6",
+    "product": "jeonse_loan",
+    "phrasing_type": "procedural",
+    "complexity": "complex",
+    "turn1_query": "신한은행 전세자금대출 상품 알아봐줘",
+    "turn1_answer": "전세자금대출 상품 3건을 안내드립니다.",
+    "turn2_query": "어디로 연락하면 되나요?",
+    "expected_tool_name": "recommend_jeonse_loan_products",
+    "expected_tool_params_contains": {
+      "bank_name_filter": "신한은행"
+    }
+  },
+  {
+    "id": "test_jeonse_loan_procedural_7",
+    "product": "jeonse_loan",
+    "phrasing_type": "procedural",
+    "complexity": "complex",
+    "turn1_query": "신한은행 전세자금대출 상품 알아봐줘",
+    "turn1_answer": "전세자금대출 상품 3건을 안내드립니다.",
+    "turn2_query": "방문 안 하고도 되나요?",
+    "expected_tool_name": "recommend_jeonse_loan_products",
+    "expected_tool_params_contains": {
+      "bank_name_filter": "신한은행"
+    }
+  },
+  {
+    "id": "test_jeonse_loan_procedural_8",
+    "product": "jeonse_loan",
+    "phrasing_type": "procedural",
+    "complexity": "complex",
+    "turn1_query": "신한은행 전세자금대출 상품 알아봐줘",
+    "turn1_answer": "전세자금대출 상품 3건을 안내드립니다.",
+    "turn2_query": "가입 조건이 따로 있나요?",
+    "expected_tool_name": "recommend_jeonse_loan_products",
+    "expected_tool_params_contains": {
+      "bank_name_filter": "신한은행"
+    }
+  },
+  {
+    "id": "test_jeonse_loan_procedural_9",
+    "product": "jeonse_loan",
+    "phrasing_type": "procedural",
+    "complexity": "complex",
+    "turn1_query": "신한은행 전세자금대출 상품 알아봐줘",
+    "turn1_answer": "전세자금대출 상품 3건을 안내드립니다.",
+    "turn2_query": "처리 기간이 얼마나 걸려요?",
+    "expected_tool_name": "recommend_jeonse_loan_products",
+    "expected_tool_params_contains": {
+      "bank_name_filter": "신한은행"
+    }
+  },
+  {
+    "id": "test_jeonse_loan_procedural_10",
+    "product": "jeonse_loan",
+    "phrasing_type": "procedural",
+    "complexity": "complex",
+    "turn1_query": "신한은행 전세자금대출 상품 알아봐줘",
+    "turn1_answer": "전세자금대출 상품 3건을 안내드립니다.",
+    "turn2_query": "지금 신청하면 언제 되나요?",
+    "expected_tool_name": "recommend_jeonse_loan_products",
+    "expected_tool_params_contains": {
+      "bank_name_filter": "신한은행"
+    }
+  },
+  {
+    "id": "test_mortgage_loan_procedural_1",
+    "product": "mortgage_loan",
+    "phrasing_type": "procedural",
+    "complexity": "complex",
+    "turn1_query": "하나은행 주택담보대출 상품 알아봐줘",
+    "turn1_answer": "주택담보대출 상품 3건을 안내드립니다.",
+    "turn2_query": "가입 방법을 알려주세요",
+    "expected_tool_name": "recommend_mortgage_loan_products",
+    "expected_tool_params_contains": {
+      "bank_name_filter": "하나은행"
+    }
+  },
+  {
+    "id": "test_mortgage_loan_procedural_2",
+    "product": "mortgage_loan",
+    "phrasing_type": "procedural",
+    "complexity": "complex",
+    "turn1_query": "하나은행 주택담보대출 상품 알아봐줘",
+    "turn1_answer": "주택담보대출 상품 3건을 안내드립니다.",
+    "turn2_query": "심사는 얼마나 걸리나요?",
+    "expected_tool_name": "recommend_mortgage_loan_products",
+    "expected_tool_params_contains": {
+      "bank_name_filter": "하나은행"
+    }
+  },
+  {
+    "id": "test_mortgage_loan_procedural_3",
+    "product": "mortgage_loan",
+    "phrasing_type": "procedural",
+    "complexity": "complex",
+    "turn1_query": "하나은행 주택담보대출 상품 알아봐줘",
+    "turn1_answer": "주택담보대출 상품 3건을 안내드립니다.",
+    "turn2_query": "온라인으로도 신청 가능한가요?",
+    "expected_tool_name": "recommend_mortgage_loan_products",
+    "expected_tool_params_contains": {
+      "bank_name_filter": "하나은행"
+    }
+  },
+  {
+    "id": "test_mortgage_loan_procedural_4",
+    "product": "mortgage_loan",
+    "phrasing_type": "procedural",
+    "complexity": "complex",
+    "turn1_query": "하나은행 주택담보대출 상품 알아봐줘",
+    "turn1_answer": "주택담보대출 상품 3건을 안내드립니다.",
+    "turn2_query": "지금 바로 신청할 수 있나요?",
+    "expected_tool_name": "recommend_mortgage_loan_products",
+    "expected_tool_params_contains": {
+      "bank_name_filter": "하나은행"
+    }
+  },
+  {
+    "id": "test_mortgage_loan_procedural_5",
+    "product": "mortgage_loan",
+    "phrasing_type": "procedural",
+    "complexity": "complex",
+    "turn1_query": "하나은행 주택담보대출 상품 알아봐줘",
+    "turn1_answer": "주택담보대출 상품 3건을 안내드립니다.",
+    "turn2_query": "가입하려면 뭐가 필요해요?",
+    "expected_tool_name": "recommend_mortgage_loan_products",
+    "expected_tool_params_contains": {
+      "bank_name_filter": "하나은행"
+    }
+  },
+  {
+    "id": "test_mortgage_loan_procedural_6",
+    "product": "mortgage_loan",
+    "phrasing_type": "procedural",
+    "complexity": "complex",
+    "turn1_query": "하나은행 주택담보대출 상품 알아봐줘",
+    "turn1_answer": "주택담보대출 상품 3건을 안내드립니다.",
+    "turn2_query": "어디로 연락하면 되나요?",
+    "expected_tool_name": "recommend_mortgage_loan_products",
+    "expected_tool_params_contains": {
+      "bank_name_filter": "하나은행"
+    }
+  },
+  {
+    "id": "test_mortgage_loan_procedural_7",
+    "product": "mortgage_loan",
+    "phrasing_type": "procedural",
+    "complexity": "complex",
+    "turn1_query": "하나은행 주택담보대출 상품 알아봐줘",
+    "turn1_answer": "주택담보대출 상품 3건을 안내드립니다.",
+    "turn2_query": "방문 안 하고도 되나요?",
+    "expected_tool_name": "recommend_mortgage_loan_products",
+    "expected_tool_params_contains": {
+      "bank_name_filter": "하나은행"
+    }
+  },
+  {
+    "id": "test_mortgage_loan_procedural_8",
+    "product": "mortgage_loan",
+    "phrasing_type": "procedural",
+    "complexity": "complex",
+    "turn1_query": "하나은행 주택담보대출 상품 알아봐줘",
+    "turn1_answer": "주택담보대출 상품 3건을 안내드립니다.",
+    "turn2_query": "가입 조건이 따로 있나요?",
+    "expected_tool_name": "recommend_mortgage_loan_products",
+    "expected_tool_params_contains": {
+      "bank_name_filter": "하나은행"
+    }
+  },
+  {
+    "id": "test_mortgage_loan_procedural_9",
+    "product": "mortgage_loan",
+    "phrasing_type": "procedural",
+    "complexity": "complex",
+    "turn1_query": "하나은행 주택담보대출 상품 알아봐줘",
+    "turn1_answer": "주택담보대출 상품 3건을 안내드립니다.",
+    "turn2_query": "처리 기간이 얼마나 걸려요?",
+    "expected_tool_name": "recommend_mortgage_loan_products",
+    "expected_tool_params_contains": {
+      "bank_name_filter": "하나은행"
+    }
+  },
+  {
+    "id": "test_mortgage_loan_procedural_10",
+    "product": "mortgage_loan",
+    "phrasing_type": "procedural",
+    "complexity": "complex",
+    "turn1_query": "하나은행 주택담보대출 상품 알아봐줘",
+    "turn1_answer": "주택담보대출 상품 3건을 안내드립니다.",
+    "turn2_query": "지금 신청하면 언제 되나요?",
+    "expected_tool_name": "recommend_mortgage_loan_products",
+    "expected_tool_params_contains": {
+      "bank_name_filter": "하나은행"
+    }
+  },
+  {
+    "id": "test_business_loan_procedural_1",
+    "product": "business_loan",
+    "phrasing_type": "procedural",
+    "complexity": "complex",
+    "turn1_query": "신용점수 680인 사업자대출 알아봐줘",
+    "turn1_answer": "사업자대출 상품 3건을 안내드립니다.",
+    "turn2_query": "가입 방법을 알려주세요",
+    "expected_tool_name": "recommend_business_loan_products",
+    "expected_tool_params_contains": {
+      "credit_score": 680
+    }
+  },
+  {
+    "id": "test_business_loan_procedural_2",
+    "product": "business_loan",
+    "phrasing_type": "procedural",
+    "complexity": "complex",
+    "turn1_query": "신용점수 680인 사업자대출 알아봐줘",
+    "turn1_answer": "사업자대출 상품 3건을 안내드립니다.",
+    "turn2_query": "심사는 얼마나 걸리나요?",
+    "expected_tool_name": "recommend_business_loan_products",
+    "expected_tool_params_contains": {
+      "credit_score": 680
+    }
+  },
+  {
+    "id": "test_business_loan_procedural_3",
+    "product": "business_loan",
+    "phrasing_type": "procedural",
+    "complexity": "complex",
+    "turn1_query": "신용점수 680인 사업자대출 알아봐줘",
+    "turn1_answer": "사업자대출 상품 3건을 안내드립니다.",
+    "turn2_query": "온라인으로도 신청 가능한가요?",
+    "expected_tool_name": "recommend_business_loan_products",
+    "expected_tool_params_contains": {
+      "credit_score": 680
+    }
+  },
+  {
+    "id": "test_business_loan_procedural_4",
+    "product": "business_loan",
+    "phrasing_type": "procedural",
+    "complexity": "complex",
+    "turn1_query": "신용점수 680인 사업자대출 알아봐줘",
+    "turn1_answer": "사업자대출 상품 3건을 안내드립니다.",
+    "turn2_query": "지금 바로 신청할 수 있나요?",
+    "expected_tool_name": "recommend_business_loan_products",
+    "expected_tool_params_contains": {
+      "credit_score": 680
+    }
+  },
+  {
+    "id": "test_business_loan_procedural_5",
+    "product": "business_loan",
+    "phrasing_type": "procedural",
+    "complexity": "complex",
+    "turn1_query": "신용점수 680인 사업자대출 알아봐줘",
+    "turn1_answer": "사업자대출 상품 3건을 안내드립니다.",
+    "turn2_query": "가입하려면 뭐가 필요해요?",
+    "expected_tool_name": "recommend_business_loan_products",
+    "expected_tool_params_contains": {
+      "credit_score": 680
+    }
+  },
+  {
+    "id": "test_business_loan_procedural_6",
+    "product": "business_loan",
+    "phrasing_type": "procedural",
+    "complexity": "complex",
+    "turn1_query": "신용점수 680인 사업자대출 알아봐줘",
+    "turn1_answer": "사업자대출 상품 3건을 안내드립니다.",
+    "turn2_query": "어디로 연락하면 되나요?",
+    "expected_tool_name": "recommend_business_loan_products",
+    "expected_tool_params_contains": {
+      "credit_score": 680
+    }
+  },
+  {
+    "id": "test_business_loan_procedural_7",
+    "product": "business_loan",
+    "phrasing_type": "procedural",
+    "complexity": "complex",
+    "turn1_query": "신용점수 680인 사업자대출 알아봐줘",
+    "turn1_answer": "사업자대출 상품 3건을 안내드립니다.",
+    "turn2_query": "방문 안 하고도 되나요?",
+    "expected_tool_name": "recommend_business_loan_products",
+    "expected_tool_params_contains": {
+      "credit_score": 680
+    }
+  },
+  {
+    "id": "test_business_loan_procedural_8",
+    "product": "business_loan",
+    "phrasing_type": "procedural",
+    "complexity": "complex",
+    "turn1_query": "신용점수 680인 사업자대출 알아봐줘",
+    "turn1_answer": "사업자대출 상품 3건을 안내드립니다.",
+    "turn2_query": "가입 조건이 따로 있나요?",
+    "expected_tool_name": "recommend_business_loan_products",
+    "expected_tool_params_contains": {
+      "credit_score": 680
+    }
+  },
+  {
+    "id": "test_business_loan_procedural_9",
+    "product": "business_loan",
+    "phrasing_type": "procedural",
+    "complexity": "complex",
+    "turn1_query": "신용점수 680인 사업자대출 알아봐줘",
+    "turn1_answer": "사업자대출 상품 3건을 안내드립니다.",
+    "turn2_query": "처리 기간이 얼마나 걸려요?",
+    "expected_tool_name": "recommend_business_loan_products",
+    "expected_tool_params_contains": {
+      "credit_score": 680
+    }
+  },
+  {
+    "id": "test_business_loan_procedural_10",
+    "product": "business_loan",
+    "phrasing_type": "procedural",
+    "complexity": "complex",
+    "turn1_query": "신용점수 680인 사업자대출 알아봐줘",
+    "turn1_answer": "사업자대출 상품 3건을 안내드립니다.",
+    "turn2_query": "지금 신청하면 언제 되나요?",
+    "expected_tool_name": "recommend_business_loan_products",
+    "expected_tool_params_contains": {
+      "credit_score": 680
+    }
+  }
+]

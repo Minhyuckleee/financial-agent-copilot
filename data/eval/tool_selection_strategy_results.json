@@ -1,0 +1,2704 @@
+{
+  "per_case": [
+    {
+      "id": "deposit_procedural_1",
+      "condition": "A",
+      "phrasing_type": "procedural",
+      "complexity": "simple",
+      "reached_retry": true,
+      "first_attempt_error": "no_selection",
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_deposit_products",
+      "actual_tool_params": {
+        "save_term_months": 12
+      }
+    },
+    {
+      "id": "deposit_procedural_1",
+      "condition": "B",
+      "phrasing_type": "procedural",
+      "complexity": "simple",
+      "reached_retry": true,
+      "first_attempt_error": "no_selection",
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_deposit_products",
+      "actual_tool_params": {}
+    },
+    {
+      "id": "deposit_procedural_2",
+      "condition": "A",
+      "phrasing_type": "procedural",
+      "complexity": "simple",
+      "reached_retry": true,
+      "first_attempt_error": "no_selection",
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_deposit_products",
+      "actual_tool_params": {
+        "save_term_months": 12
+      }
+    },
+    {
+      "id": "deposit_procedural_2",
+      "condition": "B",
+      "phrasing_type": "procedural",
+      "complexity": "simple",
+      "reached_retry": true,
+      "first_attempt_error": "no_selection",
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_deposit_products",
+      "actual_tool_params": {}
+    },
+    {
+      "id": "deposit_procedural_3",
+      "condition": "A",
+      "phrasing_type": "procedural",
+      "complexity": "complex",
+      "reached_retry": true,
+      "first_attempt_error": "no_selection",
+      "tool_success": false,
+      "answer_accurate": false,
+      "actual_tool_name": null,
+      "actual_tool_params": null
+    },
+    {
+      "id": "deposit_procedural_3",
+      "condition": "B",
+      "phrasing_type": "procedural",
+      "complexity": "complex",
+      "reached_retry": true,
+      "first_attempt_error": "no_selection",
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_deposit_products",
+      "actual_tool_params": {
+        "save_term_months": 6
+      }
+    },
+    {
+      "id": "deposit_procedural_4",
+      "condition": "A",
+      "phrasing_type": "procedural",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_deposit_products",
+      "actual_tool_params": {
+        "save_term_months": 24
+      }
+    },
+    {
+      "id": "deposit_procedural_4",
+      "condition": "B",
+      "phrasing_type": "procedural",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_deposit_products",
+      "actual_tool_params": {
+        "save_term_months": 24
+      }
+    },
+    {
+      "id": "deposit_procedural_5",
+      "condition": "A",
+      "phrasing_type": "procedural",
+      "complexity": "complex",
+      "reached_retry": true,
+      "first_attempt_error": "no_selection",
+      "tool_success": false,
+      "answer_accurate": false,
+      "actual_tool_name": null,
+      "actual_tool_params": null
+    },
+    {
+      "id": "deposit_procedural_5",
+      "condition": "B",
+      "phrasing_type": "procedural",
+      "complexity": "complex",
+      "reached_retry": true,
+      "first_attempt_error": "no_selection",
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_deposit_products",
+      "actual_tool_params": {
+        "save_term_months": 36
+      }
+    },
+    {
+      "id": "deposit_reconfirm_1",
+      "condition": "A",
+      "phrasing_type": "reconfirm",
+      "complexity": "simple",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_deposit_products",
+      "actual_tool_params": {}
+    },
+    {
+      "id": "deposit_reconfirm_1",
+      "condition": "B",
+      "phrasing_type": "reconfirm",
+      "complexity": "simple",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_deposit_products",
+      "actual_tool_params": {}
+    },
+    {
+      "id": "deposit_reconfirm_2",
+      "condition": "A",
+      "phrasing_type": "reconfirm",
+      "complexity": "simple",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_deposit_products",
+      "actual_tool_params": {}
+    },
+    {
+      "id": "deposit_reconfirm_2",
+      "condition": "B",
+      "phrasing_type": "reconfirm",
+      "complexity": "simple",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_deposit_products",
+      "actual_tool_params": {}
+    },
+    {
+      "id": "deposit_reconfirm_3",
+      "condition": "A",
+      "phrasing_type": "reconfirm",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_deposit_products",
+      "actual_tool_params": {
+        "save_term_months": 6
+      }
+    },
+    {
+      "id": "deposit_reconfirm_3",
+      "condition": "B",
+      "phrasing_type": "reconfirm",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_deposit_products",
+      "actual_tool_params": {
+        "save_term_months": 6
+      }
+    },
+    {
+      "id": "deposit_reconfirm_4",
+      "condition": "A",
+      "phrasing_type": "reconfirm",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_deposit_products",
+      "actual_tool_params": {
+        "save_term_months": 24
+      }
+    },
+    {
+      "id": "deposit_reconfirm_4",
+      "condition": "B",
+      "phrasing_type": "reconfirm",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_deposit_products",
+      "actual_tool_params": {
+        "save_term_months": 24
+      }
+    },
+    {
+      "id": "deposit_reconfirm_5",
+      "condition": "A",
+      "phrasing_type": "reconfirm",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_deposit_products",
+      "actual_tool_params": {
+        "save_term_months": 36
+      }
+    },
+    {
+      "id": "deposit_reconfirm_5",
+      "condition": "B",
+      "phrasing_type": "reconfirm",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_deposit_products",
+      "actual_tool_params": {
+        "save_term_months": 36
+      }
+    },
+    {
+      "id": "deposit_reason_1",
+      "condition": "A",
+      "phrasing_type": "reason",
+      "complexity": "simple",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_deposit_products",
+      "actual_tool_params": {}
+    },
+    {
+      "id": "deposit_reason_1",
+      "condition": "B",
+      "phrasing_type": "reason",
+      "complexity": "simple",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_deposit_products",
+      "actual_tool_params": {}
+    },
+    {
+      "id": "deposit_reason_2",
+      "condition": "A",
+      "phrasing_type": "reason",
+      "complexity": "simple",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_deposit_products",
+      "actual_tool_params": {}
+    },
+    {
+      "id": "deposit_reason_2",
+      "condition": "B",
+      "phrasing_type": "reason",
+      "complexity": "simple",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_deposit_products",
+      "actual_tool_params": {}
+    },
+    {
+      "id": "deposit_reason_3",
+      "condition": "A",
+      "phrasing_type": "reason",
+      "complexity": "complex",
+      "reached_retry": true,
+      "first_attempt_error": "no_selection",
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_deposit_products",
+      "actual_tool_params": {
+        "save_term_months": 6
+      }
+    },
+    {
+      "id": "deposit_reason_3",
+      "condition": "B",
+      "phrasing_type": "reason",
+      "complexity": "complex",
+      "reached_retry": true,
+      "first_attempt_error": "no_selection",
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_deposit_products",
+      "actual_tool_params": {
+        "save_term_months": 6
+      }
+    },
+    {
+      "id": "deposit_reason_4",
+      "condition": "A",
+      "phrasing_type": "reason",
+      "complexity": "complex",
+      "reached_retry": true,
+      "first_attempt_error": "no_selection",
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_deposit_products",
+      "actual_tool_params": {
+        "save_term_months": 24
+      }
+    },
+    {
+      "id": "deposit_reason_4",
+      "condition": "B",
+      "phrasing_type": "reason",
+      "complexity": "complex",
+      "reached_retry": true,
+      "first_attempt_error": "no_selection",
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_deposit_products",
+      "actual_tool_params": {
+        "save_term_months": 24
+      }
+    },
+    {
+      "id": "deposit_reason_5",
+      "condition": "A",
+      "phrasing_type": "reason",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_deposit_products",
+      "actual_tool_params": {
+        "save_term_months": 36
+      }
+    },
+    {
+      "id": "deposit_reason_5",
+      "condition": "B",
+      "phrasing_type": "reason",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_deposit_products",
+      "actual_tool_params": {
+        "save_term_months": 36
+      }
+    },
+    {
+      "id": "deposit_vague_1",
+      "condition": "A",
+      "phrasing_type": "vague",
+      "complexity": "simple",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_deposit_products",
+      "actual_tool_params": {}
+    },
+    {
+      "id": "deposit_vague_1",
+      "condition": "B",
+      "phrasing_type": "vague",
+      "complexity": "simple",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_deposit_products",
+      "actual_tool_params": {}
+    },
+    {
+      "id": "deposit_vague_2",
+      "condition": "A",
+      "phrasing_type": "vague",
+      "complexity": "simple",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_deposit_products",
+      "actual_tool_params": {}
+    },
+    {
+      "id": "deposit_vague_2",
+      "condition": "B",
+      "phrasing_type": "vague",
+      "complexity": "simple",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_deposit_products",
+      "actual_tool_params": {}
+    },
+    {
+      "id": "deposit_vague_3",
+      "condition": "A",
+      "phrasing_type": "vague",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_deposit_products",
+      "actual_tool_params": {
+        "save_term_months": 6
+      }
+    },
+    {
+      "id": "deposit_vague_3",
+      "condition": "B",
+      "phrasing_type": "vague",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_deposit_products",
+      "actual_tool_params": {
+        "save_term_months": 6
+      }
+    },
+    {
+      "id": "deposit_vague_4",
+      "condition": "A",
+      "phrasing_type": "vague",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_deposit_products",
+      "actual_tool_params": {
+        "save_term_months": 24
+      }
+    },
+    {
+      "id": "deposit_vague_4",
+      "condition": "B",
+      "phrasing_type": "vague",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_deposit_products",
+      "actual_tool_params": {
+        "save_term_months": 24
+      }
+    },
+    {
+      "id": "deposit_vague_5",
+      "condition": "A",
+      "phrasing_type": "vague",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_deposit_products",
+      "actual_tool_params": {
+        "save_term_months": 36
+      }
+    },
+    {
+      "id": "deposit_vague_5",
+      "condition": "B",
+      "phrasing_type": "vague",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_deposit_products",
+      "actual_tool_params": {
+        "save_term_months": 36
+      }
+    },
+    {
+      "id": "credit_loan_procedural_1",
+      "condition": "A",
+      "phrasing_type": "procedural",
+      "complexity": "simple",
+      "reached_retry": true,
+      "first_attempt_error": "no_selection",
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_credit_loan_products",
+      "actual_tool_params": {
+        "credit_score": 700
+      }
+    },
+    {
+      "id": "credit_loan_procedural_1",
+      "condition": "B",
+      "phrasing_type": "procedural",
+      "complexity": "simple",
+      "reached_retry": true,
+      "first_attempt_error": "no_selection",
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_credit_loan_products",
+      "actual_tool_params": {}
+    },
+    {
+      "id": "credit_loan_procedural_2",
+      "condition": "A",
+      "phrasing_type": "procedural",
+      "complexity": "simple",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_credit_loan_products",
+      "actual_tool_params": {}
+    },
+    {
+      "id": "credit_loan_procedural_2",
+      "condition": "B",
+      "phrasing_type": "procedural",
+      "complexity": "simple",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_credit_loan_products",
+      "actual_tool_params": {}
+    },
+    {
+      "id": "credit_loan_procedural_3",
+      "condition": "A",
+      "phrasing_type": "procedural",
+      "complexity": "complex",
+      "reached_retry": true,
+      "first_attempt_error": "no_selection",
+      "tool_success": false,
+      "answer_accurate": false,
+      "actual_tool_name": null,
+      "actual_tool_params": null
+    },
+    {
+      "id": "credit_loan_procedural_3",
+      "condition": "B",
+      "phrasing_type": "procedural",
+      "complexity": "complex",
+      "reached_retry": true,
+      "first_attempt_error": "no_selection",
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_credit_loan_products",
+      "actual_tool_params": {
+        "credit_score": 650
+      }
+    },
+    {
+      "id": "credit_loan_procedural_4",
+      "condition": "A",
+      "phrasing_type": "procedural",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_credit_loan_products",
+      "actual_tool_params": {
+        "credit_score": 750
+      }
+    },
+    {
+      "id": "credit_loan_procedural_4",
+      "condition": "B",
+      "phrasing_type": "procedural",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_credit_loan_products",
+      "actual_tool_params": {
+        "credit_score": 750
+      }
+    },
+    {
+      "id": "credit_loan_procedural_5",
+      "condition": "A",
+      "phrasing_type": "procedural",
+      "complexity": "complex",
+      "reached_retry": true,
+      "first_attempt_error": "no_selection",
+      "tool_success": false,
+      "answer_accurate": false,
+      "actual_tool_name": null,
+      "actual_tool_params": null
+    },
+    {
+      "id": "credit_loan_procedural_5",
+      "condition": "B",
+      "phrasing_type": "procedural",
+      "complexity": "complex",
+      "reached_retry": true,
+      "first_attempt_error": "no_selection",
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_credit_loan_products",
+      "actual_tool_params": {
+        "credit_score": 800
+      }
+    },
+    {
+      "id": "credit_loan_reconfirm_1",
+      "condition": "A",
+      "phrasing_type": "reconfirm",
+      "complexity": "simple",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_credit_loan_products",
+      "actual_tool_params": {}
+    },
+    {
+      "id": "credit_loan_reconfirm_1",
+      "condition": "B",
+      "phrasing_type": "reconfirm",
+      "complexity": "simple",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_credit_loan_products",
+      "actual_tool_params": {}
+    },
+    {
+      "id": "credit_loan_reconfirm_2",
+      "condition": "A",
+      "phrasing_type": "reconfirm",
+      "complexity": "simple",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_credit_loan_products",
+      "actual_tool_params": {}
+    },
+    {
+      "id": "credit_loan_reconfirm_2",
+      "condition": "B",
+      "phrasing_type": "reconfirm",
+      "complexity": "simple",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_credit_loan_products",
+      "actual_tool_params": {}
+    },
+    {
+      "id": "credit_loan_reconfirm_3",
+      "condition": "A",
+      "phrasing_type": "reconfirm",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_credit_loan_products",
+      "actual_tool_params": {
+        "credit_score": 650
+      }
+    },
+    {
+      "id": "credit_loan_reconfirm_3",
+      "condition": "B",
+      "phrasing_type": "reconfirm",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_credit_loan_products",
+      "actual_tool_params": {
+        "credit_score": 650
+      }
+    },
+    {
+      "id": "credit_loan_reconfirm_4",
+      "condition": "A",
+      "phrasing_type": "reconfirm",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_credit_loan_products",
+      "actual_tool_params": {
+        "credit_score": 750
+      }
+    },
+    {
+      "id": "credit_loan_reconfirm_4",
+      "condition": "B",
+      "phrasing_type": "reconfirm",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_credit_loan_products",
+      "actual_tool_params": {
+        "credit_score": 750
+      }
+    },
+    {
+      "id": "credit_loan_reconfirm_5",
+      "condition": "A",
+      "phrasing_type": "reconfirm",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_credit_loan_products",
+      "actual_tool_params": {
+        "credit_score": 800
+      }
+    },
+    {
+      "id": "credit_loan_reconfirm_5",
+      "condition": "B",
+      "phrasing_type": "reconfirm",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_credit_loan_products",
+      "actual_tool_params": {
+        "credit_score": 800
+      }
+    },
+    {
+      "id": "credit_loan_reason_1",
+      "condition": "A",
+      "phrasing_type": "reason",
+      "complexity": "simple",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_credit_loan_products",
+      "actual_tool_params": {}
+    },
+    {
+      "id": "credit_loan_reason_1",
+      "condition": "B",
+      "phrasing_type": "reason",
+      "complexity": "simple",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_credit_loan_products",
+      "actual_tool_params": {}
+    },
+    {
+      "id": "credit_loan_reason_2",
+      "condition": "A",
+      "phrasing_type": "reason",
+      "complexity": "simple",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_credit_loan_products",
+      "actual_tool_params": {}
+    },
+    {
+      "id": "credit_loan_reason_2",
+      "condition": "B",
+      "phrasing_type": "reason",
+      "complexity": "simple",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_credit_loan_products",
+      "actual_tool_params": {}
+    },
+    {
+      "id": "credit_loan_reason_3",
+      "condition": "A",
+      "phrasing_type": "reason",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_credit_loan_products",
+      "actual_tool_params": {
+        "credit_score": 650
+      }
+    },
+    {
+      "id": "credit_loan_reason_3",
+      "condition": "B",
+      "phrasing_type": "reason",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_credit_loan_products",
+      "actual_tool_params": {
+        "credit_score": 650
+      }
+    },
+    {
+      "id": "credit_loan_reason_4",
+      "condition": "A",
+      "phrasing_type": "reason",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_credit_loan_products",
+      "actual_tool_params": {
+        "credit_score": 750
+      }
+    },
+    {
+      "id": "credit_loan_reason_4",
+      "condition": "B",
+      "phrasing_type": "reason",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_credit_loan_products",
+      "actual_tool_params": {
+        "credit_score": 750
+      }
+    },
+    {
+      "id": "credit_loan_reason_5",
+      "condition": "A",
+      "phrasing_type": "reason",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_credit_loan_products",
+      "actual_tool_params": {
+        "credit_score": 800
+      }
+    },
+    {
+      "id": "credit_loan_reason_5",
+      "condition": "B",
+      "phrasing_type": "reason",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_credit_loan_products",
+      "actual_tool_params": {
+        "credit_score": 800
+      }
+    },
+    {
+      "id": "credit_loan_vague_1",
+      "condition": "A",
+      "phrasing_type": "vague",
+      "complexity": "simple",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_credit_loan_products",
+      "actual_tool_params": {}
+    },
+    {
+      "id": "credit_loan_vague_1",
+      "condition": "B",
+      "phrasing_type": "vague",
+      "complexity": "simple",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_credit_loan_products",
+      "actual_tool_params": {}
+    },
+    {
+      "id": "credit_loan_vague_2",
+      "condition": "A",
+      "phrasing_type": "vague",
+      "complexity": "simple",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_credit_loan_products",
+      "actual_tool_params": {}
+    },
+    {
+      "id": "credit_loan_vague_2",
+      "condition": "B",
+      "phrasing_type": "vague",
+      "complexity": "simple",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_credit_loan_products",
+      "actual_tool_params": {}
+    },
+    {
+      "id": "credit_loan_vague_3",
+      "condition": "A",
+      "phrasing_type": "vague",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_credit_loan_products",
+      "actual_tool_params": {
+        "credit_score": 650
+      }
+    },
+    {
+      "id": "credit_loan_vague_3",
+      "condition": "B",
+      "phrasing_type": "vague",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_credit_loan_products",
+      "actual_tool_params": {
+        "credit_score": 650
+      }
+    },
+    {
+      "id": "credit_loan_vague_4",
+      "condition": "A",
+      "phrasing_type": "vague",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_credit_loan_products",
+      "actual_tool_params": {
+        "credit_score": 750
+      }
+    },
+    {
+      "id": "credit_loan_vague_4",
+      "condition": "B",
+      "phrasing_type": "vague",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_credit_loan_products",
+      "actual_tool_params": {
+        "credit_score": 750
+      }
+    },
+    {
+      "id": "credit_loan_vague_5",
+      "condition": "A",
+      "phrasing_type": "vague",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_credit_loan_products",
+      "actual_tool_params": {
+        "credit_score": 800
+      }
+    },
+    {
+      "id": "credit_loan_vague_5",
+      "condition": "B",
+      "phrasing_type": "vague",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_credit_loan_products",
+      "actual_tool_params": {
+        "credit_score": 800
+      }
+    },
+    {
+      "id": "jeonse_loan_procedural_1",
+      "condition": "A",
+      "phrasing_type": "procedural",
+      "complexity": "simple",
+      "reached_retry": true,
+      "first_attempt_error": "no_selection",
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_jeonse_loan_products",
+      "actual_tool_params": {}
+    },
+    {
+      "id": "jeonse_loan_procedural_1",
+      "condition": "B",
+      "phrasing_type": "procedural",
+      "complexity": "simple",
+      "reached_retry": true,
+      "first_attempt_error": "no_selection",
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_jeonse_loan_products",
+      "actual_tool_params": {
+        "bank_name_filter": null
+      }
+    },
+    {
+      "id": "jeonse_loan_procedural_2",
+      "condition": "A",
+      "phrasing_type": "procedural",
+      "complexity": "simple",
+      "reached_retry": true,
+      "first_attempt_error": "no_selection",
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_jeonse_loan_products",
+      "actual_tool_params": {}
+    },
+    {
+      "id": "jeonse_loan_procedural_2",
+      "condition": "B",
+      "phrasing_type": "procedural",
+      "complexity": "simple",
+      "reached_retry": true,
+      "first_attempt_error": "no_selection",
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_jeonse_loan_products",
+      "actual_tool_params": {}
+    },
+    {
+      "id": "jeonse_loan_procedural_3",
+      "condition": "A",
+      "phrasing_type": "procedural",
+      "complexity": "complex",
+      "reached_retry": true,
+      "first_attempt_error": "no_selection",
+      "tool_success": false,
+      "answer_accurate": false,
+      "actual_tool_name": null,
+      "actual_tool_params": null
+    },
+    {
+      "id": "jeonse_loan_procedural_3",
+      "condition": "B",
+      "phrasing_type": "procedural",
+      "complexity": "complex",
+      "reached_retry": true,
+      "first_attempt_error": "no_selection",
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_jeonse_loan_products",
+      "actual_tool_params": {
+        "bank_name_filter": "농협"
+      }
+    },
+    {
+      "id": "jeonse_loan_procedural_4",
+      "condition": "A",
+      "phrasing_type": "procedural",
+      "complexity": "complex",
+      "reached_retry": true,
+      "first_attempt_error": "no_selection",
+      "tool_success": false,
+      "answer_accurate": false,
+      "actual_tool_name": null,
+      "actual_tool_params": null
+    },
+    {
+      "id": "jeonse_loan_procedural_4",
+      "condition": "B",
+      "phrasing_type": "procedural",
+      "complexity": "complex",
+      "reached_retry": true,
+      "first_attempt_error": "no_selection",
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_jeonse_loan_products",
+      "actual_tool_params": {
+        "bank_name_filter": "하나"
+      }
+    },
+    {
+      "id": "jeonse_loan_procedural_5",
+      "condition": "A",
+      "phrasing_type": "procedural",
+      "complexity": "complex",
+      "reached_retry": true,
+      "first_attempt_error": "no_selection",
+      "tool_success": false,
+      "answer_accurate": false,
+      "actual_tool_name": null,
+      "actual_tool_params": null
+    },
+    {
+      "id": "jeonse_loan_procedural_5",
+      "condition": "B",
+      "phrasing_type": "procedural",
+      "complexity": "complex",
+      "reached_retry": true,
+      "first_attempt_error": "no_selection",
+      "tool_success": false,
+      "answer_accurate": false,
+      "actual_tool_name": "recommend_jeonse_loan_products",
+      "actual_tool_params": {
+        "bank_name_filter": "신협"
+      }
+    },
+    {
+      "id": "jeonse_loan_reconfirm_1",
+      "condition": "A",
+      "phrasing_type": "reconfirm",
+      "complexity": "simple",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_jeonse_loan_products",
+      "actual_tool_params": {
+        "bank_name_filter": null
+      }
+    },
+    {
+      "id": "jeonse_loan_reconfirm_1",
+      "condition": "B",
+      "phrasing_type": "reconfirm",
+      "complexity": "simple",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_jeonse_loan_products",
+      "actual_tool_params": {
+        "bank_name_filter": null
+      }
+    },
+    {
+      "id": "jeonse_loan_reconfirm_2",
+      "condition": "A",
+      "phrasing_type": "reconfirm",
+      "complexity": "simple",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_jeonse_loan_products",
+      "actual_tool_params": {}
+    },
+    {
+      "id": "jeonse_loan_reconfirm_2",
+      "condition": "B",
+      "phrasing_type": "reconfirm",
+      "complexity": "simple",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_jeonse_loan_products",
+      "actual_tool_params": {}
+    },
+    {
+      "id": "jeonse_loan_reconfirm_3",
+      "condition": "A",
+      "phrasing_type": "reconfirm",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_jeonse_loan_products",
+      "actual_tool_params": {
+        "bank_name_filter": "농협"
+      }
+    },
+    {
+      "id": "jeonse_loan_reconfirm_3",
+      "condition": "B",
+      "phrasing_type": "reconfirm",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_jeonse_loan_products",
+      "actual_tool_params": {
+        "bank_name_filter": "농협"
+      }
+    },
+    {
+      "id": "jeonse_loan_reconfirm_4",
+      "condition": "A",
+      "phrasing_type": "reconfirm",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_jeonse_loan_products",
+      "actual_tool_params": {
+        "bank_name_filter": "하나"
+      }
+    },
+    {
+      "id": "jeonse_loan_reconfirm_4",
+      "condition": "B",
+      "phrasing_type": "reconfirm",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_jeonse_loan_products",
+      "actual_tool_params": {
+        "bank_name_filter": "하나"
+      }
+    },
+    {
+      "id": "jeonse_loan_reconfirm_5",
+      "condition": "A",
+      "phrasing_type": "reconfirm",
+      "complexity": "complex",
+      "reached_retry": true,
+      "first_attempt_error": "empty_result",
+      "tool_success": false,
+      "answer_accurate": false,
+      "actual_tool_name": "recommend_jeonse_loan_products",
+      "actual_tool_params": {
+        "bank_name_filter": "신협"
+      }
+    },
+    {
+      "id": "jeonse_loan_reconfirm_5",
+      "condition": "B",
+      "phrasing_type": "reconfirm",
+      "complexity": "complex",
+      "reached_retry": true,
+      "first_attempt_error": "empty_result",
+      "tool_success": true,
+      "answer_accurate": false,
+      "actual_tool_name": "recommend_jeonse_loan_products",
+      "actual_tool_params": {}
+    },
+    {
+      "id": "jeonse_loan_reason_1",
+      "condition": "A",
+      "phrasing_type": "reason",
+      "complexity": "simple",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_jeonse_loan_products",
+      "actual_tool_params": {}
+    },
+    {
+      "id": "jeonse_loan_reason_1",
+      "condition": "B",
+      "phrasing_type": "reason",
+      "complexity": "simple",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_jeonse_loan_products",
+      "actual_tool_params": {}
+    },
+    {
+      "id": "jeonse_loan_reason_2",
+      "condition": "A",
+      "phrasing_type": "reason",
+      "complexity": "simple",
+      "reached_retry": true,
+      "first_attempt_error": "no_selection",
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_jeonse_loan_products",
+      "actual_tool_params": {}
+    },
+    {
+      "id": "jeonse_loan_reason_2",
+      "condition": "B",
+      "phrasing_type": "reason",
+      "complexity": "simple",
+      "reached_retry": true,
+      "first_attempt_error": "no_selection",
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_jeonse_loan_products",
+      "actual_tool_params": {}
+    },
+    {
+      "id": "jeonse_loan_reason_3",
+      "condition": "A",
+      "phrasing_type": "reason",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_jeonse_loan_products",
+      "actual_tool_params": {
+        "bank_name_filter": "농협"
+      }
+    },
+    {
+      "id": "jeonse_loan_reason_3",
+      "condition": "B",
+      "phrasing_type": "reason",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_jeonse_loan_products",
+      "actual_tool_params": {
+        "bank_name_filter": "농협"
+      }
+    },
+    {
+      "id": "jeonse_loan_reason_4",
+      "condition": "A",
+      "phrasing_type": "reason",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_jeonse_loan_products",
+      "actual_tool_params": {
+        "bank_name_filter": "하나"
+      }
+    },
+    {
+      "id": "jeonse_loan_reason_4",
+      "condition": "B",
+      "phrasing_type": "reason",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_jeonse_loan_products",
+      "actual_tool_params": {
+        "bank_name_filter": "하나"
+      }
+    },
+    {
+      "id": "jeonse_loan_reason_5",
+      "condition": "A",
+      "phrasing_type": "reason",
+      "complexity": "complex",
+      "reached_retry": true,
+      "first_attempt_error": "empty_result",
+      "tool_success": false,
+      "answer_accurate": false,
+      "actual_tool_name": "recommend_jeonse_loan_products",
+      "actual_tool_params": {
+        "bank_name_filter": "신협"
+      }
+    },
+    {
+      "id": "jeonse_loan_reason_5",
+      "condition": "B",
+      "phrasing_type": "reason",
+      "complexity": "complex",
+      "reached_retry": true,
+      "first_attempt_error": "empty_result",
+      "tool_success": true,
+      "answer_accurate": false,
+      "actual_tool_name": "recommend_jeonse_loan_products",
+      "actual_tool_params": {}
+    },
+    {
+      "id": "jeonse_loan_vague_1",
+      "condition": "A",
+      "phrasing_type": "vague",
+      "complexity": "simple",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_jeonse_loan_products",
+      "actual_tool_params": {}
+    },
+    {
+      "id": "jeonse_loan_vague_1",
+      "condition": "B",
+      "phrasing_type": "vague",
+      "complexity": "simple",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_jeonse_loan_products",
+      "actual_tool_params": {}
+    },
+    {
+      "id": "jeonse_loan_vague_2",
+      "condition": "A",
+      "phrasing_type": "vague",
+      "complexity": "simple",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_jeonse_loan_products",
+      "actual_tool_params": {
+        "bank_name_filter": null
+      }
+    },
+    {
+      "id": "jeonse_loan_vague_2",
+      "condition": "B",
+      "phrasing_type": "vague",
+      "complexity": "simple",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_jeonse_loan_products",
+      "actual_tool_params": {
+        "bank_name_filter": null
+      }
+    },
+    {
+      "id": "jeonse_loan_vague_3",
+      "condition": "A",
+      "phrasing_type": "vague",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_jeonse_loan_products",
+      "actual_tool_params": {
+        "bank_name_filter": "농협"
+      }
+    },
+    {
+      "id": "jeonse_loan_vague_3",
+      "condition": "B",
+      "phrasing_type": "vague",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_jeonse_loan_products",
+      "actual_tool_params": {
+        "bank_name_filter": "농협"
+      }
+    },
+    {
+      "id": "jeonse_loan_vague_4",
+      "condition": "A",
+      "phrasing_type": "vague",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_jeonse_loan_products",
+      "actual_tool_params": {
+        "bank_name_filter": "하나"
+      }
+    },
+    {
+      "id": "jeonse_loan_vague_4",
+      "condition": "B",
+      "phrasing_type": "vague",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_jeonse_loan_products",
+      "actual_tool_params": {
+        "bank_name_filter": "하나"
+      }
+    },
+    {
+      "id": "jeonse_loan_vague_5",
+      "condition": "A",
+      "phrasing_type": "vague",
+      "complexity": "complex",
+      "reached_retry": true,
+      "first_attempt_error": "empty_result",
+      "tool_success": false,
+      "answer_accurate": false,
+      "actual_tool_name": "recommend_jeonse_loan_products",
+      "actual_tool_params": {
+        "bank_name_filter": "신협"
+      }
+    },
+    {
+      "id": "jeonse_loan_vague_5",
+      "condition": "B",
+      "phrasing_type": "vague",
+      "complexity": "complex",
+      "reached_retry": true,
+      "first_attempt_error": "empty_result",
+      "tool_success": true,
+      "answer_accurate": false,
+      "actual_tool_name": "recommend_jeonse_loan_products",
+      "actual_tool_params": {
+        "bank_name_filter": null
+      }
+    },
+    {
+      "id": "mortgage_loan_procedural_1",
+      "condition": "A",
+      "phrasing_type": "procedural",
+      "complexity": "simple",
+      "reached_retry": true,
+      "first_attempt_error": "no_selection",
+      "tool_success": false,
+      "answer_accurate": false,
+      "actual_tool_name": null,
+      "actual_tool_params": null
+    },
+    {
+      "id": "mortgage_loan_procedural_1",
+      "condition": "B",
+      "phrasing_type": "procedural",
+      "complexity": "simple",
+      "reached_retry": true,
+      "first_attempt_error": "no_selection",
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_mortgage_loan_products",
+      "actual_tool_params": {}
+    },
+    {
+      "id": "mortgage_loan_procedural_2",
+      "condition": "A",
+      "phrasing_type": "procedural",
+      "complexity": "simple",
+      "reached_retry": true,
+      "first_attempt_error": "no_selection",
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_mortgage_loan_products",
+      "actual_tool_params": {}
+    },
+    {
+      "id": "mortgage_loan_procedural_2",
+      "condition": "B",
+      "phrasing_type": "procedural",
+      "complexity": "simple",
+      "reached_retry": true,
+      "first_attempt_error": "no_selection",
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_mortgage_loan_products",
+      "actual_tool_params": {
+        "bank_name_filter": null
+      }
+    },
+    {
+      "id": "mortgage_loan_procedural_3",
+      "condition": "A",
+      "phrasing_type": "procedural",
+      "complexity": "complex",
+      "reached_retry": true,
+      "first_attempt_error": "no_selection",
+      "tool_success": false,
+      "answer_accurate": false,
+      "actual_tool_name": null,
+      "actual_tool_params": null
+    },
+    {
+      "id": "mortgage_loan_procedural_3",
+      "condition": "B",
+      "phrasing_type": "procedural",
+      "complexity": "complex",
+      "reached_retry": true,
+      "first_attempt_error": "no_selection",
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_mortgage_loan_products",
+      "actual_tool_params": {
+        "bank_name_filter": "국민은행"
+      }
+    },
+    {
+      "id": "mortgage_loan_procedural_4",
+      "condition": "A",
+      "phrasing_type": "procedural",
+      "complexity": "complex",
+      "reached_retry": true,
+      "first_attempt_error": "no_selection",
+      "tool_success": false,
+      "answer_accurate": false,
+      "actual_tool_name": null,
+      "actual_tool_params": null
+    },
+    {
+      "id": "mortgage_loan_procedural_4",
+      "condition": "B",
+      "phrasing_type": "procedural",
+      "complexity": "complex",
+      "reached_retry": true,
+      "first_attempt_error": "no_selection",
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_mortgage_loan_products",
+      "actual_tool_params": {
+        "bank_name_filter": "부산은행"
+      }
+    },
+    {
+      "id": "mortgage_loan_procedural_5",
+      "condition": "A",
+      "phrasing_type": "procedural",
+      "complexity": "complex",
+      "reached_retry": true,
+      "first_attempt_error": "no_selection",
+      "tool_success": false,
+      "answer_accurate": false,
+      "actual_tool_name": null,
+      "actual_tool_params": null
+    },
+    {
+      "id": "mortgage_loan_procedural_5",
+      "condition": "B",
+      "phrasing_type": "procedural",
+      "complexity": "complex",
+      "reached_retry": true,
+      "first_attempt_error": "no_selection",
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_mortgage_loan_products",
+      "actual_tool_params": {
+        "bank_name_filter": "경남은행"
+      }
+    },
+    {
+      "id": "mortgage_loan_reconfirm_1",
+      "condition": "A",
+      "phrasing_type": "reconfirm",
+      "complexity": "simple",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_mortgage_loan_products",
+      "actual_tool_params": {
+        "bank_name_filter": null
+      }
+    },
+    {
+      "id": "mortgage_loan_reconfirm_1",
+      "condition": "B",
+      "phrasing_type": "reconfirm",
+      "complexity": "simple",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_mortgage_loan_products",
+      "actual_tool_params": {
+        "bank_name_filter": null
+      }
+    },
+    {
+      "id": "mortgage_loan_reconfirm_2",
+      "condition": "A",
+      "phrasing_type": "reconfirm",
+      "complexity": "simple",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_mortgage_loan_products",
+      "actual_tool_params": {}
+    },
+    {
+      "id": "mortgage_loan_reconfirm_2",
+      "condition": "B",
+      "phrasing_type": "reconfirm",
+      "complexity": "simple",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_mortgage_loan_products",
+      "actual_tool_params": {}
+    },
+    {
+      "id": "mortgage_loan_reconfirm_3",
+      "condition": "A",
+      "phrasing_type": "reconfirm",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_mortgage_loan_products",
+      "actual_tool_params": {
+        "bank_name_filter": "국민은행"
+      }
+    },
+    {
+      "id": "mortgage_loan_reconfirm_3",
+      "condition": "B",
+      "phrasing_type": "reconfirm",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_mortgage_loan_products",
+      "actual_tool_params": {
+        "bank_name_filter": "국민은행"
+      }
+    },
+    {
+      "id": "mortgage_loan_reconfirm_4",
+      "condition": "A",
+      "phrasing_type": "reconfirm",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_mortgage_loan_products",
+      "actual_tool_params": {
+        "bank_name_filter": "부산은행"
+      }
+    },
+    {
+      "id": "mortgage_loan_reconfirm_4",
+      "condition": "B",
+      "phrasing_type": "reconfirm",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_mortgage_loan_products",
+      "actual_tool_params": {
+        "bank_name_filter": "부산은행"
+      }
+    },
+    {
+      "id": "mortgage_loan_reconfirm_5",
+      "condition": "A",
+      "phrasing_type": "reconfirm",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_mortgage_loan_products",
+      "actual_tool_params": {
+        "bank_name_filter": "경남은행"
+      }
+    },
+    {
+      "id": "mortgage_loan_reconfirm_5",
+      "condition": "B",
+      "phrasing_type": "reconfirm",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_mortgage_loan_products",
+      "actual_tool_params": {
+        "bank_name_filter": "경남은행"
+      }
+    },
+    {
+      "id": "mortgage_loan_reason_1",
+      "condition": "A",
+      "phrasing_type": "reason",
+      "complexity": "simple",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_mortgage_loan_products",
+      "actual_tool_params": {}
+    },
+    {
+      "id": "mortgage_loan_reason_1",
+      "condition": "B",
+      "phrasing_type": "reason",
+      "complexity": "simple",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_mortgage_loan_products",
+      "actual_tool_params": {}
+    },
+    {
+      "id": "mortgage_loan_reason_2",
+      "condition": "A",
+      "phrasing_type": "reason",
+      "complexity": "simple",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_mortgage_loan_products",
+      "actual_tool_params": {}
+    },
+    {
+      "id": "mortgage_loan_reason_2",
+      "condition": "B",
+      "phrasing_type": "reason",
+      "complexity": "simple",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_mortgage_loan_products",
+      "actual_tool_params": {}
+    },
+    {
+      "id": "mortgage_loan_reason_3",
+      "condition": "A",
+      "phrasing_type": "reason",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_mortgage_loan_products",
+      "actual_tool_params": {
+        "bank_name_filter": "국민은행"
+      }
+    },
+    {
+      "id": "mortgage_loan_reason_3",
+      "condition": "B",
+      "phrasing_type": "reason",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_mortgage_loan_products",
+      "actual_tool_params": {
+        "bank_name_filter": "국민은행"
+      }
+    },
+    {
+      "id": "mortgage_loan_reason_4",
+      "condition": "A",
+      "phrasing_type": "reason",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_mortgage_loan_products",
+      "actual_tool_params": {
+        "bank_name_filter": "부산은행"
+      }
+    },
+    {
+      "id": "mortgage_loan_reason_4",
+      "condition": "B",
+      "phrasing_type": "reason",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_mortgage_loan_products",
+      "actual_tool_params": {
+        "bank_name_filter": "부산은행"
+      }
+    },
+    {
+      "id": "mortgage_loan_reason_5",
+      "condition": "A",
+      "phrasing_type": "reason",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_mortgage_loan_products",
+      "actual_tool_params": {
+        "bank_name_filter": "경남은행"
+      }
+    },
+    {
+      "id": "mortgage_loan_reason_5",
+      "condition": "B",
+      "phrasing_type": "reason",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_mortgage_loan_products",
+      "actual_tool_params": {
+        "bank_name_filter": "경남은행"
+      }
+    },
+    {
+      "id": "mortgage_loan_vague_1",
+      "condition": "A",
+      "phrasing_type": "vague",
+      "complexity": "simple",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_mortgage_loan_products",
+      "actual_tool_params": {}
+    },
+    {
+      "id": "mortgage_loan_vague_1",
+      "condition": "B",
+      "phrasing_type": "vague",
+      "complexity": "simple",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_mortgage_loan_products",
+      "actual_tool_params": {}
+    },
+    {
+      "id": "mortgage_loan_vague_2",
+      "condition": "A",
+      "phrasing_type": "vague",
+      "complexity": "simple",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_mortgage_loan_products",
+      "actual_tool_params": {
+        "bank_name_filter": null
+      }
+    },
+    {
+      "id": "mortgage_loan_vague_2",
+      "condition": "B",
+      "phrasing_type": "vague",
+      "complexity": "simple",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_mortgage_loan_products",
+      "actual_tool_params": {
+        "bank_name_filter": null
+      }
+    },
+    {
+      "id": "mortgage_loan_vague_3",
+      "condition": "A",
+      "phrasing_type": "vague",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_mortgage_loan_products",
+      "actual_tool_params": {
+        "bank_name_filter": "국민은행"
+      }
+    },
+    {
+      "id": "mortgage_loan_vague_3",
+      "condition": "B",
+      "phrasing_type": "vague",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_mortgage_loan_products",
+      "actual_tool_params": {
+        "bank_name_filter": "국민은행"
+      }
+    },
+    {
+      "id": "mortgage_loan_vague_4",
+      "condition": "A",
+      "phrasing_type": "vague",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_mortgage_loan_products",
+      "actual_tool_params": {
+        "bank_name_filter": "부산은행"
+      }
+    },
+    {
+      "id": "mortgage_loan_vague_4",
+      "condition": "B",
+      "phrasing_type": "vague",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_mortgage_loan_products",
+      "actual_tool_params": {
+        "bank_name_filter": "부산은행"
+      }
+    },
+    {
+      "id": "mortgage_loan_vague_5",
+      "condition": "A",
+      "phrasing_type": "vague",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_mortgage_loan_products",
+      "actual_tool_params": {
+        "bank_name_filter": "경남은행"
+      }
+    },
+    {
+      "id": "mortgage_loan_vague_5",
+      "condition": "B",
+      "phrasing_type": "vague",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_mortgage_loan_products",
+      "actual_tool_params": {
+        "bank_name_filter": "경남은행"
+      }
+    },
+    {
+      "id": "business_loan_procedural_1",
+      "condition": "A",
+      "phrasing_type": "procedural",
+      "complexity": "simple",
+      "reached_retry": true,
+      "first_attempt_error": "no_selection",
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_business_loan_products",
+      "actual_tool_params": {
+        "credit_score": 700
+      }
+    },
+    {
+      "id": "business_loan_procedural_1",
+      "condition": "B",
+      "phrasing_type": "procedural",
+      "complexity": "simple",
+      "reached_retry": true,
+      "first_attempt_error": "no_selection",
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_business_loan_products",
+      "actual_tool_params": {}
+    },
+    {
+      "id": "business_loan_procedural_2",
+      "condition": "A",
+      "phrasing_type": "procedural",
+      "complexity": "simple",
+      "reached_retry": true,
+      "first_attempt_error": "no_selection",
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_business_loan_products",
+      "actual_tool_params": {
+        "credit_score": 700
+      }
+    },
+    {
+      "id": "business_loan_procedural_2",
+      "condition": "B",
+      "phrasing_type": "procedural",
+      "complexity": "simple",
+      "reached_retry": true,
+      "first_attempt_error": "no_selection",
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_business_loan_products",
+      "actual_tool_params": {}
+    },
+    {
+      "id": "business_loan_procedural_3",
+      "condition": "A",
+      "phrasing_type": "procedural",
+      "complexity": "complex",
+      "reached_retry": true,
+      "first_attempt_error": "no_selection",
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_business_loan_products",
+      "actual_tool_params": {
+        "credit_score": 600
+      }
+    },
+    {
+      "id": "business_loan_procedural_3",
+      "condition": "B",
+      "phrasing_type": "procedural",
+      "complexity": "complex",
+      "reached_retry": true,
+      "first_attempt_error": "no_selection",
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_business_loan_products",
+      "actual_tool_params": {
+        "credit_score": 600
+      }
+    },
+    {
+      "id": "business_loan_procedural_4",
+      "condition": "A",
+      "phrasing_type": "procedural",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_business_loan_products",
+      "actual_tool_params": {
+        "credit_score": 700
+      }
+    },
+    {
+      "id": "business_loan_procedural_4",
+      "condition": "B",
+      "phrasing_type": "procedural",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_business_loan_products",
+      "actual_tool_params": {
+        "credit_score": 700
+      }
+    },
+    {
+      "id": "business_loan_procedural_5",
+      "condition": "A",
+      "phrasing_type": "procedural",
+      "complexity": "complex",
+      "reached_retry": true,
+      "first_attempt_error": "no_selection",
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_business_loan_products",
+      "actual_tool_params": {
+        "credit_score": 850
+      }
+    },
+    {
+      "id": "business_loan_procedural_5",
+      "condition": "B",
+      "phrasing_type": "procedural",
+      "complexity": "complex",
+      "reached_retry": true,
+      "first_attempt_error": "no_selection",
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_business_loan_products",
+      "actual_tool_params": {
+        "credit_score": 850
+      }
+    },
+    {
+      "id": "business_loan_reconfirm_1",
+      "condition": "A",
+      "phrasing_type": "reconfirm",
+      "complexity": "simple",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_business_loan_products",
+      "actual_tool_params": {}
+    },
+    {
+      "id": "business_loan_reconfirm_1",
+      "condition": "B",
+      "phrasing_type": "reconfirm",
+      "complexity": "simple",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_business_loan_products",
+      "actual_tool_params": {}
+    },
+    {
+      "id": "business_loan_reconfirm_2",
+      "condition": "A",
+      "phrasing_type": "reconfirm",
+      "complexity": "simple",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_business_loan_products",
+      "actual_tool_params": {}
+    },
+    {
+      "id": "business_loan_reconfirm_2",
+      "condition": "B",
+      "phrasing_type": "reconfirm",
+      "complexity": "simple",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_business_loan_products",
+      "actual_tool_params": {}
+    },
+    {
+      "id": "business_loan_reconfirm_3",
+      "condition": "A",
+      "phrasing_type": "reconfirm",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_business_loan_products",
+      "actual_tool_params": {
+        "credit_score": 600
+      }
+    },
+    {
+      "id": "business_loan_reconfirm_3",
+      "condition": "B",
+      "phrasing_type": "reconfirm",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_business_loan_products",
+      "actual_tool_params": {
+        "credit_score": 600
+      }
+    },
+    {
+      "id": "business_loan_reconfirm_4",
+      "condition": "A",
+      "phrasing_type": "reconfirm",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_business_loan_products",
+      "actual_tool_params": {
+        "credit_score": 700
+      }
+    },
+    {
+      "id": "business_loan_reconfirm_4",
+      "condition": "B",
+      "phrasing_type": "reconfirm",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_business_loan_products",
+      "actual_tool_params": {
+        "credit_score": 700
+      }
+    },
+    {
+      "id": "business_loan_reconfirm_5",
+      "condition": "A",
+      "phrasing_type": "reconfirm",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_business_loan_products",
+      "actual_tool_params": {
+        "credit_score": 850
+      }
+    },
+    {
+      "id": "business_loan_reconfirm_5",
+      "condition": "B",
+      "phrasing_type": "reconfirm",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_business_loan_products",
+      "actual_tool_params": {
+        "credit_score": 850
+      }
+    },
+    {
+      "id": "business_loan_reason_1",
+      "condition": "A",
+      "phrasing_type": "reason",
+      "complexity": "simple",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_business_loan_products",
+      "actual_tool_params": {}
+    },
+    {
+      "id": "business_loan_reason_1",
+      "condition": "B",
+      "phrasing_type": "reason",
+      "complexity": "simple",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_business_loan_products",
+      "actual_tool_params": {}
+    },
+    {
+      "id": "business_loan_reason_2",
+      "condition": "A",
+      "phrasing_type": "reason",
+      "complexity": "simple",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_business_loan_products",
+      "actual_tool_params": {}
+    },
+    {
+      "id": "business_loan_reason_2",
+      "condition": "B",
+      "phrasing_type": "reason",
+      "complexity": "simple",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_business_loan_products",
+      "actual_tool_params": {}
+    },
+    {
+      "id": "business_loan_reason_3",
+      "condition": "A",
+      "phrasing_type": "reason",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_business_loan_products",
+      "actual_tool_params": {
+        "credit_score": 600
+      }
+    },
+    {
+      "id": "business_loan_reason_3",
+      "condition": "B",
+      "phrasing_type": "reason",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_business_loan_products",
+      "actual_tool_params": {
+        "credit_score": 600
+      }
+    },
+    {
+      "id": "business_loan_reason_4",
+      "condition": "A",
+      "phrasing_type": "reason",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_business_loan_products",
+      "actual_tool_params": {
+        "credit_score": 700
+      }
+    },
+    {
+      "id": "business_loan_reason_4",
+      "condition": "B",
+      "phrasing_type": "reason",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_business_loan_products",
+      "actual_tool_params": {
+        "credit_score": 700
+      }
+    },
+    {
+      "id": "business_loan_reason_5",
+      "condition": "A",
+      "phrasing_type": "reason",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_business_loan_products",
+      "actual_tool_params": {
+        "credit_score": 850
+      }
+    },
+    {
+      "id": "business_loan_reason_5",
+      "condition": "B",
+      "phrasing_type": "reason",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_business_loan_products",
+      "actual_tool_params": {
+        "credit_score": 850
+      }
+    },
+    {
+      "id": "business_loan_vague_1",
+      "condition": "A",
+      "phrasing_type": "vague",
+      "complexity": "simple",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_business_loan_products",
+      "actual_tool_params": {}
+    },
+    {
+      "id": "business_loan_vague_1",
+      "condition": "B",
+      "phrasing_type": "vague",
+      "complexity": "simple",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_business_loan_products",
+      "actual_tool_params": {}
+    },
+    {
+      "id": "business_loan_vague_2",
+      "condition": "A",
+      "phrasing_type": "vague",
+      "complexity": "simple",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_business_loan_products",
+      "actual_tool_params": {
+        "credit_score": 700
+      }
+    },
+    {
+      "id": "business_loan_vague_2",
+      "condition": "B",
+      "phrasing_type": "vague",
+      "complexity": "simple",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_business_loan_products",
+      "actual_tool_params": {
+        "credit_score": 700
+      }
+    },
+    {
+      "id": "business_loan_vague_3",
+      "condition": "A",
+      "phrasing_type": "vague",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_business_loan_products",
+      "actual_tool_params": {
+        "credit_score": 600
+      }
+    },
+    {
+      "id": "business_loan_vague_3",
+      "condition": "B",
+      "phrasing_type": "vague",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_business_loan_products",
+      "actual_tool_params": {
+        "credit_score": 600
+      }
+    },
+    {
+      "id": "business_loan_vague_4",
+      "condition": "A",
+      "phrasing_type": "vague",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_business_loan_products",
+      "actual_tool_params": {
+        "credit_score": 700
+      }
+    },
+    {
+      "id": "business_loan_vague_4",
+      "condition": "B",
+      "phrasing_type": "vague",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_business_loan_products",
+      "actual_tool_params": {
+        "credit_score": 700
+      }
+    },
+    {
+      "id": "business_loan_vague_5",
+      "condition": "A",
+      "phrasing_type": "vague",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_business_loan_products",
+      "actual_tool_params": {
+        "credit_score": 850
+      }
+    },
+    {
+      "id": "business_loan_vague_5",
+      "condition": "B",
+      "phrasing_type": "vague",
+      "complexity": "complex",
+      "reached_retry": false,
+      "first_attempt_error": null,
+      "tool_success": true,
+      "answer_accurate": true,
+      "actual_tool_name": "recommend_business_loan_products",
+      "actual_tool_params": {
+        "credit_score": 850
+      }
+    }
+  ],
+  "summary": {
+    "A": {
+      "n": 100,
+      "reached_retry_n": 27,
+      "tool_success_rate": 0.86,
+      "answer_accuracy_rate": 0.8,
+      "by_phrasing_type": {
+        "procedural": {
+          "n": 25,
+          "tool_success": 14
+        },
+        "reconfirm": {
+          "n": 25,
+          "tool_success": 24
+        },
+        "reason": {
+          "n": 25,
+          "tool_success": 24
+        },
+        "vague": {
+          "n": 25,
+          "tool_success": 24
+        }
+      }
+    },
+    "B": {
+      "n": 100,
+      "reached_retry_n": 27,
+      "tool_success_rate": 0.99,
+      "answer_accuracy_rate": 0.88,
+      "by_phrasing_type": {
+        "procedural": {
+          "n": 25,
+          "tool_success": 24
+        },
+        "reconfirm": {
+          "n": 25,
+          "tool_success": 25
+        },
+        "reason": {
+          "n": 25,
+          "tool_success": 25
+        },
+        "vague": {
+          "n": 25,
+          "tool_success": 25
+        }
+      }
+    }
+  }
+}

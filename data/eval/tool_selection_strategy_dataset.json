@@ -1,0 +1,1222 @@
+[
+  {
+    "id": "deposit_procedural_1",
+    "product": "deposit",
+    "phrasing_type": "procedural",
+    "complexity": "simple",
+    "turn1_query": "정기예금 좋은 상품 추천해줘",
+    "turn1_answer": "정기예금 상품 3건을 안내드립니다.",
+    "turn2_query": "어떻게 신청하나요?",
+    "expected_tool_name": "recommend_deposit_products",
+    "expected_tool_params_contains": {}
+  },
+  {
+    "id": "deposit_procedural_2",
+    "product": "deposit",
+    "phrasing_type": "procedural",
+    "complexity": "simple",
+    "turn1_query": "정기예금 좋은 상품 추천해줘",
+    "turn1_answer": "정기예금 상품 3건을 안내드립니다.",
+    "turn2_query": "신청은 어디서 하나요?",
+    "expected_tool_name": "recommend_deposit_products",
+    "expected_tool_params_contains": {}
+  },
+  {
+    "id": "deposit_procedural_3",
+    "product": "deposit",
+    "phrasing_type": "procedural",
+    "complexity": "complex",
+    "turn1_query": "6개월짜리 정기예금 좋은 상품 추천해줘",
+    "turn1_answer": "정기예금 상품 3건을 안내드립니다.",
+    "turn2_query": "필요한 서류가 있나요?",
+    "expected_tool_name": "recommend_deposit_products",
+    "expected_tool_params_contains": {
+      "save_term_months": 6
+    }
+  },
+  {
+    "id": "deposit_procedural_4",
+    "product": "deposit",
+    "phrasing_type": "procedural",
+    "complexity": "complex",
+    "turn1_query": "24개월짜리 정기예금 좋은 상품 추천해줘",
+    "turn1_answer": "정기예금 상품 3건을 안내드립니다.",
+    "turn2_query": "언제부터 신청 가능해요?",
+    "expected_tool_name": "recommend_deposit_products",
+    "expected_tool_params_contains": {
+      "save_term_months": 24
+    }
+  },
+  {
+    "id": "deposit_procedural_5",
+    "product": "deposit",
+    "phrasing_type": "procedural",
+    "complexity": "complex",
+    "turn1_query": "36개월짜리 정기예금 좋은 상품 추천해줘",
+    "turn1_answer": "정기예금 상품 3건을 안내드립니다.",
+    "turn2_query": "신청 절차가 궁금해요",
+    "expected_tool_name": "recommend_deposit_products",
+    "expected_tool_params_contains": {
+      "save_term_months": 36
+    }
+  },
+  {
+    "id": "deposit_reconfirm_1",
+    "product": "deposit",
+    "phrasing_type": "reconfirm",
+    "complexity": "simple",
+    "turn1_query": "정기예금 좋은 상품 추천해줘",
+    "turn1_answer": "정기예금 상품 3건을 안내드립니다.",
+    "turn2_query": "그게 다예요?",
+    "expected_tool_name": "recommend_deposit_products",
+    "expected_tool_params_contains": {}
+  },
+  {
+    "id": "deposit_reconfirm_2",
+    "product": "deposit",
+    "phrasing_type": "reconfirm",
+    "complexity": "simple",
+    "turn1_query": "정기예금 좋은 상품 추천해줘",
+    "turn1_answer": "정기예금 상품 3건을 안내드립니다.",
+    "turn2_query": "다시 한번 봐주세요",
+    "expected_tool_name": "recommend_deposit_products",
+    "expected_tool_params_contains": {}
+  },
+  {
+    "id": "deposit_reconfirm_3",
+    "product": "deposit",
+    "phrasing_type": "reconfirm",
+    "complexity": "complex",
+    "turn1_query": "6개월짜리 정기예금 좋은 상품 추천해줘",
+    "turn1_answer": "정기예금 상품 3건을 안내드립니다.",
+    "turn2_query": "정말이에요?",
+    "expected_tool_name": "recommend_deposit_products",
+    "expected_tool_params_contains": {
+      "save_term_months": 6
+    }
+  },
+  {
+    "id": "deposit_reconfirm_4",
+    "product": "deposit",
+    "phrasing_type": "reconfirm",
+    "complexity": "complex",
+    "turn1_query": "24개월짜리 정기예금 좋은 상품 추천해줘",
+    "turn1_answer": "정기예금 상품 3건을 안내드립니다.",
+    "turn2_query": "다시 조회해주세요",
+    "expected_tool_name": "recommend_deposit_products",
+    "expected_tool_params_contains": {
+      "save_term_months": 24
+    }
+  },
+  {
+    "id": "deposit_reconfirm_5",
+    "product": "deposit",
+    "phrasing_type": "reconfirm",
+    "complexity": "complex",
+    "turn1_query": "36개월짜리 정기예금 좋은 상품 추천해줘",
+    "turn1_answer": "정기예금 상품 3건을 안내드립니다.",
+    "turn2_query": "확실한 건가요?",
+    "expected_tool_name": "recommend_deposit_products",
+    "expected_tool_params_contains": {
+      "save_term_months": 36
+    }
+  },
+  {
+    "id": "deposit_reason_1",
+    "product": "deposit",
+    "phrasing_type": "reason",
+    "complexity": "simple",
+    "turn1_query": "정기예금 좋은 상품 추천해줘",
+    "turn1_answer": "정기예금 상품 3건을 안내드립니다.",
+    "turn2_query": "왜 안돼요?",
+    "expected_tool_name": "recommend_deposit_products",
+    "expected_tool_params_contains": {}
+  },
+  {
+    "id": "deposit_reason_2",
+    "product": "deposit",
+    "phrasing_type": "reason",
+    "complexity": "simple",
+    "turn1_query": "정기예금 좋은 상품 추천해줘",
+    "turn1_answer": "정기예금 상품 3건을 안내드립니다.",
+    "turn2_query": "그건 왜 그런거죠?",
+    "expected_tool_name": "recommend_deposit_products",
+    "expected_tool_params_contains": {}
+  },
+  {
+    "id": "deposit_reason_3",
+    "product": "deposit",
+    "phrasing_type": "reason",
+    "complexity": "complex",
+    "turn1_query": "6개월짜리 정기예금 좋은 상품 추천해줘",
+    "turn1_answer": "정기예금 상품 3건을 안내드립니다.",
+    "turn2_query": "왜 그런 거예요?",
+    "expected_tool_name": "recommend_deposit_products",
+    "expected_tool_params_contains": {
+      "save_term_months": 6
+    }
+  },
+  {
+    "id": "deposit_reason_4",
+    "product": "deposit",
+    "phrasing_type": "reason",
+    "complexity": "complex",
+    "turn1_query": "24개월짜리 정기예금 좋은 상품 추천해줘",
+    "turn1_answer": "정기예금 상품 3건을 안내드립니다.",
+    "turn2_query": "이유가 뭔가요?",
+    "expected_tool_name": "recommend_deposit_products",
+    "expected_tool_params_contains": {
+      "save_term_months": 24
+    }
+  },
+  {
+    "id": "deposit_reason_5",
+    "product": "deposit",
+    "phrasing_type": "reason",
+    "complexity": "complex",
+    "turn1_query": "36개월짜리 정기예금 좋은 상품 추천해줘",
+    "turn1_answer": "정기예금 상품 3건을 안내드립니다.",
+    "turn2_query": "어째서 그런가요?",
+    "expected_tool_name": "recommend_deposit_products",
+    "expected_tool_params_contains": {
+      "save_term_months": 36
+    }
+  },
+  {
+    "id": "deposit_vague_1",
+    "product": "deposit",
+    "phrasing_type": "vague",
+    "complexity": "simple",
+    "turn1_query": "정기예금 좋은 상품 추천해줘",
+    "turn1_answer": "정기예금 상품 3건을 안내드립니다.",
+    "turn2_query": "그런가요?",
+    "expected_tool_name": "recommend_deposit_products",
+    "expected_tool_params_contains": {}
+  },
+  {
+    "id": "deposit_vague_2",
+    "product": "deposit",
+    "phrasing_type": "vague",
+    "complexity": "simple",
+    "turn1_query": "정기예금 좋은 상품 추천해줘",
+    "turn1_answer": "정기예금 상품 3건을 안내드립니다.",
+    "turn2_query": "그거 좀 더 알려주세요",
+    "expected_tool_name": "recommend_deposit_products",
+    "expected_tool_params_contains": {}
+  },
+  {
+    "id": "deposit_vague_3",
+    "product": "deposit",
+    "phrasing_type": "vague",
+    "complexity": "complex",
+    "turn1_query": "6개월짜리 정기예금 좋은 상품 추천해줘",
+    "turn1_answer": "정기예금 상품 3건을 안내드립니다.",
+    "turn2_query": "음, 그래요?",
+    "expected_tool_name": "recommend_deposit_products",
+    "expected_tool_params_contains": {
+      "save_term_months": 6
+    }
+  },
+  {
+    "id": "deposit_vague_4",
+    "product": "deposit",
+    "phrasing_type": "vague",
+    "complexity": "complex",
+    "turn1_query": "24개월짜리 정기예금 좋은 상품 추천해줘",
+    "turn1_answer": "정기예금 상품 3건을 안내드립니다.",
+    "turn2_query": "좀 더 자세히요",
+    "expected_tool_name": "recommend_deposit_products",
+    "expected_tool_params_contains": {
+      "save_term_months": 24
+    }
+  },
+  {
+    "id": "deposit_vague_5",
+    "product": "deposit",
+    "phrasing_type": "vague",
+    "complexity": "complex",
+    "turn1_query": "36개월짜리 정기예금 좋은 상품 추천해줘",
+    "turn1_answer": "정기예금 상품 3건을 안내드립니다.",
+    "turn2_query": "그거 어떻게 되나요?",
+    "expected_tool_name": "recommend_deposit_products",
+    "expected_tool_params_contains": {
+      "save_term_months": 36
+    }
+  },
+  {
+    "id": "credit_loan_procedural_1",
+    "product": "credit_loan",
+    "phrasing_type": "procedural",
+    "complexity": "simple",
+    "turn1_query": "신용대출 상품 알아봐줘",
+    "turn1_answer": "신용대출 상품 3건을 안내드립니다.",
+    "turn2_query": "어떻게 신청하나요?",
+    "expected_tool_name": "recommend_credit_loan_products",
+    "expected_tool_params_contains": {}
+  },
+  {
+    "id": "credit_loan_procedural_2",
+    "product": "credit_loan",
+    "phrasing_type": "procedural",
+    "complexity": "simple",
+    "turn1_query": "신용대출 상품 알아봐줘",
+    "turn1_answer": "신용대출 상품 3건을 안내드립니다.",
+    "turn2_query": "신청은 어디서 하나요?",
+    "expected_tool_name": "recommend_credit_loan_products",
+    "expected_tool_params_contains": {}
+  },
+  {
+    "id": "credit_loan_procedural_3",
+    "product": "credit_loan",
+    "phrasing_type": "procedural",
+    "complexity": "complex",
+    "turn1_query": "신용점수 650인 고객 신용대출 알아봐줘",
+    "turn1_answer": "신용대출 상품 3건을 안내드립니다.",
+    "turn2_query": "필요한 서류가 있나요?",
+    "expected_tool_name": "recommend_credit_loan_products",
+    "expected_tool_params_contains": {
+      "credit_score": 650
+    }
+  },
+  {
+    "id": "credit_loan_procedural_4",
+    "product": "credit_loan",
+    "phrasing_type": "procedural",
+    "complexity": "complex",
+    "turn1_query": "신용점수 750인 고객 신용대출 알아봐줘",
+    "turn1_answer": "신용대출 상품 3건을 안내드립니다.",
+    "turn2_query": "언제부터 신청 가능해요?",
+    "expected_tool_name": "recommend_credit_loan_products",
+    "expected_tool_params_contains": {
+      "credit_score": 750
+    }
+  },
+  {
+    "id": "credit_loan_procedural_5",
+    "product": "credit_loan",
+    "phrasing_type": "procedural",
+    "complexity": "complex",
+    "turn1_query": "신용점수 800인 고객 신용대출 알아봐줘",
+    "turn1_answer": "신용대출 상품 3건을 안내드립니다.",
+    "turn2_query": "신청 절차가 궁금해요",
+    "expected_tool_name": "recommend_credit_loan_products",
+    "expected_tool_params_contains": {
+      "credit_score": 800
+    }
+  },
+  {
+    "id": "credit_loan_reconfirm_1",
+    "product": "credit_loan",
+    "phrasing_type": "reconfirm",
+    "complexity": "simple",
+    "turn1_query": "신용대출 상품 알아봐줘",
+    "turn1_answer": "신용대출 상품 3건을 안내드립니다.",
+    "turn2_query": "그게 다예요?",
+    "expected_tool_name": "recommend_credit_loan_products",
+    "expected_tool_params_contains": {}
+  },
+  {
+    "id": "credit_loan_reconfirm_2",
+    "product": "credit_loan",
+    "phrasing_type": "reconfirm",
+    "complexity": "simple",
+    "turn1_query": "신용대출 상품 알아봐줘",
+    "turn1_answer": "신용대출 상품 3건을 안내드립니다.",
+    "turn2_query": "다시 한번 봐주세요",
+    "expected_tool_name": "recommend_credit_loan_products",
+    "expected_tool_params_contains": {}
+  },
+  {
+    "id": "credit_loan_reconfirm_3",
+    "product": "credit_loan",
+    "phrasing_type": "reconfirm",
+    "complexity": "complex",
+    "turn1_query": "신용점수 650인 고객 신용대출 알아봐줘",
+    "turn1_answer": "신용대출 상품 3건을 안내드립니다.",
+    "turn2_query": "정말이에요?",
+    "expected_tool_name": "recommend_credit_loan_products",
+    "expected_tool_params_contains": {
+      "credit_score": 650
+    }
+  },
+  {
+    "id": "credit_loan_reconfirm_4",
+    "product": "credit_loan",
+    "phrasing_type": "reconfirm",
+    "complexity": "complex",
+    "turn1_query": "신용점수 750인 고객 신용대출 알아봐줘",
+    "turn1_answer": "신용대출 상품 3건을 안내드립니다.",
+    "turn2_query": "다시 조회해주세요",
+    "expected_tool_name": "recommend_credit_loan_products",
+    "expected_tool_params_contains": {
+      "credit_score": 750
+    }
+  },
+  {
+    "id": "credit_loan_reconfirm_5",
+    "product": "credit_loan",
+    "phrasing_type": "reconfirm",
+    "complexity": "complex",
+    "turn1_query": "신용점수 800인 고객 신용대출 알아봐줘",
+    "turn1_answer": "신용대출 상품 3건을 안내드립니다.",
+    "turn2_query": "확실한 건가요?",
+    "expected_tool_name": "recommend_credit_loan_products",
+    "expected_tool_params_contains": {
+      "credit_score": 800
+    }
+  },
+  {
+    "id": "credit_loan_reason_1",
+    "product": "credit_loan",
+    "phrasing_type": "reason",
+    "complexity": "simple",
+    "turn1_query": "신용대출 상품 알아봐줘",
+    "turn1_answer": "신용대출 상품 3건을 안내드립니다.",
+    "turn2_query": "왜 안돼요?",
+    "expected_tool_name": "recommend_credit_loan_products",
+    "expected_tool_params_contains": {}
+  },
+  {
+    "id": "credit_loan_reason_2",
+    "product": "credit_loan",
+    "phrasing_type": "reason",
+    "complexity": "simple",
+    "turn1_query": "신용대출 상품 알아봐줘",
+    "turn1_answer": "신용대출 상품 3건을 안내드립니다.",
+    "turn2_query": "그건 왜 그런거죠?",
+    "expected_tool_name": "recommend_credit_loan_products",
+    "expected_tool_params_contains": {}
+  },
+  {
+    "id": "credit_loan_reason_3",
+    "product": "credit_loan",
+    "phrasing_type": "reason",
+    "complexity": "complex",
+    "turn1_query": "신용점수 650인 고객 신용대출 알아봐줘",
+    "turn1_answer": "신용대출 상품 3건을 안내드립니다.",
+    "turn2_query": "왜 그런 거예요?",
+    "expected_tool_name": "recommend_credit_loan_products",
+    "expected_tool_params_contains": {
+      "credit_score": 650
+    }
+  },
+  {
+    "id": "credit_loan_reason_4",
+    "product": "credit_loan",
+    "phrasing_type": "reason",
+    "complexity": "complex",
+    "turn1_query": "신용점수 750인 고객 신용대출 알아봐줘",
+    "turn1_answer": "신용대출 상품 3건을 안내드립니다.",
+    "turn2_query": "이유가 뭔가요?",
+    "expected_tool_name": "recommend_credit_loan_products",
+    "expected_tool_params_contains": {
+      "credit_score": 750
+    }
+  },
+  {
+    "id": "credit_loan_reason_5",
+    "product": "credit_loan",
+    "phrasing_type": "reason",
+    "complexity": "complex",
+    "turn1_query": "신용점수 800인 고객 신용대출 알아봐줘",
+    "turn1_answer": "신용대출 상품 3건을 안내드립니다.",
+    "turn2_query": "어째서 그런가요?",
+    "expected_tool_name": "recommend_credit_loan_products",
+    "expected_tool_params_contains": {
+      "credit_score": 800
+    }
+  },
+  {
+    "id": "credit_loan_vague_1",
+    "product": "credit_loan",
+    "phrasing_type": "vague",
+    "complexity": "simple",
+    "turn1_query": "신용대출 상품 알아봐줘",
+    "turn1_answer": "신용대출 상품 3건을 안내드립니다.",
+    "turn2_query": "그런가요?",
+    "expected_tool_name": "recommend_credit_loan_products",
+    "expected_tool_params_contains": {}
+  },
+  {
+    "id": "credit_loan_vague_2",
+    "product": "credit_loan",
+    "phrasing_type": "vague",
+    "complexity": "simple",
+    "turn1_query": "신용대출 상품 알아봐줘",
+    "turn1_answer": "신용대출 상품 3건을 안내드립니다.",
+    "turn2_query": "그거 좀 더 알려주세요",
+    "expected_tool_name": "recommend_credit_loan_products",
+    "expected_tool_params_contains": {}
+  },
+  {
+    "id": "credit_loan_vague_3",
+    "product": "credit_loan",
+    "phrasing_type": "vague",
+    "complexity": "complex",
+    "turn1_query": "신용점수 650인 고객 신용대출 알아봐줘",
+    "turn1_answer": "신용대출 상품 3건을 안내드립니다.",
+    "turn2_query": "음, 그래요?",
+    "expected_tool_name": "recommend_credit_loan_products",
+    "expected_tool_params_contains": {
+      "credit_score": 650
+    }
+  },
+  {
+    "id": "credit_loan_vague_4",
+    "product": "credit_loan",
+    "phrasing_type": "vague",
+    "complexity": "complex",
+    "turn1_query": "신용점수 750인 고객 신용대출 알아봐줘",
+    "turn1_answer": "신용대출 상품 3건을 안내드립니다.",
+    "turn2_query": "좀 더 자세히요",
+    "expected_tool_name": "recommend_credit_loan_products",
+    "expected_tool_params_contains": {
+      "credit_score": 750
+    }
+  },
+  {
+    "id": "credit_loan_vague_5",
+    "product": "credit_loan",
+    "phrasing_type": "vague",
+    "complexity": "complex",
+    "turn1_query": "신용점수 800인 고객 신용대출 알아봐줘",
+    "turn1_answer": "신용대출 상품 3건을 안내드립니다.",
+    "turn2_query": "그거 어떻게 되나요?",
+    "expected_tool_name": "recommend_credit_loan_products",
+    "expected_tool_params_contains": {
+      "credit_score": 800
+    }
+  },
+  {
+    "id": "jeonse_loan_procedural_1",
+    "product": "jeonse_loan",
+    "phrasing_type": "procedural",
+    "complexity": "simple",
+    "turn1_query": "전세자금대출 상품 알아봐줘",
+    "turn1_answer": "전세자금대출 상품 3건을 안내드립니다.",
+    "turn2_query": "어떻게 신청하나요?",
+    "expected_tool_name": "recommend_jeonse_loan_products",
+    "expected_tool_params_contains": {}
+  },
+  {
+    "id": "jeonse_loan_procedural_2",
+    "product": "jeonse_loan",
+    "phrasing_type": "procedural",
+    "complexity": "simple",
+    "turn1_query": "전세자금대출 상품 알아봐줘",
+    "turn1_answer": "전세자금대출 상품 3건을 안내드립니다.",
+    "turn2_query": "신청은 어디서 하나요?",
+    "expected_tool_name": "recommend_jeonse_loan_products",
+    "expected_tool_params_contains": {}
+  },
+  {
+    "id": "jeonse_loan_procedural_3",
+    "product": "jeonse_loan",
+    "phrasing_type": "procedural",
+    "complexity": "complex",
+    "turn1_query": "농협은행 전세자금대출 상품 알아봐줘",
+    "turn1_answer": "전세자금대출 상품 3건을 안내드립니다.",
+    "turn2_query": "필요한 서류가 있나요?",
+    "expected_tool_name": "recommend_jeonse_loan_products",
+    "expected_tool_params_contains": {
+      "bank_name_filter": "농협은행"
+    }
+  },
+  {
+    "id": "jeonse_loan_procedural_4",
+    "product": "jeonse_loan",
+    "phrasing_type": "procedural",
+    "complexity": "complex",
+    "turn1_query": "하나은행 전세자금대출 상품 알아봐줘",
+    "turn1_answer": "전세자금대출 상품 3건을 안내드립니다.",
+    "turn2_query": "언제부터 신청 가능해요?",
+    "expected_tool_name": "recommend_jeonse_loan_products",
+    "expected_tool_params_contains": {
+      "bank_name_filter": "하나은행"
+    }
+  },
+  {
+    "id": "jeonse_loan_procedural_5",
+    "product": "jeonse_loan",
+    "phrasing_type": "procedural",
+    "complexity": "complex",
+    "turn1_query": "신협 전세자금대출 상품 알아봐줘",
+    "turn1_answer": "전세자금대출 상품 3건을 안내드립니다.",
+    "turn2_query": "신청 절차가 궁금해요",
+    "expected_tool_name": "recommend_jeonse_loan_products",
+    "expected_tool_params_contains": {
+      "bank_name_filter": "신협"
+    }
+  },
+  {
+    "id": "jeonse_loan_reconfirm_1",
+    "product": "jeonse_loan",
+    "phrasing_type": "reconfirm",
+    "complexity": "simple",
+    "turn1_query": "전세자금대출 상품 알아봐줘",
+    "turn1_answer": "전세자금대출 상품 3건을 안내드립니다.",
+    "turn2_query": "그게 다예요?",
+    "expected_tool_name": "recommend_jeonse_loan_products",
+    "expected_tool_params_contains": {}
+  },
+  {
+    "id": "jeonse_loan_reconfirm_2",
+    "product": "jeonse_loan",
+    "phrasing_type": "reconfirm",
+    "complexity": "simple",
+    "turn1_query": "전세자금대출 상품 알아봐줘",
+    "turn1_answer": "전세자금대출 상품 3건을 안내드립니다.",
+    "turn2_query": "다시 한번 봐주세요",
+    "expected_tool_name": "recommend_jeonse_loan_products",
+    "expected_tool_params_contains": {}
+  },
+  {
+    "id": "jeonse_loan_reconfirm_3",
+    "product": "jeonse_loan",
+    "phrasing_type": "reconfirm",
+    "complexity": "complex",
+    "turn1_query": "농협은행 전세자금대출 상품 알아봐줘",
+    "turn1_answer": "전세자금대출 상품 3건을 안내드립니다.",
+    "turn2_query": "정말이에요?",
+    "expected_tool_name": "recommend_jeonse_loan_products",
+    "expected_tool_params_contains": {
+      "bank_name_filter": "농협은행"
+    }
+  },
+  {
+    "id": "jeonse_loan_reconfirm_4",
+    "product": "jeonse_loan",
+    "phrasing_type": "reconfirm",
+    "complexity": "complex",
+    "turn1_query": "하나은행 전세자금대출 상품 알아봐줘",
+    "turn1_answer": "전세자금대출 상품 3건을 안내드립니다.",
+    "turn2_query": "다시 조회해주세요",
+    "expected_tool_name": "recommend_jeonse_loan_products",
+    "expected_tool_params_contains": {
+      "bank_name_filter": "하나은행"
+    }
+  },
+  {
+    "id": "jeonse_loan_reconfirm_5",
+    "product": "jeonse_loan",
+    "phrasing_type": "reconfirm",
+    "complexity": "complex",
+    "turn1_query": "신협 전세자금대출 상품 알아봐줘",
+    "turn1_answer": "전세자금대출 상품 3건을 안내드립니다.",
+    "turn2_query": "확실한 건가요?",
+    "expected_tool_name": "recommend_jeonse_loan_products",
+    "expected_tool_params_contains": {
+      "bank_name_filter": "신협"
+    }
+  },
+  {
+    "id": "jeonse_loan_reason_1",
+    "product": "jeonse_loan",
+    "phrasing_type": "reason",
+    "complexity": "simple",
+    "turn1_query": "전세자금대출 상품 알아봐줘",
+    "turn1_answer": "전세자금대출 상품 3건을 안내드립니다.",
+    "turn2_query": "왜 안돼요?",
+    "expected_tool_name": "recommend_jeonse_loan_products",
+    "expected_tool_params_contains": {}
+  },
+  {
+    "id": "jeonse_loan_reason_2",
+    "product": "jeonse_loan",
+    "phrasing_type": "reason",
+    "complexity": "simple",
+    "turn1_query": "전세자금대출 상품 알아봐줘",
+    "turn1_answer": "전세자금대출 상품 3건을 안내드립니다.",
+    "turn2_query": "그건 왜 그런거죠?",
+    "expected_tool_name": "recommend_jeonse_loan_products",
+    "expected_tool_params_contains": {}
+  },
+  {
+    "id": "jeonse_loan_reason_3",
+    "product": "jeonse_loan",
+    "phrasing_type": "reason",
+    "complexity": "complex",
+    "turn1_query": "농협은행 전세자금대출 상품 알아봐줘",
+    "turn1_answer": "전세자금대출 상품 3건을 안내드립니다.",
+    "turn2_query": "왜 그런 거예요?",
+    "expected_tool_name": "recommend_jeonse_loan_products",
+    "expected_tool_params_contains": {
+      "bank_name_filter": "농협은행"
+    }
+  },
+  {
+    "id": "jeonse_loan_reason_4",
+    "product": "jeonse_loan",
+    "phrasing_type": "reason",
+    "complexity": "complex",
+    "turn1_query": "하나은행 전세자금대출 상품 알아봐줘",
+    "turn1_answer": "전세자금대출 상품 3건을 안내드립니다.",
+    "turn2_query": "이유가 뭔가요?",
+    "expected_tool_name": "recommend_jeonse_loan_products",
+    "expected_tool_params_contains": {
+      "bank_name_filter": "하나은행"
+    }
+  },
+  {
+    "id": "jeonse_loan_reason_5",
+    "product": "jeonse_loan",
+    "phrasing_type": "reason",
+    "complexity": "complex",
+    "turn1_query": "신협 전세자금대출 상품 알아봐줘",
+    "turn1_answer": "전세자금대출 상품 3건을 안내드립니다.",
+    "turn2_query": "어째서 그런가요?",
+    "expected_tool_name": "recommend_jeonse_loan_products",
+    "expected_tool_params_contains": {
+      "bank_name_filter": "신협"
+    }
+  },
+  {
+    "id": "jeonse_loan_vague_1",
+    "product": "jeonse_loan",
+    "phrasing_type": "vague",
+    "complexity": "simple",
+    "turn1_query": "전세자금대출 상품 알아봐줘",
+    "turn1_answer": "전세자금대출 상품 3건을 안내드립니다.",
+    "turn2_query": "그런가요?",
+    "expected_tool_name": "recommend_jeonse_loan_products",
+    "expected_tool_params_contains": {}
+  },
+  {
+    "id": "jeonse_loan_vague_2",
+    "product": "jeonse_loan",
+    "phrasing_type": "vague",
+    "complexity": "simple",
+    "turn1_query": "전세자금대출 상품 알아봐줘",
+    "turn1_answer": "전세자금대출 상품 3건을 안내드립니다.",
+    "turn2_query": "그거 좀 더 알려주세요",
+    "expected_tool_name": "recommend_jeonse_loan_products",
+    "expected_tool_params_contains": {}
+  },
+  {
+    "id": "jeonse_loan_vague_3",
+    "product": "jeonse_loan",
+    "phrasing_type": "vague",
+    "complexity": "complex",
+    "turn1_query": "농협은행 전세자금대출 상품 알아봐줘",
+    "turn1_answer": "전세자금대출 상품 3건을 안내드립니다.",
+    "turn2_query": "음, 그래요?",
+    "expected_tool_name": "recommend_jeonse_loan_products",
+    "expected_tool_params_contains": {
+      "bank_name_filter": "농협은행"
+    }
+  },
+  {
+    "id": "jeonse_loan_vague_4",
+    "product": "jeonse_loan",
+    "phrasing_type": "vague",
+    "complexity": "complex",
+    "turn1_query": "하나은행 전세자금대출 상품 알아봐줘",
+    "turn1_answer": "전세자금대출 상품 3건을 안내드립니다.",
+    "turn2_query": "좀 더 자세히요",
+    "expected_tool_name": "recommend_jeonse_loan_products",
+    "expected_tool_params_contains": {
+      "bank_name_filter": "하나은행"
+    }
+  },
+  {
+    "id": "jeonse_loan_vague_5",
+    "product": "jeonse_loan",
+    "phrasing_type": "vague",
+    "complexity": "complex",
+    "turn1_query": "신협 전세자금대출 상품 알아봐줘",
+    "turn1_answer": "전세자금대출 상품 3건을 안내드립니다.",
+    "turn2_query": "그거 어떻게 되나요?",
+    "expected_tool_name": "recommend_jeonse_loan_products",
+    "expected_tool_params_contains": {
+      "bank_name_filter": "신협"
+    }
+  },
+  {
+    "id": "mortgage_loan_procedural_1",
+    "product": "mortgage_loan",
+    "phrasing_type": "procedural",
+    "complexity": "simple",
+    "turn1_query": "주택담보대출 상품 추천해줘",
+    "turn1_answer": "주택담보대출 상품 3건을 안내드립니다.",
+    "turn2_query": "어떻게 신청하나요?",
+    "expected_tool_name": "recommend_mortgage_loan_products",
+    "expected_tool_params_contains": {}
+  },
+  {
+    "id": "mortgage_loan_procedural_2",
+    "product": "mortgage_loan",
+    "phrasing_type": "procedural",
+    "complexity": "simple",
+    "turn1_query": "주택담보대출 상품 추천해줘",
+    "turn1_answer": "주택담보대출 상품 3건을 안내드립니다.",
+    "turn2_query": "신청은 어디서 하나요?",
+    "expected_tool_name": "recommend_mortgage_loan_products",
+    "expected_tool_params_contains": {}
+  },
+  {
+    "id": "mortgage_loan_procedural_3",
+    "product": "mortgage_loan",
+    "phrasing_type": "procedural",
+    "complexity": "complex",
+    "turn1_query": "국민은행 주택담보대출 상품 알아봐줘",
+    "turn1_answer": "주택담보대출 상품 3건을 안내드립니다.",
+    "turn2_query": "필요한 서류가 있나요?",
+    "expected_tool_name": "recommend_mortgage_loan_products",
+    "expected_tool_params_contains": {
+      "bank_name_filter": "국민은행"
+    }
+  },
+  {
+    "id": "mortgage_loan_procedural_4",
+    "product": "mortgage_loan",
+    "phrasing_type": "procedural",
+    "complexity": "complex",
+    "turn1_query": "부산은행 주택담보대출 상품 알아봐줘",
+    "turn1_answer": "주택담보대출 상품 3건을 안내드립니다.",
+    "turn2_query": "언제부터 신청 가능해요?",
+    "expected_tool_name": "recommend_mortgage_loan_products",
+    "expected_tool_params_contains": {
+      "bank_name_filter": "부산은행"
+    }
+  },
+  {
+    "id": "mortgage_loan_procedural_5",
+    "product": "mortgage_loan",
+    "phrasing_type": "procedural",
+    "complexity": "complex",
+    "turn1_query": "경남은행 주택담보대출 상품 알아봐줘",
+    "turn1_answer": "주택담보대출 상품 3건을 안내드립니다.",
+    "turn2_query": "신청 절차가 궁금해요",
+    "expected_tool_name": "recommend_mortgage_loan_products",
+    "expected_tool_params_contains": {
+      "bank_name_filter": "경남은행"
+    }
+  },
+  {
+    "id": "mortgage_loan_reconfirm_1",
+    "product": "mortgage_loan",
+    "phrasing_type": "reconfirm",
+    "complexity": "simple",
+    "turn1_query": "주택담보대출 상품 추천해줘",
+    "turn1_answer": "주택담보대출 상품 3건을 안내드립니다.",
+    "turn2_query": "그게 다예요?",
+    "expected_tool_name": "recommend_mortgage_loan_products",
+    "expected_tool_params_contains": {}
+  },
+  {
+    "id": "mortgage_loan_reconfirm_2",
+    "product": "mortgage_loan",
+    "phrasing_type": "reconfirm",
+    "complexity": "simple",
+    "turn1_query": "주택담보대출 상품 추천해줘",
+    "turn1_answer": "주택담보대출 상품 3건을 안내드립니다.",
+    "turn2_query": "다시 한번 봐주세요",
+    "expected_tool_name": "recommend_mortgage_loan_products",
+    "expected_tool_params_contains": {}
+  },
+  {
+    "id": "mortgage_loan_reconfirm_3",
+    "product": "mortgage_loan",
+    "phrasing_type": "reconfirm",
+    "complexity": "complex",
+    "turn1_query": "국민은행 주택담보대출 상품 알아봐줘",
+    "turn1_answer": "주택담보대출 상품 3건을 안내드립니다.",
+    "turn2_query": "정말이에요?",
+    "expected_tool_name": "recommend_mortgage_loan_products",
+    "expected_tool_params_contains": {
+      "bank_name_filter": "국민은행"
+    }
+  },
+  {
+    "id": "mortgage_loan_reconfirm_4",
+    "product": "mortgage_loan",
+    "phrasing_type": "reconfirm",
+    "complexity": "complex",
+    "turn1_query": "부산은행 주택담보대출 상품 알아봐줘",
+    "turn1_answer": "주택담보대출 상품 3건을 안내드립니다.",
+    "turn2_query": "다시 조회해주세요",
+    "expected_tool_name": "recommend_mortgage_loan_products",
+    "expected_tool_params_contains": {
+      "bank_name_filter": "부산은행"
+    }
+  },
+  {
+    "id": "mortgage_loan_reconfirm_5",
+    "product": "mortgage_loan",
+    "phrasing_type": "reconfirm",
+    "complexity": "complex",
+    "turn1_query": "경남은행 주택담보대출 상품 알아봐줘",
+    "turn1_answer": "주택담보대출 상품 3건을 안내드립니다.",
+    "turn2_query": "확실한 건가요?",
+    "expected_tool_name": "recommend_mortgage_loan_products",
+    "expected_tool_params_contains": {
+      "bank_name_filter": "경남은행"
+    }
+  },
+  {
+    "id": "mortgage_loan_reason_1",
+    "product": "mortgage_loan",
+    "phrasing_type": "reason",
+    "complexity": "simple",
+    "turn1_query": "주택담보대출 상품 추천해줘",
+    "turn1_answer": "주택담보대출 상품 3건을 안내드립니다.",
+    "turn2_query": "왜 안돼요?",
+    "expected_tool_name": "recommend_mortgage_loan_products",
+    "expected_tool_params_contains": {}
+  },
+  {
+    "id": "mortgage_loan_reason_2",
+    "product": "mortgage_loan",
+    "phrasing_type": "reason",
+    "complexity": "simple",
+    "turn1_query": "주택담보대출 상품 추천해줘",
+    "turn1_answer": "주택담보대출 상품 3건을 안내드립니다.",
+    "turn2_query": "그건 왜 그런거죠?",
+    "expected_tool_name": "recommend_mortgage_loan_products",
+    "expected_tool_params_contains": {}
+  },
+  {
+    "id": "mortgage_loan_reason_3",
+    "product": "mortgage_loan",
+    "phrasing_type": "reason",
+    "complexity": "complex",
+    "turn1_query": "국민은행 주택담보대출 상품 알아봐줘",
+    "turn1_answer": "주택담보대출 상품 3건을 안내드립니다.",
+    "turn2_query": "왜 그런 거예요?",
+    "expected_tool_name": "recommend_mortgage_loan_products",
+    "expected_tool_params_contains": {
+      "bank_name_filter": "국민은행"
+    }
+  },
+  {
+    "id": "mortgage_loan_reason_4",
+    "product": "mortgage_loan",
+    "phrasing_type": "reason",
+    "complexity": "complex",
+    "turn1_query": "부산은행 주택담보대출 상품 알아봐줘",
+    "turn1_answer": "주택담보대출 상품 3건을 안내드립니다.",
+    "turn2_query": "이유가 뭔가요?",
+    "expected_tool_name": "recommend_mortgage_loan_products",
+    "expected_tool_params_contains": {
+      "bank_name_filter": "부산은행"
+    }
+  },
+  {
+    "id": "mortgage_loan_reason_5",
+    "product": "mortgage_loan",
+    "phrasing_type": "reason",
+    "complexity": "complex",
+    "turn1_query": "경남은행 주택담보대출 상품 알아봐줘",
+    "turn1_answer": "주택담보대출 상품 3건을 안내드립니다.",
+    "turn2_query": "어째서 그런가요?",
+    "expected_tool_name": "recommend_mortgage_loan_products",
+    "expected_tool_params_contains": {
+      "bank_name_filter": "경남은행"
+    }
+  },
+  {
+    "id": "mortgage_loan_vague_1",
+    "product": "mortgage_loan",
+    "phrasing_type": "vague",
+    "complexity": "simple",
+    "turn1_query": "주택담보대출 상품 추천해줘",
+    "turn1_answer": "주택담보대출 상품 3건을 안내드립니다.",
+    "turn2_query": "그런가요?",
+    "expected_tool_name": "recommend_mortgage_loan_products",
+    "expected_tool_params_contains": {}
+  },
+  {
+    "id": "mortgage_loan_vague_2",
+    "product": "mortgage_loan",
+    "phrasing_type": "vague",
+    "complexity": "simple",
+    "turn1_query": "주택담보대출 상품 추천해줘",
+    "turn1_answer": "주택담보대출 상품 3건을 안내드립니다.",
+    "turn2_query": "그거 좀 더 알려주세요",
+    "expected_tool_name": "recommend_mortgage_loan_products",
+    "expected_tool_params_contains": {}
+  },
+  {
+    "id": "mortgage_loan_vague_3",
+    "product": "mortgage_loan",
+    "phrasing_type": "vague",
+    "complexity": "complex",
+    "turn1_query": "국민은행 주택담보대출 상품 알아봐줘",
+    "turn1_answer": "주택담보대출 상품 3건을 안내드립니다.",
+    "turn2_query": "음, 그래요?",
+    "expected_tool_name": "recommend_mortgage_loan_products",
+    "expected_tool_params_contains": {
+      "bank_name_filter": "국민은행"
+    }
+  },
+  {
+    "id": "mortgage_loan_vague_4",
+    "product": "mortgage_loan",
+    "phrasing_type": "vague",
+    "complexity": "complex",
+    "turn1_query": "부산은행 주택담보대출 상품 알아봐줘",
+    "turn1_answer": "주택담보대출 상품 3건을 안내드립니다.",
+    "turn2_query": "좀 더 자세히요",
+    "expected_tool_name": "recommend_mortgage_loan_products",
+    "expected_tool_params_contains": {
+      "bank_name_filter": "부산은행"
+    }
+  },
+  {
+    "id": "mortgage_loan_vague_5",
+    "product": "mortgage_loan",
+    "phrasing_type": "vague",
+    "complexity": "complex",
+    "turn1_query": "경남은행 주택담보대출 상품 알아봐줘",
+    "turn1_answer": "주택담보대출 상품 3건을 안내드립니다.",
+    "turn2_query": "그거 어떻게 되나요?",
+    "expected_tool_name": "recommend_mortgage_loan_products",
+    "expected_tool_params_contains": {
+      "bank_name_filter": "경남은행"
+    }
+  },
+  {
+    "id": "business_loan_procedural_1",
+    "product": "business_loan",
+    "phrasing_type": "procedural",
+    "complexity": "simple",
+    "turn1_query": "사업자대출 상품 알아봐줘",
+    "turn1_answer": "사업자대출 상품 3건을 안내드립니다.",
+    "turn2_query": "어떻게 신청하나요?",
+    "expected_tool_name": "recommend_business_loan_products",
+    "expected_tool_params_contains": {}
+  },
+  {
+    "id": "business_loan_procedural_2",
+    "product": "business_loan",
+    "phrasing_type": "procedural",
+    "complexity": "simple",
+    "turn1_query": "사업자대출 상품 알아봐줘",
+    "turn1_answer": "사업자대출 상품 3건을 안내드립니다.",
+    "turn2_query": "신청은 어디서 하나요?",
+    "expected_tool_name": "recommend_business_loan_products",
+    "expected_tool_params_contains": {}
+  },
+  {
+    "id": "business_loan_procedural_3",
+    "product": "business_loan",
+    "phrasing_type": "procedural",
+    "complexity": "complex",
+    "turn1_query": "신용점수 600인 사업자대출 알아봐줘",
+    "turn1_answer": "사업자대출 상품 3건을 안내드립니다.",
+    "turn2_query": "필요한 서류가 있나요?",
+    "expected_tool_name": "recommend_business_loan_products",
+    "expected_tool_params_contains": {
+      "credit_score": 600
+    }
+  },
+  {
+    "id": "business_loan_procedural_4",
+    "product": "business_loan",
+    "phrasing_type": "procedural",
+    "complexity": "complex",
+    "turn1_query": "신용점수 700인 사업자대출 알아봐줘",
+    "turn1_answer": "사업자대출 상품 3건을 안내드립니다.",
+    "turn2_query": "언제부터 신청 가능해요?",
+    "expected_tool_name": "recommend_business_loan_products",
+    "expected_tool_params_contains": {
+      "credit_score": 700
+    }
+  },
+  {
+    "id": "business_loan_procedural_5",
+    "product": "business_loan",
+    "phrasing_type": "procedural",
+    "complexity": "complex",
+    "turn1_query": "신용점수 850인 사업자대출 알아봐줘",
+    "turn1_answer": "사업자대출 상품 3건을 안내드립니다.",
+    "turn2_query": "신청 절차가 궁금해요",
+    "expected_tool_name": "recommend_business_loan_products",
+    "expected_tool_params_contains": {
+      "credit_score": 850
+    }
+  },
+  {
+    "id": "business_loan_reconfirm_1",
+    "product": "business_loan",
+    "phrasing_type": "reconfirm",
+    "complexity": "simple",
+    "turn1_query": "사업자대출 상품 알아봐줘",
+    "turn1_answer": "사업자대출 상품 3건을 안내드립니다.",
+    "turn2_query": "그게 다예요?",
+    "expected_tool_name": "recommend_business_loan_products",
+    "expected_tool_params_contains": {}
+  },
+  {
+    "id": "business_loan_reconfirm_2",
+    "product": "business_loan",
+    "phrasing_type": "reconfirm",
+    "complexity": "simple",
+    "turn1_query": "사업자대출 상품 알아봐줘",
+    "turn1_answer": "사업자대출 상품 3건을 안내드립니다.",
+    "turn2_query": "다시 한번 봐주세요",
+    "expected_tool_name": "recommend_business_loan_products",
+    "expected_tool_params_contains": {}
+  },
+  {
+    "id": "business_loan_reconfirm_3",
+    "product": "business_loan",
+    "phrasing_type": "reconfirm",
+    "complexity": "complex",
+    "turn1_query": "신용점수 600인 사업자대출 알아봐줘",
+    "turn1_answer": "사업자대출 상품 3건을 안내드립니다.",
+    "turn2_query": "정말이에요?",
+    "expected_tool_name": "recommend_business_loan_products",
+    "expected_tool_params_contains": {
+      "credit_score": 600
+    }
+  },
+  {
+    "id": "business_loan_reconfirm_4",
+    "product": "business_loan",
+    "phrasing_type": "reconfirm",
+    "complexity": "complex",
+    "turn1_query": "신용점수 700인 사업자대출 알아봐줘",
+    "turn1_answer": "사업자대출 상품 3건을 안내드립니다.",
+    "turn2_query": "다시 조회해주세요",
+    "expected_tool_name": "recommend_business_loan_products",
+    "expected_tool_params_contains": {
+      "credit_score": 700
+    }
+  },
+  {
+    "id": "business_loan_reconfirm_5",
+    "product": "business_loan",
+    "phrasing_type": "reconfirm",
+    "complexity": "complex",
+    "turn1_query": "신용점수 850인 사업자대출 알아봐줘",
+    "turn1_answer": "사업자대출 상품 3건을 안내드립니다.",
+    "turn2_query": "확실한 건가요?",
+    "expected_tool_name": "recommend_business_loan_products",
+    "expected_tool_params_contains": {
+      "credit_score": 850
+    }
+  },
+  {
+    "id": "business_loan_reason_1",
+    "product": "business_loan",
+    "phrasing_type": "reason",
+    "complexity": "simple",
+    "turn1_query": "사업자대출 상품 알아봐줘",
+    "turn1_answer": "사업자대출 상품 3건을 안내드립니다.",
+    "turn2_query": "왜 안돼요?",
+    "expected_tool_name": "recommend_business_loan_products",
+    "expected_tool_params_contains": {}
+  },
+  {
+    "id": "business_loan_reason_2",
+    "product": "business_loan",
+    "phrasing_type": "reason",
+    "complexity": "simple",
+    "turn1_query": "사업자대출 상품 알아봐줘",
+    "turn1_answer": "사업자대출 상품 3건을 안내드립니다.",
+    "turn2_query": "그건 왜 그런거죠?",
+    "expected_tool_name": "recommend_business_loan_products",
+    "expected_tool_params_contains": {}
+  },
+  {
+    "id": "business_loan_reason_3",
+    "product": "business_loan",
+    "phrasing_type": "reason",
+    "complexity": "complex",
+    "turn1_query": "신용점수 600인 사업자대출 알아봐줘",
+    "turn1_answer": "사업자대출 상품 3건을 안내드립니다.",
+    "turn2_query": "왜 그런 거예요?",
+    "expected_tool_name": "recommend_business_loan_products",
+    "expected_tool_params_contains": {
+      "credit_score": 600
+    }
+  },
+  {
+    "id": "business_loan_reason_4",
+    "product": "business_loan",
+    "phrasing_type": "reason",
+    "complexity": "complex",
+    "turn1_query": "신용점수 700인 사업자대출 알아봐줘",
+    "turn1_answer": "사업자대출 상품 3건을 안내드립니다.",
+    "turn2_query": "이유가 뭔가요?",
+    "expected_tool_name": "recommend_business_loan_products",
+    "expected_tool_params_contains": {
+      "credit_score": 700
+    }
+  },
+  {
+    "id": "business_loan_reason_5",
+    "product": "business_loan",
+    "phrasing_type": "reason",
+    "complexity": "complex",
+    "turn1_query": "신용점수 850인 사업자대출 알아봐줘",
+    "turn1_answer": "사업자대출 상품 3건을 안내드립니다.",
+    "turn2_query": "어째서 그런가요?",
+    "expected_tool_name": "recommend_business_loan_products",
+    "expected_tool_params_contains": {
+      "credit_score": 850
+    }
+  },
+  {
+    "id": "business_loan_vague_1",
+    "product": "business_loan",
+    "phrasing_type": "vague",
+    "complexity": "simple",
+    "turn1_query": "사업자대출 상품 알아봐줘",
+    "turn1_answer": "사업자대출 상품 3건을 안내드립니다.",
+    "turn2_query": "그런가요?",
+    "expected_tool_name": "recommend_business_loan_products",
+    "expected_tool_params_contains": {}
+  },
+  {
+    "id": "business_loan_vague_2",
+    "product": "business_loan",
+    "phrasing_type": "vague",
+    "complexity": "simple",
+    "turn1_query": "사업자대출 상품 알아봐줘",
+    "turn1_answer": "사업자대출 상품 3건을 안내드립니다.",
+    "turn2_query": "그거 좀 더 알려주세요",
+    "expected_tool_name": "recommend_business_loan_products",
+    "expected_tool_params_contains": {}
+  },
+  {
+    "id": "business_loan_vague_3",
+    "product": "business_loan",
+    "phrasing_type": "vague",
+    "complexity": "complex",
+    "turn1_query": "신용점수 600인 사업자대출 알아봐줘",
+    "turn1_answer": "사업자대출 상품 3건을 안내드립니다.",
+    "turn2_query": "음, 그래요?",
+    "expected_tool_name": "recommend_business_loan_products",
+    "expected_tool_params_contains": {
+      "credit_score": 600
+    }
+  },
+  {
+    "id": "business_loan_vague_4",
+    "product": "business_loan",
+    "phrasing_type": "vague",
+    "complexity": "complex",
+    "turn1_query": "신용점수 700인 사업자대출 알아봐줘",
+    "turn1_answer": "사업자대출 상품 3건을 안내드립니다.",
+    "turn2_query": "좀 더 자세히요",
+    "expected_tool_name": "recommend_business_loan_products",
+    "expected_tool_params_contains": {
+      "credit_score": 700
+    }
+  },
+  {
+    "id": "business_loan_vague_5",
+    "product": "business_loan",
+    "phrasing_type": "vague",
+    "complexity": "complex",
+    "turn1_query": "신용점수 850인 사업자대출 알아봐줘",
+    "turn1_answer": "사업자대출 상품 3건을 안내드립니다.",
+    "turn2_query": "그거 어떻게 되나요?",
+    "expected_tool_name": "recommend_business_loan_products",
+    "expected_tool_params_contains": {
+      "credit_score": 850
+    }
+  }
+]
