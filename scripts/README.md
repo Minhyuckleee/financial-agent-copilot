@@ -40,9 +40,9 @@ RAG·가드레일·Agent 품질을 측정하는 평가 스크립트, API 연동 
 ### eval_citation_grounding_cosine_range.py / _llm_detection.py — cosine vs LLM 재현 비교
 
 규칙⑤(citation grounding)를 임베딩 코사인 유사도 방식에서 LLM entailment 판정으로 전환한 근거였던
-초기 파일럿(negative 5건)은 표본이 너무 작아 일반화하기 어려웠다. 정상 50건(실제 파이프라인
+초기 파일럿(negative 5건)은 표본이 너무 작아 일반화하기 어려웠습니다. 정상 50건(실제 파이프라인
 출력, 사람이 chunk 대조로 확정한 라벨) + 위조 50건(5개 실패유형 × 10건, 골든셋 문서 기반으로
-구성 후 사람이 원문 대조 검증)으로 재현했다.
+구성 후 사람이 원문 대조 검증)으로 재현했습니다.
 
 - **cosine 유사도**(claimed_phrase ↔ retrieved chunk 중 최댓값, KURE-v1 임베딩): 정상 range
   [0.629, 0.961](평균 0.777) / 위조 range [0.415, 0.893](평균 0.668) — 위조 50건 중 **34건(68%)**이
@@ -52,6 +52,3 @@ RAG·가드레일·Agent 품질을 측정하는 평가 스크립트, API 연동 
   애초에 "citation claim"으로 추출되지 않은 경우(has_citation_claim=False), 1건은 판정
   자체가 틀림(entailment miss) — LLM 판정도 완벽하진 않지만, cosine이 원천적으로 구분 못 하는
   구간을 유의미하게 걸러낸다는 점은 명확함
-- 위조 50건 중 40건은 생성 과정에서 실제로 2건이 "숫자를 안 바꾸고 원문 그대로 베낀" 라벨링
-  버그였음 — LLM 판정기가 이 2건을 grounded=true로 판정한 게 오히려 정답이었고, 원문 대조로
-  발견해 다른 문항으로 교체했다(위조 샘플도 사람 검증 없이는 신뢰할 수 없다는 걸 스스로 증명한 사례)
