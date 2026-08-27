@@ -1,0 +1,816 @@
+{
+  "per_item": [
+    {
+      "id": "gs_060",
+      "group": "normal",
+      "expected_grounded": true,
+      "predicted_grounded": true,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "gs_068",
+      "group": "normal",
+      "expected_grounded": true,
+      "predicted_grounded": true,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "gs_011",
+      "group": "normal",
+      "expected_grounded": true,
+      "predicted_grounded": true,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "gs_059",
+      "group": "normal",
+      "expected_grounded": true,
+      "predicted_grounded": true,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "gs_test_015",
+      "group": "normal",
+      "expected_grounded": true,
+      "predicted_grounded": true,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "gs_096",
+      "group": "normal",
+      "expected_grounded": true,
+      "predicted_grounded": true,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "gs_039",
+      "group": "normal",
+      "expected_grounded": true,
+      "predicted_grounded": true,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "gs_test_036",
+      "group": "normal",
+      "expected_grounded": true,
+      "predicted_grounded": true,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "gs_test_019",
+      "group": "normal",
+      "expected_grounded": true,
+      "predicted_grounded": true,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "gs_017",
+      "group": "normal",
+      "expected_grounded": true,
+      "predicted_grounded": true,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "gs_test_008",
+      "group": "normal",
+      "expected_grounded": true,
+      "predicted_grounded": true,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "gs_038",
+      "group": "normal",
+      "expected_grounded": true,
+      "predicted_grounded": true,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "gs_test_012",
+      "group": "normal",
+      "expected_grounded": true,
+      "predicted_grounded": true,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "gs_087",
+      "group": "normal",
+      "expected_grounded": true,
+      "predicted_grounded": true,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "gs_033",
+      "group": "normal",
+      "expected_grounded": true,
+      "predicted_grounded": true,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "gs_051",
+      "group": "normal",
+      "expected_grounded": true,
+      "predicted_grounded": true,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "gs_test_003",
+      "group": "normal",
+      "expected_grounded": true,
+      "predicted_grounded": true,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "gs_test_010",
+      "group": "normal",
+      "expected_grounded": true,
+      "predicted_grounded": true,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "gs_085",
+      "group": "normal",
+      "expected_grounded": true,
+      "predicted_grounded": true,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "gs_044",
+      "group": "normal",
+      "expected_grounded": true,
+      "predicted_grounded": true,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "gs_019",
+      "group": "normal",
+      "expected_grounded": true,
+      "predicted_grounded": true,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "gs_test_025",
+      "group": "normal",
+      "expected_grounded": true,
+      "predicted_grounded": true,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "gs_test_007",
+      "group": "normal",
+      "expected_grounded": true,
+      "predicted_grounded": true,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "gs_test_023",
+      "group": "normal",
+      "expected_grounded": true,
+      "predicted_grounded": true,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "gs_005",
+      "group": "normal",
+      "expected_grounded": true,
+      "predicted_grounded": true,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "gs_086",
+      "group": "normal",
+      "expected_grounded": true,
+      "predicted_grounded": true,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "gs_067",
+      "group": "normal",
+      "expected_grounded": true,
+      "predicted_grounded": true,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "gs_test_032",
+      "group": "normal",
+      "expected_grounded": true,
+      "predicted_grounded": true,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "gs_006",
+      "group": "normal",
+      "expected_grounded": true,
+      "predicted_grounded": true,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "gs_test_034",
+      "group": "normal",
+      "expected_grounded": true,
+      "predicted_grounded": true,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "gs_test_031",
+      "group": "normal",
+      "expected_grounded": true,
+      "predicted_grounded": true,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "gs_test_024",
+      "group": "normal",
+      "expected_grounded": true,
+      "predicted_grounded": true,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "gs_018",
+      "group": "normal",
+      "expected_grounded": true,
+      "predicted_grounded": true,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "gs_001",
+      "group": "normal",
+      "expected_grounded": true,
+      "predicted_grounded": true,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "gs_test_037",
+      "group": "normal",
+      "expected_grounded": true,
+      "predicted_grounded": true,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "gs_076",
+      "group": "normal",
+      "expected_grounded": true,
+      "predicted_grounded": true,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "gs_test_014",
+      "group": "normal",
+      "expected_grounded": true,
+      "predicted_grounded": true,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "gs_074",
+      "group": "normal",
+      "expected_grounded": true,
+      "predicted_grounded": true,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "gs_test_029",
+      "group": "normal",
+      "expected_grounded": true,
+      "predicted_grounded": true,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "gs_021",
+      "group": "normal",
+      "expected_grounded": true,
+      "predicted_grounded": true,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "gs_test_002",
+      "group": "normal",
+      "expected_grounded": true,
+      "predicted_grounded": true,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "gs_test_030",
+      "group": "normal",
+      "expected_grounded": true,
+      "predicted_grounded": true,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "gs_test_006",
+      "group": "normal",
+      "expected_grounded": true,
+      "predicted_grounded": true,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "gs_095",
+      "group": "normal",
+      "expected_grounded": true,
+      "predicted_grounded": true,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "gs_test_035",
+      "group": "normal",
+      "expected_grounded": true,
+      "predicted_grounded": true,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "gs_026",
+      "group": "normal",
+      "expected_grounded": true,
+      "predicted_grounded": true,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "gs_test_027",
+      "group": "normal",
+      "expected_grounded": true,
+      "predicted_grounded": true,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "gs_test_039",
+      "group": "normal",
+      "expected_grounded": true,
+      "predicted_grounded": true,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "gs_003",
+      "group": "normal",
+      "expected_grounded": true,
+      "predicted_grounded": true,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "gs_075",
+      "group": "normal",
+      "expected_grounded": true,
+      "predicted_grounded": true,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "neg_gs_001",
+      "group": "forged",
+      "expected_grounded": false,
+      "predicted_grounded": false,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "neg_gs_007",
+      "group": "forged",
+      "expected_grounded": false,
+      "predicted_grounded": false,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "neg_gs_009",
+      "group": "forged",
+      "expected_grounded": false,
+      "predicted_grounded": false,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "neg_gs_005",
+      "group": "forged",
+      "expected_grounded": false,
+      "predicted_grounded": false,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "neg_gs_010",
+      "group": "forged",
+      "expected_grounded": false,
+      "predicted_grounded": false,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "neg_gs_test_006",
+      "group": "forged",
+      "expected_grounded": false,
+      "predicted_grounded": false,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "neg_gs_test_003",
+      "group": "forged",
+      "expected_grounded": false,
+      "predicted_grounded": false,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "neg_gs_test_005",
+      "group": "forged",
+      "expected_grounded": false,
+      "predicted_grounded": false,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "neg_gs_test_002",
+      "group": "forged",
+      "expected_grounded": false,
+      "predicted_grounded": false,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "neg_gs_test_008",
+      "group": "forged",
+      "expected_grounded": false,
+      "predicted_grounded": false,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "neg_extra_gs_test_009",
+      "group": "forged",
+      "expected_grounded": false,
+      "predicted_grounded": false,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "neg_extra_gs_034",
+      "group": "forged",
+      "expected_grounded": false,
+      "predicted_grounded": false,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "neg_extra_gs_076",
+      "group": "forged",
+      "expected_grounded": false,
+      "predicted_grounded": false,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "neg_extra_gs_019",
+      "group": "forged",
+      "expected_grounded": false,
+      "predicted_grounded": false,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "neg_extra_gs_018",
+      "group": "forged",
+      "expected_grounded": false,
+      "predicted_grounded": true,
+      "has_citation_claim": true,
+      "correct": false
+    },
+    {
+      "id": "neg_extra_gs_test_023",
+      "group": "forged",
+      "expected_grounded": false,
+      "predicted_grounded": false,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "neg_extra_gs_test_037",
+      "group": "forged",
+      "expected_grounded": false,
+      "predicted_grounded": false,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "neg_extra_gs_test_024",
+      "group": "forged",
+      "expected_grounded": false,
+      "predicted_grounded": false,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "neg_extra_gs_test_001",
+      "group": "forged",
+      "expected_grounded": false,
+      "predicted_grounded": false,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "neg_extra_gs_087",
+      "group": "forged",
+      "expected_grounded": false,
+      "predicted_grounded": false,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "neg_extra_gs_030",
+      "group": "forged",
+      "expected_grounded": false,
+      "predicted_grounded": false,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "neg_extra_gs_test_031",
+      "group": "forged",
+      "expected_grounded": false,
+      "predicted_grounded": false,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "neg_extra_gs_test_021",
+      "group": "forged",
+      "expected_grounded": false,
+      "predicted_grounded": false,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "neg_extra_gs_060",
+      "group": "forged",
+      "expected_grounded": false,
+      "predicted_grounded": false,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "neg_extra_gs_test_019",
+      "group": "forged",
+      "expected_grounded": false,
+      "predicted_grounded": false,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "neg_extra_gs_059",
+      "group": "forged",
+      "expected_grounded": false,
+      "predicted_grounded": false,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "neg_extra_gs_test_012",
+      "group": "forged",
+      "expected_grounded": false,
+      "predicted_grounded": false,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "neg_extra_gs_test_015",
+      "group": "forged",
+      "expected_grounded": false,
+      "predicted_grounded": false,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "neg_extra_gs_test_029",
+      "group": "forged",
+      "expected_grounded": false,
+      "predicted_grounded": false,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "neg_extra_gs_035",
+      "group": "forged",
+      "expected_grounded": false,
+      "predicted_grounded": false,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "neg_extra_gs_037",
+      "group": "forged",
+      "expected_grounded": false,
+      "predicted_grounded": null,
+      "has_citation_claim": false,
+      "correct": false
+    },
+    {
+      "id": "neg_extra_gs_095",
+      "group": "forged",
+      "expected_grounded": false,
+      "predicted_grounded": false,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "neg_extra_gs_test_014",
+      "group": "forged",
+      "expected_grounded": false,
+      "predicted_grounded": false,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "neg_extra_gs_006",
+      "group": "forged",
+      "expected_grounded": false,
+      "predicted_grounded": false,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "neg_extra_gs_test_020",
+      "group": "forged",
+      "expected_grounded": false,
+      "predicted_grounded": false,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "neg_extra_gs_test_030",
+      "group": "forged",
+      "expected_grounded": false,
+      "predicted_grounded": false,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "neg_extra_gs_test_013",
+      "group": "forged",
+      "expected_grounded": false,
+      "predicted_grounded": false,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "neg_extra_gs_044",
+      "group": "forged",
+      "expected_grounded": false,
+      "predicted_grounded": false,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "neg_extra_gs_test_022",
+      "group": "forged",
+      "expected_grounded": false,
+      "predicted_grounded": false,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "neg_extra_gs_051",
+      "group": "forged",
+      "expected_grounded": false,
+      "predicted_grounded": null,
+      "has_citation_claim": false,
+      "correct": false
+    },
+    {
+      "id": "neg_extra_gs_068",
+      "group": "forged",
+      "expected_grounded": false,
+      "predicted_grounded": false,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "neg_extra_gs_039",
+      "group": "forged",
+      "expected_grounded": false,
+      "predicted_grounded": false,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "neg_extra_gs_test_011",
+      "group": "forged",
+      "expected_grounded": false,
+      "predicted_grounded": false,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "neg_extra_gs_046",
+      "group": "forged",
+      "expected_grounded": false,
+      "predicted_grounded": null,
+      "has_citation_claim": false,
+      "correct": false
+    },
+    {
+      "id": "neg_extra_gs_015",
+      "group": "forged",
+      "expected_grounded": false,
+      "predicted_grounded": false,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "neg_extra_gs_017",
+      "group": "forged",
+      "expected_grounded": false,
+      "predicted_grounded": false,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "neg_extra_gs_097",
+      "group": "forged",
+      "expected_grounded": false,
+      "predicted_grounded": false,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "neg_extra_gs_test_027",
+      "group": "forged",
+      "expected_grounded": false,
+      "predicted_grounded": false,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "neg_extra_gs_021_v2",
+      "group": "forged",
+      "expected_grounded": false,
+      "predicted_grounded": false,
+      "has_citation_claim": true,
+      "correct": true
+    },
+    {
+      "id": "neg_extra_gs_test_010_v2",
+      "group": "forged",
+      "expected_grounded": false,
+      "predicted_grounded": false,
+      "has_citation_claim": true,
+      "correct": true
+    }
+  ],
+  "summary": {
+    "normal": {
+      "n": 50,
+      "correct": 50,
+      "false_alarm": 0
+    },
+    "forged": {
+      "n": 50,
+      "detected": 46,
+      "missed": 4
+    }
+  }
+}

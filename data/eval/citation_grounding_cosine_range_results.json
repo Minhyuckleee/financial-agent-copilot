@@ -1,0 +1,528 @@
+{
+  "per_item": [
+    {
+      "id": "gs_060",
+      "group": "normal",
+      "max_cosine": 0.6487002372741699
+    },
+    {
+      "id": "gs_068",
+      "group": "normal",
+      "max_cosine": 0.9124433994293213
+    },
+    {
+      "id": "gs_011",
+      "group": "normal",
+      "max_cosine": 0.7267732620239258
+    },
+    {
+      "id": "gs_059",
+      "group": "normal",
+      "max_cosine": 0.6630760431289673
+    },
+    {
+      "id": "gs_test_015",
+      "group": "normal",
+      "max_cosine": 0.7074375748634338
+    },
+    {
+      "id": "gs_096",
+      "group": "normal",
+      "max_cosine": 0.877686083316803
+    },
+    {
+      "id": "gs_039",
+      "group": "normal",
+      "max_cosine": 0.7954767942428589
+    },
+    {
+      "id": "gs_test_036",
+      "group": "normal",
+      "max_cosine": 0.7563339471817017
+    },
+    {
+      "id": "gs_test_019",
+      "group": "normal",
+      "max_cosine": 0.8279504776000977
+    },
+    {
+      "id": "gs_017",
+      "group": "normal",
+      "max_cosine": 0.8142539262771606
+    },
+    {
+      "id": "gs_test_008",
+      "group": "normal",
+      "max_cosine": 0.7066788673400879
+    },
+    {
+      "id": "gs_038",
+      "group": "normal",
+      "max_cosine": 0.7440400719642639
+    },
+    {
+      "id": "gs_test_012",
+      "group": "normal",
+      "max_cosine": 0.7067925930023193
+    },
+    {
+      "id": "gs_087",
+      "group": "normal",
+      "max_cosine": 0.8071594834327698
+    },
+    {
+      "id": "gs_033",
+      "group": "normal",
+      "max_cosine": 0.9278658032417297
+    },
+    {
+      "id": "gs_051",
+      "group": "normal",
+      "max_cosine": 0.8172731995582581
+    },
+    {
+      "id": "gs_test_003",
+      "group": "normal",
+      "max_cosine": 0.7723736763000488
+    },
+    {
+      "id": "gs_test_010",
+      "group": "normal",
+      "max_cosine": 0.7115023732185364
+    },
+    {
+      "id": "gs_085",
+      "group": "normal",
+      "max_cosine": 0.9510865807533264
+    },
+    {
+      "id": "gs_044",
+      "group": "normal",
+      "max_cosine": 0.77936851978302
+    },
+    {
+      "id": "gs_019",
+      "group": "normal",
+      "max_cosine": 0.7769875526428223
+    },
+    {
+      "id": "gs_test_025",
+      "group": "normal",
+      "max_cosine": 0.9562236070632935
+    },
+    {
+      "id": "gs_test_007",
+      "group": "normal",
+      "max_cosine": 0.8699835538864136
+    },
+    {
+      "id": "gs_test_023",
+      "group": "normal",
+      "max_cosine": 0.8541146516799927
+    },
+    {
+      "id": "gs_005",
+      "group": "normal",
+      "max_cosine": 0.7809885740280151
+    },
+    {
+      "id": "gs_086",
+      "group": "normal",
+      "max_cosine": 0.8556368350982666
+    },
+    {
+      "id": "gs_067",
+      "group": "normal",
+      "max_cosine": 0.664703369140625
+    },
+    {
+      "id": "gs_test_032",
+      "group": "normal",
+      "max_cosine": 0.7758800983428955
+    },
+    {
+      "id": "gs_006",
+      "group": "normal",
+      "max_cosine": 0.8850078582763672
+    },
+    {
+      "id": "gs_test_034",
+      "group": "normal",
+      "max_cosine": 0.8348912596702576
+    },
+    {
+      "id": "gs_test_031",
+      "group": "normal",
+      "max_cosine": 0.6957215070724487
+    },
+    {
+      "id": "gs_test_024",
+      "group": "normal",
+      "max_cosine": 0.8932467699050903
+    },
+    {
+      "id": "gs_018",
+      "group": "normal",
+      "max_cosine": 0.7810196876525879
+    },
+    {
+      "id": "gs_001",
+      "group": "normal",
+      "max_cosine": 0.7120371460914612
+    },
+    {
+      "id": "gs_test_037",
+      "group": "normal",
+      "max_cosine": 0.6601642370223999
+    },
+    {
+      "id": "gs_076",
+      "group": "normal",
+      "max_cosine": 0.8037095069885254
+    },
+    {
+      "id": "gs_test_014",
+      "group": "normal",
+      "max_cosine": 0.7942967414855957
+    },
+    {
+      "id": "gs_074",
+      "group": "normal",
+      "max_cosine": 0.6649124622344971
+    },
+    {
+      "id": "gs_test_029",
+      "group": "normal",
+      "max_cosine": 0.961223840713501
+    },
+    {
+      "id": "gs_021",
+      "group": "normal",
+      "max_cosine": 0.8276749849319458
+    },
+    {
+      "id": "gs_test_002",
+      "group": "normal",
+      "max_cosine": 0.749915361404419
+    },
+    {
+      "id": "gs_test_030",
+      "group": "normal",
+      "max_cosine": 0.821394681930542
+    },
+    {
+      "id": "gs_test_006",
+      "group": "normal",
+      "max_cosine": 0.6472432017326355
+    },
+    {
+      "id": "gs_095",
+      "group": "normal",
+      "max_cosine": 0.6828191876411438
+    },
+    {
+      "id": "gs_test_035",
+      "group": "normal",
+      "max_cosine": 0.6744757294654846
+    },
+    {
+      "id": "gs_026",
+      "group": "normal",
+      "max_cosine": 0.7833739519119263
+    },
+    {
+      "id": "gs_test_027",
+      "group": "normal",
+      "max_cosine": 0.7994651794433594
+    },
+    {
+      "id": "gs_test_039",
+      "group": "normal",
+      "max_cosine": 0.6639739274978638
+    },
+    {
+      "id": "gs_003",
+      "group": "normal",
+      "max_cosine": 0.6292853355407715
+    },
+    {
+      "id": "gs_075",
+      "group": "normal",
+      "max_cosine": 0.7052454948425293
+    },
+    {
+      "id": "neg_gs_001",
+      "group": "forged",
+      "max_cosine": 0.41482847929000854
+    },
+    {
+      "id": "neg_gs_007",
+      "group": "forged",
+      "max_cosine": 0.5175700187683105
+    },
+    {
+      "id": "neg_gs_009",
+      "group": "forged",
+      "max_cosine": 0.840455949306488
+    },
+    {
+      "id": "neg_gs_005",
+      "group": "forged",
+      "max_cosine": 0.59804767370224
+    },
+    {
+      "id": "neg_gs_010",
+      "group": "forged",
+      "max_cosine": 0.6555362343788147
+    },
+    {
+      "id": "neg_gs_test_006",
+      "group": "forged",
+      "max_cosine": 0.5298006534576416
+    },
+    {
+      "id": "neg_gs_test_003",
+      "group": "forged",
+      "max_cosine": 0.7754321694374084
+    },
+    {
+      "id": "neg_gs_test_005",
+      "group": "forged",
+      "max_cosine": 0.7182447910308838
+    },
+    {
+      "id": "neg_gs_test_002",
+      "group": "forged",
+      "max_cosine": 0.6645606756210327
+    },
+    {
+      "id": "neg_gs_test_008",
+      "group": "forged",
+      "max_cosine": 0.7049136161804199
+    },
+    {
+      "id": "neg_extra_gs_test_009",
+      "group": "forged",
+      "max_cosine": 0.6517410278320312
+    },
+    {
+      "id": "neg_extra_gs_034",
+      "group": "forged",
+      "max_cosine": 0.5387742519378662
+    },
+    {
+      "id": "neg_extra_gs_076",
+      "group": "forged",
+      "max_cosine": 0.7458361387252808
+    },
+    {
+      "id": "neg_extra_gs_019",
+      "group": "forged",
+      "max_cosine": 0.6848398447036743
+    },
+    {
+      "id": "neg_extra_gs_018",
+      "group": "forged",
+      "max_cosine": 0.762351930141449
+    },
+    {
+      "id": "neg_extra_gs_test_023",
+      "group": "forged",
+      "max_cosine": 0.632993221282959
+    },
+    {
+      "id": "neg_extra_gs_test_037",
+      "group": "forged",
+      "max_cosine": 0.6268237829208374
+    },
+    {
+      "id": "neg_extra_gs_test_024",
+      "group": "forged",
+      "max_cosine": 0.8790650367736816
+    },
+    {
+      "id": "neg_extra_gs_test_001",
+      "group": "forged",
+      "max_cosine": 0.6722769737243652
+    },
+    {
+      "id": "neg_extra_gs_087",
+      "group": "forged",
+      "max_cosine": 0.7665599584579468
+    },
+    {
+      "id": "neg_extra_gs_030",
+      "group": "forged",
+      "max_cosine": 0.5155032277107239
+    },
+    {
+      "id": "neg_extra_gs_test_031",
+      "group": "forged",
+      "max_cosine": 0.7626286745071411
+    },
+    {
+      "id": "neg_extra_gs_test_021",
+      "group": "forged",
+      "max_cosine": 0.6139028072357178
+    },
+    {
+      "id": "neg_extra_gs_060",
+      "group": "forged",
+      "max_cosine": 0.6252162456512451
+    },
+    {
+      "id": "neg_extra_gs_test_019",
+      "group": "forged",
+      "max_cosine": 0.7271876931190491
+    },
+    {
+      "id": "neg_extra_gs_059",
+      "group": "forged",
+      "max_cosine": 0.6401369571685791
+    },
+    {
+      "id": "neg_extra_gs_test_012",
+      "group": "forged",
+      "max_cosine": 0.6446589231491089
+    },
+    {
+      "id": "neg_extra_gs_test_015",
+      "group": "forged",
+      "max_cosine": 0.7635130882263184
+    },
+    {
+      "id": "neg_extra_gs_test_029",
+      "group": "forged",
+      "max_cosine": 0.6438230276107788
+    },
+    {
+      "id": "neg_extra_gs_035",
+      "group": "forged",
+      "max_cosine": 0.7299216985702515
+    },
+    {
+      "id": "neg_extra_gs_037",
+      "group": "forged",
+      "max_cosine": 0.5959851741790771
+    },
+    {
+      "id": "neg_extra_gs_095",
+      "group": "forged",
+      "max_cosine": 0.6933271884918213
+    },
+    {
+      "id": "neg_extra_gs_test_014",
+      "group": "forged",
+      "max_cosine": 0.7695823311805725
+    },
+    {
+      "id": "neg_extra_gs_006",
+      "group": "forged",
+      "max_cosine": 0.5837544798851013
+    },
+    {
+      "id": "neg_extra_gs_test_020",
+      "group": "forged",
+      "max_cosine": 0.6939026713371277
+    },
+    {
+      "id": "neg_extra_gs_test_030",
+      "group": "forged",
+      "max_cosine": 0.5953682661056519
+    },
+    {
+      "id": "neg_extra_gs_test_013",
+      "group": "forged",
+      "max_cosine": 0.6702271103858948
+    },
+    {
+      "id": "neg_extra_gs_044",
+      "group": "forged",
+      "max_cosine": 0.5622946619987488
+    },
+    {
+      "id": "neg_extra_gs_test_022",
+      "group": "forged",
+      "max_cosine": 0.649764895439148
+    },
+    {
+      "id": "neg_extra_gs_051",
+      "group": "forged",
+      "max_cosine": 0.5618419647216797
+    },
+    {
+      "id": "neg_extra_gs_068",
+      "group": "forged",
+      "max_cosine": 0.8927060961723328
+    },
+    {
+      "id": "neg_extra_gs_039",
+      "group": "forged",
+      "max_cosine": 0.6412456035614014
+    },
+    {
+      "id": "neg_extra_gs_test_011",
+      "group": "forged",
+      "max_cosine": 0.6891664266586304
+    },
+    {
+      "id": "neg_extra_gs_046",
+      "group": "forged",
+      "max_cosine": 0.5015167593955994
+    },
+    {
+      "id": "neg_extra_gs_015",
+      "group": "forged",
+      "max_cosine": 0.7241979837417603
+    },
+    {
+      "id": "neg_extra_gs_017",
+      "group": "forged",
+      "max_cosine": 0.7932423949241638
+    },
+    {
+      "id": "neg_extra_gs_097",
+      "group": "forged",
+      "max_cosine": 0.5837206840515137
+    },
+    {
+      "id": "neg_extra_gs_test_027",
+      "group": "forged",
+      "max_cosine": 0.7186344861984253
+    },
+    {
+      "id": "neg_extra_gs_021_v2",
+      "group": "forged",
+      "max_cosine": 0.7798581719398499
+    },
+    {
+      "id": "neg_extra_gs_test_010_v2",
+      "group": "forged",
+      "max_cosine": 0.6370998620986938
+    }
+  ],
+  "summary": {
+    "normal": {
+      "n": 50,
+      "min": 0.6292853355407715,
+      "max": 0.961223840713501,
+      "mean": 0.7771977841854095,
+      "stdev": 0.0890714023537976
+    },
+    "forged": {
+      "n": 50,
+      "min": 0.41482847929000854,
+      "max": 0.8927060961723328,
+      "mean": 0.6676916396617889,
+      "stdev": 0.09836563169100555
+    },
+    "overlap_range": [
+      0.6292853355407715,
+      0.8927060961723328
+    ],
+    "forged_buried_in_normal_range": {
+      "count": 34,
+      "total": 50
+    }
+  }
+}

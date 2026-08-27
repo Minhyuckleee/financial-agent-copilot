@@ -8,6 +8,10 @@ RAG·가드레일·Agent 품질을 측정하는 평가 스크립트, API 연동 
 - `rag_eval_ragas.py` — 골든셋 문항으로 전체 그래프(`StateGraph.invoke()`)를 실제로 돌리고, OpenAI를 judge로 RAGAS 4종 채점
 - `build_citation_grounding_dataset.py` — RAGAS 평가에서 나온 실제 답변+검색문서 쌍을 재사용해서, 가드레일 규칙⑤ 판정기의 예측이 실제 정답과 얼마나 맞는지 검증할 데이터셋 생성
 - `build_citation_grounding_negatives.py` — 같은 목적. 자연발화로는 "진짜 근거없는 claim"이 잘 안 나와서, 실패유형별로 직접 틀린 답변을 저술해 negative 샘플 확보
+- `build_citation_grounding_negatives_extra.py` — 위조 표본을 10건→50건으로 늘리기 위해 같은 5실패유형을 미사용 golden 문항 40개에 추가 적용(LLM 초안 생성 + 사람 스팟체크)
+- `prepare_citation_grounding_pool100.py` — 규칙⑤ cosine-vs-LLM 비교용 정상 50 + 위조 50 pool 구성(신규 생성 없이 기존 라벨 재사용)
+- `eval_citation_grounding_cosine_range.py` — 폐기된 "임베딩 코사인 유사도" 판정 방식을 재현해 정상/위조 그룹의 유사도 range가 얼마나 겹치는지 기술(descriptive, threshold 분류 안 함)
+- `eval_citation_grounding_llm_detection.py` — 같은 pool에 현재 프로덕션 판정기(`_check_grounding_llm`)를 그대로 돌려 위조탐지율 측정
 - `run_agent_eval.py` — 케이스 파일(질문+기대결과)로 그래프를 실제 실행하고, route/tool선택/파라미터/가드레일발동 같은 구조적 필드를 기대값과 코드로 비교(LLM judge 없음)
 - `smoke/` — ECOS/FINLIFE/OpenAI 각 API 키가 유효한지 최소 호출 1번으로 확인
 
@@ -18,6 +22,7 @@ RAG·가드레일·Agent 품질을 측정하는 평가 스크립트, API 연동 
 | `rag_eval_deterministic.py` | train(n=120) recall 0.82·precision 0.20·mrr 0.50 / test(n=40) recall 0.68·precision 0.16·mrr 0.39 / valid(n=40) recall 0.80·precision 0.18·mrr 0.43 | precision이 낮은 건 설계상 의도된 것입니다 — 검색 단계는 후보를 넉넉히(최대 6개) 뽑아 recall을 우선하고, 그 중 실제로 답에 쓸지는 뒷단(답변생성+가드레일)이 판단하는 구조입니다 |
 | `rag_eval_ragas.py` | train(n=51) context_recall 0.91·faithfulness 0.89 / test(n=40) context_recall 0.83·faithfulness 0.85 | 검색 정확도뿐 아니라 생성된 답변이 검색문서에 실제로 근거하는지까지 확인합니다 |
 | `build_citation_grounding_dataset.py` + `_negatives.py` | train 40/40, test 34/34 (전부 정확 판정) | negative가 5건뿐이라(하나만 틀려도 수치가 크게 흔들림) 일반화된 정확도로 보긴 어렵고, "오탐 없이 동작한다"는 최소 검증(sanity check)에 가깝습니다 |
+| `eval_citation_grounding_cosine_range.py` + `_llm_detection.py` | 아래 참고 | 규칙⑤를 임베딩 코사인 유사도 방식에서 LLM entailment 판정으로 전환한 근거를 정상 50 + 위조 50 표본으로 재현·검증 |
 | `run_agent_eval.py` | 아래 참고 | 공고가 요구하는 "테스트셋 기반 품질분석·개선"에 가장 직접 대응되는 결과 |
 
 ### run_agent_eval.py — 개선 과정
@@ -31,3 +36,22 @@ RAG·가드레일·Agent 품질을 측정하는 평가 스크립트, API 연동 
 
 - 개발용 416건: 1차 실행 88.2%(367/416) → 실패 49건을 전수조사해 진짜 코드버그 4건만 골라 수정(나머지는 테스트케이스 설계오류로 판명, 같이 수정) → 재실행 96.9%(403/416)
 - 별도 검증용 104건: 1차 실행 98.1%(102/104) → 실제 코드결함 2건 수정 + 골든셋 라벨 오류 1건 정정 → 최종 100%(104/104)
+
+### eval_citation_grounding_cosine_range.py / _llm_detection.py — cosine vs LLM 재현 비교
+
+규칙⑤(citation grounding)를 임베딩 코사인 유사도 방식에서 LLM entailment 판정으로 전환한 근거였던
+초기 파일럿(negative 5건)은 표본이 너무 작아 일반화하기 어려웠다. 정상 50건(실제 파이프라인
+출력, 사람이 chunk 대조로 확정한 라벨) + 위조 50건(5개 실패유형 × 10건, 골든셋 문서 기반으로
+구성 후 사람이 원문 대조 검증)으로 재현했다.
+
+- **cosine 유사도**(claimed_phrase ↔ retrieved chunk 중 최댓값, KURE-v1 임베딩): 정상 range
+  [0.629, 0.961](평균 0.777) / 위조 range [0.415, 0.893](평균 0.668) — 위조 50건 중 **34건(68%)**이
+  정상 range 안에 그대로 묻혀 threshold 하나로 구분 불가능함을 확인
+- **LLM entailment 판정**(`_check_grounding_llm`, 프로덕션 코드 그대로): 정상 50/50 오탐 없음,
+  위조 46/50(92%) 탐지. 미탐 4건 중 3건은 구체적 숫자·조항 없이 일반적 어투로 서술된 위조 주장이
+  애초에 "citation claim"으로 추출되지 않은 경우(has_citation_claim=False), 1건은 판정
+  자체가 틀림(entailment miss) — LLM 판정도 완벽하진 않지만, cosine이 원천적으로 구분 못 하는
+  구간을 유의미하게 걸러낸다는 점은 명확함
+- 위조 50건 중 40건은 생성 과정에서 실제로 2건이 "숫자를 안 바꾸고 원문 그대로 베낀" 라벨링
+  버그였음 — LLM 판정기가 이 2건을 grounded=true로 판정한 게 오히려 정답이었고, 원문 대조로
+  발견해 다른 문항으로 교체했다(위조 샘플도 사람 검증 없이는 신뢰할 수 없다는 걸 스스로 증명한 사례)
