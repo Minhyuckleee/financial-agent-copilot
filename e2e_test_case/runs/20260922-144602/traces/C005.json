@@ -1,0 +1,56 @@
+{
+ "id": "C005",
+ "question": "하나은행 3년 정기예금 금리 알려줘",
+ "history": [],
+ "route": "product_recommendation",
+ "tool_calls": [
+  {
+   "name": "recommend_deposit_products",
+   "args": {
+    "save_term_months": 36,
+    "bank_name_filter": "하나"
+   },
+   "error": null
+  }
+ ],
+ "steps": [
+  {
+   "node": "route_query",
+   "route": "product_recommendation"
+  },
+  {
+   "node": "call_tool",
+   "name": "recommend_deposit_products",
+   "args": {
+    "save_term_months": 36,
+    "bank_name_filter": "하나"
+   },
+   "error": null,
+   "result_count": 1
+  },
+  {
+   "node": "run_guardrail",
+   "guardrail": [
+    "disclosure_missing"
+   ]
+  },
+  {
+   "node": "finalize_answer"
+  }
+ ],
+ "answer": "하나은행의 3년(36개월) 정기예금 금리는 기본 연 2.3%이고, 우대금리 적용 시 최대 연 2.7%입니다.\n\n※ 실제 가입 조건과 금리는 상품설명서·약관 확인 후 최종 확정됩니다. 자세한 사항은 영업점 또는 고객센터에 문의하세요.",
+ "source_data": {
+  "tool_results": [
+   [
+    {
+     "bank_name": "주식회사 하나은행",
+     "product_name": "하나의정기예금",
+     "save_term_months": 36,
+     "interest_rate": 2.3,
+     "interest_rate_preferential": 2.7
+    }
+   ]
+  ],
+  "documents": []
+ }
+}

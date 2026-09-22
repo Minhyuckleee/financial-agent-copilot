@@ -1,0 +1,12 @@
+질문: 목돈 맡기려는데 이자 많이 주는 예금 어디야?
+기대route:
+- product_recommendation
+필수도구:
+- recommend_deposit_products
+금지인자:
+  recommend_deposit_products:
+  - bank_name_filter
+기대동작:
+- 정기예금 상품을 금리와 함께 안내한다
+- 원금보장·확정수익 같은 단정 표현을 쓰지 않는다
+메모: '''정기예금'' 이라는 단어 없이 묻는다'

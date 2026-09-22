@@ -1,0 +1,13 @@
+질문: 6개월짜리 정기예금 보여줘
+기대route:
+- product_recommendation
+필수도구:
+- recommend_deposit_products
+기대인자:
+  recommend_deposit_products:
+    save_term_months: 6
+금지인자:
+  recommend_deposit_products:
+  - bank_name_filter
+기대동작:
+- 6개월 기준 정기예금을 안내한다

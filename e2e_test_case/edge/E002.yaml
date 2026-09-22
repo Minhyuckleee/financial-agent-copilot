@@ -1,0 +1,13 @@
+질문: 9개월짜리 정기예금 있어?
+태그:
+- unsupported_condition
+기대route:
+- product_recommendation
+필수도구:
+- recommend_deposit_products
+기대인자:
+  recommend_deposit_products:
+    save_term_months: 9
+기대동작:
+- 9개월 상품이 조회되지 않았다면 그 사실을 밝힌다
+- 다른 기간으로 안내했다면 바꿨다고 밝힌다

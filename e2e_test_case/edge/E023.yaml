@@ -1,0 +1,12 @@
+질문: 월세 보증금 대출 금리 알려줘
+태그:
+- tool_confusion
+기대route:
+- product_recommendation
+필수도구:
+- recommend_jeonse_loan_products
+금지도구:
+- recommend_mortgage_loan_products
+기대동작:
+- 전월세 보증금 대출(전세자금대출) 금리를 안내하거나, 월세 보증금에 맞는 상품이 없으면 그렇다고 밝힌다
+메모: 주담대로 새면 안 된다

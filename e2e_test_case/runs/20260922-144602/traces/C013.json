@@ -1,0 +1,64 @@
+{
+ "id": "C013",
+ "question": "직장인 신용대출 금리 비교해줘",
+ "history": [],
+ "route": "product_recommendation",
+ "tool_calls": [
+  {
+   "name": "recommend_credit_loan_products",
+   "args": {},
+   "error": null
+  }
+ ],
+ "steps": [
+  {
+   "node": "route_query",
+   "route": "product_recommendation"
+  },
+  {
+   "node": "call_tool",
+   "name": "recommend_credit_loan_products",
+   "args": {},
+   "error": null,
+   "result_count": 3
+  },
+  {
+   "node": "run_guardrail",
+   "guardrail": [
+    "disclosure_missing"
+   ]
+  },
+  {
+   "node": "finalize_answer"
+  }
+ ],
+ "answer": "직장인 신용대출 금리를 비교해드리면, 신용점수 601~700점 기준으로\n\n- 농협은행의 '가계신용대출(마이너스대출)'은 금리가 5.72%\n- 하나은행의 '마이너스한도대출'은 금리가 6.12%\n- 우리은행의 '협약금리 외 신용대출상품'은 금리가 6.22%\n\n입니다. 각 은행별로 금리 차이가 있으니 참고하시기 바랍니다.\n\n※ 실제 가입 조건과 금리는 상품설명서·약관 확인 후 최종 확정됩니다. 자세한 사항은 영업점 또는 고객센터에 문의하세요.",
+ "source_data": {
+  "tool_results": [
+   [
+    {
+     "bank_name": "농협은행주식회사",
+     "product_name": "가계신용대출(마이너스대출)",
+     "loan_type": "마이너스한도대출",
+     "credit_score_band": "601~700점",
+     "interest_rate": 5.72
+    },
+    {
+     "bank_name": "주식회사 하나은행",
+     "product_name": "마이너스한도대출",
+     "loan_type": "마이너스한도대출",
+     "credit_score_band": "601~700점",
+     "interest_rate": 6.12
+    },
+    {
+     "bank_name": "우리은행",
+     "product_name": "협약금리 外 신용대출상품",
+     "loan_type": "마이너스한도대출",
+     "credit_score_band": "601~700점",
+     "interest_rate": 6.22
+    }
+   ]
+  ],
+  "documents": []
+ }
+}

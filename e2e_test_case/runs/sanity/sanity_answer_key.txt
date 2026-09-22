@@ -1,0 +1,10 @@
+S01  PASS  
+S02  PASS  
+S03  PASS  
+S04  PASS  
+S05  PASS  
+S06  FAIL  단정·과장 표현
+S07  FAIL  원자료에 없는 숫자
+S08  FAIL  바꾼 조건을 숨김
+S09  FAIL  문서가 뒷받침하지 않는 규정
+S10  FAIL  기대동작 미충족 (없음과 못 봄 혼동)

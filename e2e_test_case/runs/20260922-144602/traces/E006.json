@@ -1,0 +1,61 @@
+{
+ "id": "E006",
+ "question": "하나은행 걸로 보여줘",
+ "history": [
+  {
+   "사용자": "6개월 정기예금 추천해줘",
+   "에이전트": "6개월 기준 정기예금 상품 3건을 안내드립니다."
+  }
+ ],
+ "route": "product_recommendation",
+ "tool_calls": [
+  {
+   "name": "recommend_deposit_products",
+   "args": {
+    "save_term_months": 6,
+    "bank_name_filter": "하나"
+   },
+   "error": null
+  }
+ ],
+ "steps": [
+  {
+   "node": "route_query",
+   "route": "product_recommendation"
+  },
+  {
+   "node": "call_tool",
+   "name": "recommend_deposit_products",
+   "args": {
+    "save_term_months": 6,
+    "bank_name_filter": "하나"
+   },
+   "error": null,
+   "result_count": 1
+  },
+  {
+   "node": "run_guardrail",
+   "guardrail": [
+    "disclosure_missing"
+   ]
+  },
+  {
+   "node": "finalize_answer"
+  }
+ ],
+ "answer": "하나은행의 예금 상품으로는 '하나의정기예금'이 있습니다. 6개월 만기 기준으로 기본 금리는 연 2.25%이고, 우대금리를 포함하면 최대 연 3.3%까지 적용됩니다.\n\n※ 실제 가입 조건과 금리는 상품설명서·약관 확인 후 최종 확정됩니다. 자세한 사항은 영업점 또는 고객센터에 문의하세요.",
+ "source_data": {
+  "tool_results": [
+   [
+    {
+     "bank_name": "주식회사 하나은행",
+     "product_name": "하나의정기예금",
+     "save_term_months": 6,
+     "interest_rate": 2.25,
+     "interest_rate_preferential": 3.3
+    }
+   ]
+  ],
+  "documents": []
+ }
+}

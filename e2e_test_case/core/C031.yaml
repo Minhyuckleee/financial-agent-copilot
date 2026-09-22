@@ -1,0 +1,15 @@
+질문: 농협에서 신용점수 650점 사업자대출 금리 알려줘
+기대route:
+- product_recommendation
+필수도구:
+- recommend_business_loan_products
+금지도구:
+- recommend_credit_loan_products
+기대인자:
+  recommend_business_loan_products:
+    credit_score: 650
+    bank_name_filter:
+      포함: 농협
+기대동작:
+- 농협 650점 기준 금리를 안내하거나, 조회되지 않으면 그렇다고 밝힌다
+- 대출 승인이나 한도를 확정하는 표현을 쓰지 않는다

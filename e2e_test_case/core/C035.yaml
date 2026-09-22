@@ -1,0 +1,14 @@
+질문: 지금 원달러 몇 원이야?
+기대route:
+- exchange_rate
+필수도구:
+- inquire_exchange_rate
+금지도구:
+- recommend_deposit_products
+- recommend_credit_loan_products
+- recommend_jeonse_loan_products
+- recommend_mortgage_loan_products
+- recommend_business_loan_products
+기대동작:
+- 원/달러 환율 값을 안내한다
+- 기준일을 밝힌다

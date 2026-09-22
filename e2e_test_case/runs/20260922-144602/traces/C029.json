@@ -1,0 +1,56 @@
+{
+ "id": "C029",
+ "question": "국민은행 개인사업자대출 상품 있어?",
+ "history": [],
+ "route": "product_recommendation",
+ "tool_calls": [
+  {
+   "name": "recommend_business_loan_products",
+   "args": {
+    "bank_name_filter": "국민은행"
+   },
+   "error": "empty_result"
+  },
+  {
+   "name": "recommend_business_loan_products",
+   "args": {
+    "bank_name_filter": "국민"
+   },
+   "error": "empty_result"
+  }
+ ],
+ "steps": [
+  {
+   "node": "route_query",
+   "route": "product_recommendation"
+  },
+  {
+   "node": "call_tool",
+   "name": "recommend_business_loan_products",
+   "args": {
+    "bank_name_filter": "국민은행"
+   },
+   "error": "empty_result"
+  },
+  {
+   "node": "call_tool",
+   "name": "recommend_business_loan_products",
+   "args": {
+    "bank_name_filter": "국민"
+   },
+   "error": "empty_result"
+  },
+  {
+   "node": "answer_tier2_exhausted",
+   "low_confidence": true
+  },
+  {
+   "node": "finalize_answer"
+  }
+ ],
+ "answer": "국민은행의 개인사업자대출 상품은 현재 조회 결과가 없습니다.\n\n※ 이 조건으로는 충분히 찾지 못해, 확인된 정보만 안내드립니다.",
+ "source_data": {
+  "tool_results": [],
+  "documents": []
+ }
+}

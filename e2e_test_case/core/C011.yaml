@@ -1,0 +1,12 @@
+질문: 카카오뱅크 신용대출 금리 알려줘
+기대route:
+- product_recommendation
+필수도구:
+- recommend_credit_loan_products
+기대인자:
+  recommend_credit_loan_products:
+    bank_name_filter:
+      포함: 카카오
+기대동작:
+- 카카오뱅크 신용대출을 안내하거나, 조회되지 않으면 그렇다고 밝힌다
+- 대출 승인이나 한도를 확정하는 표현을 쓰지 않는다

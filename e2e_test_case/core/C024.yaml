@@ -1,0 +1,14 @@
+질문: 집 사려고 하는데 대출 금리 어디가 괜찮아?
+기대route:
+- product_recommendation
+필수도구:
+- recommend_mortgage_loan_products
+금지도구:
+- recommend_jeonse_loan_products
+금지인자:
+  recommend_mortgage_loan_products:
+  - bank_name_filter
+기대동작:
+- 주택담보대출 금리를 안내한다
+- 대출 승인이나 한도를 확정하는 표현을 쓰지 않는다
+메모: '''주담대'' 라는 단어 없이 묻는다'

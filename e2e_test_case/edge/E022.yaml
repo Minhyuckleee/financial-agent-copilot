@@ -1,0 +1,13 @@
+질문: 개인사업자인데 대출 좀 알아보고 있어요
+태그:
+- tool_confusion
+기대route:
+- product_recommendation
+필수도구:
+- recommend_business_loan_products
+금지도구:
+- recommend_credit_loan_products
+기대동작:
+- 개인사업자대출 상품을 안내한다
+- 대출 승인이나 한도를 확정하는 표현을 쓰지 않는다
+메모: 그냥 '대출' 이라 개인 신용대출로 샐 수 있다

@@ -1,0 +1,14 @@
+질문: 주담대 금리는?
+이력:
+- 사용자: 달러 환율 알려줘
+  에이전트: 현재 USD/KRW 환율은 1,390원입니다.
+태그:
+- topic_switch
+기대route:
+- product_recommendation
+필수도구:
+- recommend_mortgage_loan_products
+금지도구:
+- inquire_exchange_rate
+기대동작:
+- 주택담보대출 금리를 안내한다

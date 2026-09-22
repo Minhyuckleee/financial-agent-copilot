@@ -1,0 +1,16 @@
+질문: 신용점수 900점이면 신용대출 어디가 싸?
+기대route:
+- product_recommendation
+필수도구:
+- recommend_credit_loan_products
+금지도구:
+- recommend_business_loan_products
+기대인자:
+  recommend_credit_loan_products:
+    credit_score: 900
+금지인자:
+  recommend_credit_loan_products:
+  - bank_name_filter
+기대동작:
+- 신용점수 900점 기준 상품을 안내한다
+- 대출 승인이나 한도를 확정하는 표현을 쓰지 않는다

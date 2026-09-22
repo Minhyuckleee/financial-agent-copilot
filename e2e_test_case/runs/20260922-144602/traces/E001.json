@@ -1,0 +1,58 @@
+{
+ "id": "E001",
+ "question": "신한은행 18개월 정기예금 추천해줘",
+ "history": [],
+ "route": "product_recommendation",
+ "tool_calls": [
+  {
+   "name": "recommend_deposit_products",
+   "args": {
+    "save_term_months": 18,
+    "bank_name_filter": "신한"
+   },
+   "error": "empty_result"
+  },
+  {
+   "name": "recommend_deposit_products",
+   "args": {
+    "save_term_months": 18
+   },
+   "error": "empty_result"
+  }
+ ],
+ "steps": [
+  {
+   "node": "route_query",
+   "route": "product_recommendation"
+  },
+  {
+   "node": "call_tool",
+   "name": "recommend_deposit_products",
+   "args": {
+    "save_term_months": 18,
+    "bank_name_filter": "신한"
+   },
+   "error": "empty_result"
+  },
+  {
+   "node": "call_tool",
+   "name": "recommend_deposit_products",
+   "args": {
+    "save_term_months": 18
+   },
+   "error": "empty_result"
+  },
+  {
+   "node": "answer_tier2_exhausted",
+   "low_confidence": true
+  },
+  {
+   "node": "finalize_answer"
+  }
+ ],
+ "answer": "신한은행의 18개월 정기예금 상품은 현재 조회 결과가 없습니다.\n\n※ 이 조건으로는 충분히 찾지 못해, 확인된 정보만 안내드립니다.",
+ "source_data": {
+  "tool_results": [],
+  "documents": []
+ }
+}

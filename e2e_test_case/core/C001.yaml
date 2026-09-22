@@ -1,0 +1,13 @@
+질문: 정기예금 금리 좋은 거 추천해줘
+기대route:
+- product_recommendation
+필수도구:
+- recommend_deposit_products
+금지인자:
+  recommend_deposit_products:
+  - bank_name_filter
+기대동작:
+- 정기예금 상품을 금리와 함께 안내한다
+- 어느 가입기간 기준인지 밝힌다
+- 원금보장·확정수익 같은 단정 표현을 쓰지 않는다
+메모: 가장 단순한 형태. 은행을 말하지 않았으니 은행명을 지어넣으면 안 된다

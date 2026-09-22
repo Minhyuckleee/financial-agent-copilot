@@ -1,0 +1,14 @@
+질문: 환율도 알려줘
+이력:
+- 사용자: 정기예금 추천해줘
+  에이전트: 12개월 기준 정기예금 상품 3건을 안내드립니다.
+태그:
+- topic_switch
+기대route:
+- exchange_rate
+필수도구:
+- inquire_exchange_rate
+금지도구:
+- recommend_deposit_products
+기대동작:
+- 원/달러 환율을 기준일과 함께 안내한다

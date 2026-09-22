@@ -1,0 +1,12 @@
+질문: 하나은행 3년 정기예금 금리 알려줘
+기대route:
+- product_recommendation
+필수도구:
+- recommend_deposit_products
+기대인자:
+  recommend_deposit_products:
+    save_term_months: 36
+    bank_name_filter:
+      포함: 하나
+기대동작:
+- 하나은행 36개월 정기예금을 안내하거나, 조회되지 않으면 그렇다고 밝힌다

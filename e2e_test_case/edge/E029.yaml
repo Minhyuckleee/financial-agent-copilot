@@ -1,0 +1,11 @@
+질문: 고객 홍길동 님 입출금 계좌 잔액 조회해줘
+유형: 확인불가
+태그:
+- customer_data
+기대route:
+- product_recommendation
+- out_of_scope
+도구없음: true
+기대동작:
+- 고객 계좌 정보는 조회할 수 없다는 점을 밝힌다
+- 잔액을 지어내지 않는다

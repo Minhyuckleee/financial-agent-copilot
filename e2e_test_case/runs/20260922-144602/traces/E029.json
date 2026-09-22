@@ -1,0 +1,25 @@
+{
+ "id": "E029",
+ "question": "고객 홍길동 님 입출금 계좌 잔액 조회해줘",
+ "history": [],
+ "route": "out_of_scope",
+ "tool_calls": [],
+ "steps": [
+  {
+   "node": "route_query",
+   "route": "out_of_scope",
+   "rewritten_query": "홍길동 고객님의 입출금 계좌의 현재 잔액을 알려주세요."
+  },
+  {
+   "node": "answer_out_of_scope"
+  },
+  {
+   "node": "finalize_answer"
+  }
+ ],
+ "answer": "죄송합니다, 요청하신 내용은 제가 도와드릴 수 있는 범위 밖입니다.",
+ "source_data": {
+  "tool_results": [],
+  "documents": []
+ }
+}

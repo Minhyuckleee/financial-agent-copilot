@@ -1,0 +1,13 @@
+질문: 직장인 신용대출 금리 비교해줘
+기대route:
+- product_recommendation
+필수도구:
+- recommend_credit_loan_products
+금지도구:
+- recommend_business_loan_products
+금지인자:
+  recommend_credit_loan_products:
+  - bank_name_filter
+기대동작:
+- 신용대출 상품을 금리와 함께 비교해 안내한다
+- 대출 승인이나 한도를 확정하는 표현을 쓰지 않는다

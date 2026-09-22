@@ -1,0 +1,14 @@
+질문: 토스뱅크 전세자금대출 금리 알려줘
+태그:
+- unsupported_condition
+기대route:
+- product_recommendation
+필수도구:
+- recommend_jeonse_loan_products
+기대인자:
+  recommend_jeonse_loan_products:
+    bank_name_filter:
+      포함: 토스
+기대동작:
+- 토스뱅크 상품이 조회되지 않았다면 그 사실을 밝힌다
+- 다른 은행 상품으로 안내했다면 바꿨다고 밝힌다

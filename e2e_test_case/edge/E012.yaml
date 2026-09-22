@@ -1,0 +1,15 @@
+질문: 그럼 정기예금 추천해줘
+이력:
+- 사용자: 예금거래기본약관은 언제 볼 수 있어?
+  에이전트: 영업점에서 영업시간 중 볼 수 있습니다.
+태그:
+- topic_switch
+기대route:
+- product_recommendation
+필수도구:
+- recommend_deposit_products
+금지인자:
+  recommend_deposit_products:
+  - bank_name_filter
+기대동작:
+- 정기예금 상품을 금리와 함께 안내한다

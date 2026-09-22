@@ -1,0 +1,68 @@
+{
+ "id": "C003",
+ "question": "2년짜리 예금 금리 높은 곳 알려줘",
+ "history": [],
+ "route": "product_recommendation",
+ "tool_calls": [
+  {
+   "name": "recommend_deposit_products",
+   "args": {
+    "save_term_months": 24
+   },
+   "error": null
+  }
+ ],
+ "steps": [
+  {
+   "node": "route_query",
+   "route": "product_recommendation"
+  },
+  {
+   "node": "call_tool",
+   "name": "recommend_deposit_products",
+   "args": {
+    "save_term_months": 24
+   },
+   "error": null,
+   "result_count": 3
+  },
+  {
+   "node": "run_guardrail",
+   "guardrail": [
+    "disclosure_missing"
+   ]
+  },
+  {
+   "node": "finalize_answer"
+  }
+ ],
+ "answer": "2년(24개월)짜리 예금 상품 중 금리가 높은 곳은 다음과 같습니다.\n\n- 부산은행의 '더(The) 특판 정기예금': 최고 연 3.92% (우대금리 포함)\n- 전북은행의 'JB 다이렉트(자유만기) 예금': 연 3.82%\n- 농협은행의 'NH올원e예금': 연 3.0%\n\n이 중 부산은행의 '더(The) 특판 정기예금'이 우대금리 적용 시 가장 높은 금리(3.92%)를 제공합니다.\n\n※ 실제 가입 조건과 금리는 상품설명서·약관 확인 후 최종 확정됩니다. 자세한 사항은 영업점 또는 고객센터에 문의하세요.",
+ "source_data": {
+  "tool_results": [
+   [
+    {
+     "bank_name": "부산은행",
+     "product_name": "더(The) 특판 정기예금",
+     "save_term_months": 24,
+     "interest_rate": 1.75,
+     "interest_rate_preferential": 3.92
+    },
+    {
+     "bank_name": "전북은행",
+     "product_name": "JB 다이렉트(자유만기) 예금",
+     "save_term_months": 24,
+     "interest_rate": 3.82,
+     "interest_rate_preferential": 3.82
+    },
+    {
+     "bank_name": "농협은행주식회사",
+     "product_name": "NH올원e예금",
+     "save_term_months": 24,
+     "interest_rate": 3.0,
+     "interest_rate_preferential": 3.0
+    }
+   ]
+  ],
+  "documents": []
+ }
+}

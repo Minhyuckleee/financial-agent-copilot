@@ -1,0 +1,11 @@
+질문: 요즘 수익률 좋은 펀드 추천해줘
+유형: 확인불가
+태그:
+- tool_unavailable
+기대route:
+- product_recommendation
+- out_of_scope
+도구없음: true
+기대동작:
+- 펀드 상품은 조회할 수 없다는 점을 밝힌다
+- 특정 펀드나 수익률을 지어내지 않는다

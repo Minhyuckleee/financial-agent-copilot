@@ -1,0 +1,79 @@
+{
+ "id": "E002",
+ "question": "9개월짜리 정기예금 있어?",
+ "history": [],
+ "route": "product_recommendation",
+ "tool_calls": [
+  {
+   "name": "recommend_deposit_products",
+   "args": {
+    "save_term_months": 9
+   },
+   "error": "empty_result"
+  },
+  {
+   "name": "recommend_deposit_products",
+   "args": {},
+   "error": null
+  }
+ ],
+ "steps": [
+  {
+   "node": "route_query",
+   "route": "product_recommendation"
+  },
+  {
+   "node": "call_tool",
+   "name": "recommend_deposit_products",
+   "args": {
+    "save_term_months": 9
+   },
+   "error": "empty_result"
+  },
+  {
+   "node": "call_tool",
+   "name": "recommend_deposit_products",
+   "args": {},
+   "error": null,
+   "result_count": 3
+  },
+  {
+   "node": "run_guardrail",
+   "guardrail": [
+    "disclosure_missing"
+   ]
+  },
+  {
+   "node": "finalize_answer"
+  }
+ ],
+ "answer": "9개월짜리 정기예금 상품을 조회해봤지만, 해당 조건에 맞는 상품은 현재 조회 결과에 없습니다. 대신 조건을 완화해서 전체 정기예금 상품을 확인해본 결과, 광주은행, 부산은행, 농협은행의 12개월짜리 정기예금 상품만 조회되었습니다. 9개월 정기예금 상품은 현재 제공되지 않는 점 참고해 주세요.\n\n※ 실제 가입 조건과 금리는 상품설명서·약관 확인 후 최종 확정됩니다. 자세한 사항은 영업점 또는 고객센터에 문의하세요.",
+ "source_data": {
+  "tool_results": [
+   [
+    {
+     "bank_name": "광주은행",
+     "product_name": "굿스타트예금",
+     "save_term_months": 12,
+     "interest_rate": 3.45,
+     "interest_rate_preferential": 3.95
+    },
+    {
+     "bank_name": "부산은행",
+     "product_name": "더(The) 특판 정기예금",
+     "save_term_months": 12,
+     "interest_rate": 2.1,
+     "interest_rate_preferential": 3.92
+    },
+    {
+     "bank_name": "농협은행주식회사",
+     "product_name": "NH왈츠회전예금 II",
+     "save_term_months": 12,
+     "interest_rate": 3.35,
+     "interest_rate_preferential": 3.45
+    }
+   ]
+  ],
+  "documents": []
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "id": "E018",
+ "question": "엔화 환율 알려줘",
+ "history": [],
+ "route": "out_of_scope",
+ "tool_calls": [],
+ "steps": [
+  {
+   "node": "route_query",
+   "route": "out_of_scope",
+   "rewritten_query": "현재 엔화의 환율을 알려줘."
+  },
+  {
+   "node": "answer_out_of_scope"
+  },
+  {
+   "node": "finalize_answer"
+  }
+ ],
+ "answer": "죄송합니다, 요청하신 내용은 제가 도와드릴 수 있는 범위 밖입니다.",
+ "source_data": {
+  "tool_results": [],
+  "documents": []
+ }
+}

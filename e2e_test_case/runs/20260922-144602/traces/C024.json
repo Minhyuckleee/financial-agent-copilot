@@ -1,0 +1,63 @@
+{
+ "id": "C024",
+ "question": "집 사려고 하는데 대출 금리 어디가 괜찮아?",
+ "history": [],
+ "route": "product_recommendation",
+ "tool_calls": [
+  {
+   "name": "recommend_mortgage_loan_products",
+   "args": {
+    "bank_name_filter": null
+   },
+   "error": null
+  }
+ ],
+ "steps": [
+  {
+   "node": "route_query",
+   "route": "product_recommendation"
+  },
+  {
+   "node": "call_tool",
+   "name": "recommend_mortgage_loan_products",
+   "args": {
+    "bank_name_filter": null
+   },
+   "error": null,
+   "result_count": 3
+  },
+  {
+   "node": "run_guardrail",
+   "guardrail": []
+  },
+  {
+   "node": "finalize_answer"
+  }
+ ],
+ "answer": "현재 조회된 주택담보대출 금리를 보면,  \n- 경남은행의 '집집마다 도움대출II'가 연 3.7%~5.51%  \n- 우리은행의 '우리아파트론'이 연 4.18%~5.28%  \n- 농협은행의 'NH주택담보대출'이 연 4.49%~6.29%입니다.\n\n이 중에서는 경남은행의 최저 금리(3.7%)가 가장 낮고, 우리은행은 최대 금리가 상대적으로 낮은 편(5.28%)입니다. 본인의 조건(신용도, 대출기간 등)에 따라 실제 적용 금리는 달라질 수 있으니, 여러 은행에 상담을 받아보시고 비교해보시는 것이 좋겠습니다.",
+ "source_data": {
+  "tool_results": [
+   [
+    {
+     "bank_name": "경남은행",
+     "product_name": "집집마다 도움대출II",
+     "lend_rate_min": 3.7,
+     "lend_rate_max": 5.51
+    },
+    {
+     "bank_name": "우리은행",
+     "product_name": "우리아파트론",
+     "lend_rate_min": 4.18,
+     "lend_rate_max": 5.28
+    },
+    {
+     "bank_name": "농협은행주식회사",
+     "product_name": "NH주택담보대출",
+     "lend_rate_min": 4.49,
+     "lend_rate_max": 6.29
+    }
+   ]
+  ],
+  "documents": []
+ }
+}

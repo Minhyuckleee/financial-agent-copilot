@@ -1,0 +1,16 @@
+질문: 신한은행 18개월 정기예금 추천해줘
+태그:
+- unsupported_condition
+기대route:
+- product_recommendation
+필수도구:
+- recommend_deposit_products
+기대인자:
+  recommend_deposit_products:
+    save_term_months: 18
+    bank_name_filter:
+      포함: 신한
+기대동작:
+- 18개월 조건으로 찾지 못했다면 그 사실을 밝힌다
+- 다른 조건으로 바꿔 안내했다면 바꿨다고 밝힌다
+메모: 첫 호출은 사용자 조건 그대로여야 한다. 재해석은 정상 — 기대인자는 첫 호출만 본다

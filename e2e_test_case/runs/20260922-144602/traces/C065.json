@@ -1,0 +1,25 @@
+{
+ "id": "C065",
+ "question": "이번 휴가 때 갈 만한 여행지 추천해줘",
+ "history": [],
+ "route": "out_of_scope",
+ "tool_calls": [],
+ "steps": [
+  {
+   "node": "route_query",
+   "route": "out_of_scope",
+   "rewritten_query": "이번 휴가 때 내가 갈 수 있는 국내 여행지를 추천해줘."
+  },
+  {
+   "node": "answer_out_of_scope"
+  },
+  {
+   "node": "finalize_answer"
+  }
+ ],
+ "answer": "죄송합니다, 요청하신 내용은 제가 도와드릴 수 있는 범위 밖입니다.",
+ "source_data": {
+  "tool_results": [],
+  "documents": []
+ }
+}

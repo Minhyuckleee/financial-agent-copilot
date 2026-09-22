@@ -1,0 +1,14 @@
+질문: 1년 만기 예금 중에 우대금리 높은 거 알려줘
+기대route:
+- product_recommendation
+필수도구:
+- recommend_deposit_products
+기대인자:
+  recommend_deposit_products:
+    save_term_months: 12
+금지인자:
+  recommend_deposit_products:
+  - bank_name_filter
+기대동작:
+- 12개월 기준 정기예금을 우대금리와 함께 안내한다
+- 원금보장·확정수익 같은 단정 표현을 쓰지 않는다

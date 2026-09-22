@@ -1,0 +1,25 @@
+{
+ "id": "E020",
+ "question": "연회비 없는 신용카드 추천해줘",
+ "history": [],
+ "route": "out_of_scope",
+ "tool_calls": [],
+ "steps": [
+  {
+   "node": "route_query",
+   "route": "out_of_scope",
+   "rewritten_query": "연회비가 없는 신용카드를 추천해줘."
+  },
+  {
+   "node": "answer_out_of_scope"
+  },
+  {
+   "node": "finalize_answer"
+  }
+ ],
+ "answer": "죄송합니다, 요청하신 내용은 제가 도와드릴 수 있는 범위 밖입니다.",
+ "source_data": {
+  "tool_results": [],
+  "documents": []
+ }
+}

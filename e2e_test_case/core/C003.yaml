@@ -1,0 +1,14 @@
+질문: 2년짜리 예금 금리 높은 곳 알려줘
+기대route:
+- product_recommendation
+필수도구:
+- recommend_deposit_products
+기대인자:
+  recommend_deposit_products:
+    save_term_months: 24
+금지인자:
+  recommend_deposit_products:
+  - bank_name_filter
+기대동작:
+- 24개월 기준 정기예금을 안내한다
+메모: 2년을 24개월로 바꿔 넣어야 한다

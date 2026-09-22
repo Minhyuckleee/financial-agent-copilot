@@ -1,0 +1,51 @@
+{
+ "id": "C023",
+ "question": "하나은행 주택담보대출 상품 있어?",
+ "history": [],
+ "route": "product_recommendation",
+ "tool_calls": [
+  {
+   "name": "recommend_mortgage_loan_products",
+   "args": {
+    "bank_name_filter": "하나은행"
+   },
+   "error": null
+  }
+ ],
+ "steps": [
+  {
+   "node": "route_query",
+   "route": "product_recommendation"
+  },
+  {
+   "node": "call_tool",
+   "name": "recommend_mortgage_loan_products",
+   "args": {
+    "bank_name_filter": "하나은행"
+   },
+   "error": null,
+   "result_count": 1
+  },
+  {
+   "node": "run_guardrail",
+   "guardrail": []
+  },
+  {
+   "node": "finalize_answer"
+  }
+ ],
+ "answer": "네, 하나은행에는 \"하나원큐아파트론2\"라는 주택담보대출 상품이 있습니다. 이 상품의 대출 금리는 연 4.5%에서 5.7% 사이입니다.",
+ "source_data": {
+  "tool_results": [
+   [
+    {
+     "bank_name": "주식회사 하나은행",
+     "product_name": "하나원큐아파트론2",
+     "lend_rate_min": 4.5,
+     "lend_rate_max": 5.7
+    }
+   ]
+  ],
+  "documents": []
+ }
+}

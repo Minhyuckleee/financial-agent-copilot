@@ -1,0 +1,12 @@
+질문: 전세대출 말고 주담대 금리만 보여줘
+태그:
+- tool_confusion
+기대route:
+- product_recommendation
+필수도구:
+- recommend_mortgage_loan_products
+금지도구:
+- recommend_jeonse_loan_products
+기대동작:
+- 주택담보대출 상품만 안내한다
+메모: 문장에 전세가 먼저 나오지만 원하는 건 주담대다

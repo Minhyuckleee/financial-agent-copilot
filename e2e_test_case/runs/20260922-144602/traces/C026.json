@@ -1,0 +1,51 @@
+{
+ "id": "C026",
+ "question": "기업은행 주택담보대출 금리 얼마야?",
+ "history": [],
+ "route": "product_recommendation",
+ "tool_calls": [
+  {
+   "name": "recommend_mortgage_loan_products",
+   "args": {
+    "bank_name_filter": "기업은행"
+   },
+   "error": null
+  }
+ ],
+ "steps": [
+  {
+   "node": "route_query",
+   "route": "product_recommendation"
+  },
+  {
+   "node": "call_tool",
+   "name": "recommend_mortgage_loan_products",
+   "args": {
+    "bank_name_filter": "기업은행"
+   },
+   "error": null,
+   "result_count": 1
+  },
+  {
+   "node": "run_guardrail",
+   "guardrail": []
+  },
+  {
+   "node": "finalize_answer"
+  }
+ ],
+ "answer": "기업은행(중소기업은행)의 주택담보대출(IBK주택담보대출) 금리는 4.89%입니다.",
+ "source_data": {
+  "tool_results": [
+   [
+    {
+     "bank_name": "중소기업은행",
+     "product_name": "IBK주택담보대출",
+     "lend_rate_min": 4.89,
+     "lend_rate_max": 4.89
+    }
+   ]
+  ],
+  "documents": []
+ }
+}

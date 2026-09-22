@@ -1,0 +1,61 @@
+{
+ "id": "C030",
+ "question": "자영업자 대출 금리 비교해줘",
+ "history": [],
+ "route": "product_recommendation",
+ "tool_calls": [
+  {
+   "name": "recommend_business_loan_products",
+   "args": {},
+   "error": null
+  }
+ ],
+ "steps": [
+  {
+   "node": "route_query",
+   "route": "product_recommendation"
+  },
+  {
+   "node": "call_tool",
+   "name": "recommend_business_loan_products",
+   "args": {},
+   "error": null,
+   "result_count": 3
+  },
+  {
+   "node": "run_guardrail",
+   "guardrail": [
+    "prohibited_terms"
+   ]
+  },
+  {
+   "node": "finalize_answer"
+  }
+ ],
+ "answer": "현재 601~700점 신용점수 구간에서 자영업자 대출 금리는 다음과 같이 비교할 수 있습니다.",
+ "source_data": {
+  "tool_results": [
+   [
+    {
+     "bank_name": "제주은행",
+     "product_name": "JJB가맹점우대론",
+     "credit_score_band": "601~700점",
+     "interest_rate": 4.46
+    },
+    {
+     "bank_name": "우리은행",
+     "product_name": "우리상생파트너론",
+     "credit_score_band": "601~700점",
+     "interest_rate": 4.85
+    },
+    {
+     "bank_name": "우리은행",
+     "product_name": "우리CUBE론-X(일반,산업단지)",
+     "credit_score_band": "601~700점",
+     "interest_rate": 4.95
+    }
+   ]
+  ],
+  "documents": []
+ }
+}

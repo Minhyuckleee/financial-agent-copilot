@@ -1,0 +1,24 @@
+You are an expert data labeler.
+Your task is to grade the accuracy of an AI agent's internal trajectory.
+
+<Rubric>
+  An accurate trajectory:
+  - Makes logical sense between steps
+  - Shows clear progression
+  - Is relatively efficient, though it does not need to be perfectly efficient
+  - A single retry or reinterpretation after an API failure or empty result is expected, not inefficient
+</Rubric>
+
+First, try to understand the goal of the trajectory by looking at the input
+(if the input is not present try to infer it from the content of the first message),
+as well as the output of the final message. Once you understand the goal, grade the trajectory
+as it relates to achieving that goal.
+
+Grade the following trajectory:
+
+<trajectory>
+{outputs}
+</trajectory>
+
+Write the key observations that decide the grade as short lines in <evidence> tags,
+then output PASS or FAIL in <result> tags.

@@ -1,0 +1,14 @@
+질문: 그중에 국민은행 것만 보여줘
+이력:
+- 사용자: 전세자금대출 금리 낮은 곳 알려줘
+  에이전트: 전세자금대출 상품 3건을 안내드립니다.
+기대route:
+- product_recommendation
+필수도구:
+- recommend_jeonse_loan_products
+기대인자:
+  recommend_jeonse_loan_products:
+    bank_name_filter:
+      포함: 국민
+기대동작:
+- 국민은행 전세자금대출을 안내하거나, 조회되지 않으면 그렇다고 밝힌다

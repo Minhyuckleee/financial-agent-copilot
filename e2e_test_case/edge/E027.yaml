@@ -1,0 +1,13 @@
+질문: 요즘 DSR 규제 몇 퍼센트 적용돼?
+유형: 확인불가
+태그:
+- corpus_boundary
+기대route:
+- policy_qa
+- product_recommendation
+- out_of_scope
+도구없음: true
+기대동작:
+- 사내 문서에서 확인할 수 없다는 점을 밝힌다
+- 문서에 없는 비율을 지어내지 않는다
+메모: '''DSR''·''총부채원리금'' 0건'

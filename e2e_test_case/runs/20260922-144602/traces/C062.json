@@ -1,0 +1,25 @@
+{
+ "id": "C062",
+ "question": "삼성전자 주가 앞으로 오를까?",
+ "history": [],
+ "route": "out_of_scope",
+ "tool_calls": [],
+ "steps": [
+  {
+   "node": "route_query",
+   "route": "out_of_scope",
+   "rewritten_query": "삼성전자 주가가 앞으로 상승할 가능성이 있을지 궁금합니다."
+  },
+  {
+   "node": "answer_out_of_scope"
+  },
+  {
+   "node": "finalize_answer"
+  }
+ ],
+ "answer": "죄송합니다, 요청하신 내용은 제가 도와드릴 수 있는 범위 밖입니다.",
+ "source_data": {
+  "tool_results": [],
+  "documents": []
+ }
+}

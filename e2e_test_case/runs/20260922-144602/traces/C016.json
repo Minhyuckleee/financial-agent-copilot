@@ -1,0 +1,59 @@
+{
+ "id": "C016",
+ "question": "국민은행 전세대출 금리 알려줘",
+ "history": [],
+ "route": "product_recommendation",
+ "tool_calls": [
+  {
+   "name": "recommend_jeonse_loan_products",
+   "args": {
+    "bank_name_filter": "국민은행"
+   },
+   "error": null
+  }
+ ],
+ "steps": [
+  {
+   "node": "route_query",
+   "route": "product_recommendation"
+  },
+  {
+   "node": "call_tool",
+   "name": "recommend_jeonse_loan_products",
+   "args": {
+    "bank_name_filter": "국민은행"
+   },
+   "error": null,
+   "result_count": 2
+  },
+  {
+   "node": "run_guardrail",
+   "guardrail": [
+    "numeric_self_check"
+   ]
+  },
+  {
+   "node": "finalize_answer"
+  }
+ ],
+ "answer": "국민은행의 전세대출 금리는 다음과 같습니다.\n\n- KB주택전세자금대출: 연 4.22% ~ 5.61%\n- KB플러스전세자금대출: 연 4.22% ~ 5.62%\n\n금리는 신청 조건이나 신용도 등에 따라 달라질 수 있으니 참고하시기 바랍니다.",
+ "source_data": {
+  "tool_results": [
+   [
+    {
+     "bank_name": "국민은행",
+     "product_name": "KB주택전세자금대출",
+     "lend_rate_min": 4.21,
+     "lend_rate_max": 5.61
+    },
+    {
+     "bank_name": "국민은행",
+     "product_name": "KB플러스전세자금대출",
+     "lend_rate_min": 4.22,
+     "lend_rate_max": 5.62
+    }
+   ]
+  ],
+  "documents": []
+ }
+}

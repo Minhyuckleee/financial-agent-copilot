@@ -1,0 +1,69 @@
+{
+ "id": "C009",
+ "question": "신용점수 900점이면 신용대출 어디가 싸?",
+ "history": [],
+ "route": "product_recommendation",
+ "tool_calls": [
+  {
+   "name": "recommend_credit_loan_products",
+   "args": {
+    "credit_score": 900
+   },
+   "error": null
+  }
+ ],
+ "steps": [
+  {
+   "node": "route_query",
+   "route": "product_recommendation"
+  },
+  {
+   "node": "call_tool",
+   "name": "recommend_credit_loan_products",
+   "args": {
+    "credit_score": 900
+   },
+   "error": null,
+   "result_count": 3
+  },
+  {
+   "node": "run_guardrail",
+   "guardrail": [
+    "disclosure_missing",
+    "prohibited_terms"
+   ]
+  },
+  {
+   "node": "finalize_answer"
+  }
+ ],
+ "answer": "신용점수가 900점일 경우, 조회 결과 기준으로 가장 낮은 금리의 신용대출 상품은 수협은행의 '개인신용대출'(일반신용대출)로, 금리는 5.18%입니다. 그 다음으로는 아이엠뱅크의 '장기카드대출'(카드론)이 5.19%, 농협은행의 '가계신용대출(마이너스대출)'이 5.7%입니다. ※ 실제 가입 조건과 금리는 상품설명서·약관 확인 후 최종 확정됩니다. 자세한 사항은 영업점 또는 고객센터에 문의하세요.",
+ "source_data": {
+  "tool_results": [
+   [
+    {
+     "bank_name": "수협은행",
+     "product_name": "개인신용대출",
+     "loan_type": "일반신용대출",
+     "credit_score_band": "801~900점",
+     "interest_rate": 5.18
+    },
+    {
+     "bank_name": "아이엠뱅크",
+     "product_name": "장기카드대출",
+     "loan_type": "장기카드대출(카드론)",
+     "credit_score_band": "801~900점",
+     "interest_rate": 5.19
+    },
+    {
+     "bank_name": "농협은행주식회사",
+     "product_name": "가계신용대출(마이너스대출)",
+     "loan_type": "마이너스한도대출",
+     "credit_score_band": "801~900점",
+     "interest_rate": 5.7
+    }
+   ]
+  ],
+  "documents": []
+ }
+}

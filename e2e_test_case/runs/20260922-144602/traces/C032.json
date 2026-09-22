@@ -1,0 +1,66 @@
+{
+ "id": "C032",
+ "question": "가게 운영자금 대출 알아보는데 금리 낮은 데 있어?",
+ "history": [],
+ "route": "product_recommendation",
+ "tool_calls": [
+  {
+   "name": "recommend_business_loan_products",
+   "args": {
+    "credit_score": 700
+   },
+   "error": null
+  }
+ ],
+ "steps": [
+  {
+   "node": "route_query",
+   "route": "product_recommendation"
+  },
+  {
+   "node": "call_tool",
+   "name": "recommend_business_loan_products",
+   "args": {
+    "credit_score": 700
+   },
+   "error": null,
+   "result_count": 3
+  },
+  {
+   "node": "run_guardrail",
+   "guardrail": [
+    "prohibited_terms",
+    "numeric_self_check"
+   ]
+  },
+  {
+   "node": "finalize_answer"
+  }
+ ],
+ "answer": "현재 조회 결과 기준으로, 가게 운영자금 대출 중에서는 제주은행의 'JJB가맹점우대론'이 4.46%로 가장 낮은 금리를 제공하고 있습니다. 그 외에는 우리은행의 '우리상생파트너론'(4.95%)과 '우리CUBE론-X(일반,산업단지)'(4.95%)가 있습니다.",
+ "source_data": {
+  "tool_results": [
+   [
+    {
+     "bank_name": "제주은행",
+     "product_name": "JJB가맹점우대론",
+     "credit_score_band": "601~700점",
+     "interest_rate": 4.46
+    },
+    {
+     "bank_name": "우리은행",
+     "product_name": "우리상생파트너론",
+     "credit_score_band": "601~700점",
+     "interest_rate": 4.85
+    },
+    {
+     "bank_name": "우리은행",
+     "product_name": "우리CUBE론-X(일반,산업단지)",
+     "credit_score_band": "601~700점",
+     "interest_rate": 4.95
+    }
+   ]
+  ],
+  "documents": []
+ }
+}

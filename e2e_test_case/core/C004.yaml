@@ -1,0 +1,11 @@
+질문: 우리은행 정기예금 상품 뭐 있어?
+기대route:
+- product_recommendation
+필수도구:
+- recommend_deposit_products
+기대인자:
+  recommend_deposit_products:
+    bank_name_filter:
+      포함: 우리
+기대동작:
+- 우리은행 정기예금을 안내하거나, 조회되지 않으면 그렇다고 밝힌다

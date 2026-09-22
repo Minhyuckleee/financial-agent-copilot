@@ -1,0 +1,63 @@
+{
+ "id": "C020",
+ "question": "농협 전세대출 금리 보여줘",
+ "history": [],
+ "route": "product_recommendation",
+ "tool_calls": [
+  {
+   "name": "recommend_jeonse_loan_products",
+   "args": {
+    "bank_name_filter": "농협"
+   },
+   "error": null
+  }
+ ],
+ "steps": [
+  {
+   "node": "route_query",
+   "route": "product_recommendation"
+  },
+  {
+   "node": "call_tool",
+   "name": "recommend_jeonse_loan_products",
+   "args": {
+    "bank_name_filter": "농협"
+   },
+   "error": null,
+   "result_count": 3
+  },
+  {
+   "node": "run_guardrail",
+   "guardrail": []
+  },
+  {
+   "node": "finalize_answer"
+  }
+ ],
+ "answer": "농협은행의 전세대출 금리는 다음과 같습니다.\n\n- NH전세대출(서울보증보험): 연 3.69% ~ 6.39%\n- NH전세대출(주택금융공사): 연 3.69% ~ 6.39%\n- NH전세대출(주택도시보증공사): 연 3.7% ~ 6.4%\n\n각 상품별로 금리 범위가 다소 차이가 있으니 참고하시기 바랍니다.",
+ "source_data": {
+  "tool_results": [
+   [
+    {
+     "bank_name": "농협은행주식회사",
+     "product_name": "NH전세대출(서울보증보험)",
+     "lend_rate_min": 3.69,
+     "lend_rate_max": 6.39
+    },
+    {
+     "bank_name": "농협은행주식회사",
+     "product_name": "NH전세대출(주택금융공사)",
+     "lend_rate_min": 3.69,
+     "lend_rate_max": 6.39
+    },
+    {
+     "bank_name": "농협은행주식회사",
+     "product_name": "NH전세대출(주택도시보증공사)",
+     "lend_rate_min": 3.7,
+     "lend_rate_max": 6.4
+    }
+   ]
+  ],
+  "documents": []
+ }
+}

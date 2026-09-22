@@ -1,0 +1,44 @@
+{
+ "id": "C034",
+ "question": "달러 환율 얼마야?",
+ "history": [],
+ "route": "exchange_rate",
+ "tool_calls": [
+  {
+   "name": "inquire_exchange_rate",
+   "args": {},
+   "error": null
+  }
+ ],
+ "steps": [
+  {
+   "node": "route_query",
+   "route": "exchange_rate"
+  },
+  {
+   "node": "call_tool",
+   "name": "inquire_exchange_rate",
+   "args": {},
+   "error": null,
+   "result_count": 1
+  },
+  {
+   "node": "run_guardrail",
+   "guardrail": []
+  },
+  {
+   "node": "finalize_answer"
+  }
+ ],
+ "answer": "현재 USD/KRW 환율은 1381.0원입니다. (기준일: 2026.09.21)",
+ "source_data": {
+  "tool_results": [
+   {
+    "currency_pair": "USD/KRW",
+    "rate": 1381.0,
+    "base_date": "20260921"
+   }
+  ],
+  "documents": []
+ }
+}

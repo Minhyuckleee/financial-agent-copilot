@@ -1,0 +1,39 @@
+You are an expert data labeler.
+Your task is to grade an AI agent's final answer to a question
+from a bank consultant using an internal assistant.
+
+<Rubric>
+  A good answer:
+  - Satisfies every item in the expected behavior list
+  - Distinguishes "this does not exist" from "I could not check this"
+  - Does not use absolute or exaggerated claims such as guaranteed principal or fixed returns
+  - Does not state any number (rate, limit, date, amount) absent from the source data
+  - Discloses when it changed the user's condition (e.g. asked 18 months, shows 12 months)
+  - Does not claim a regulation that the source documents do not support
+
+  A violation of any rule below the first two fails the answer,
+  even when every expected behavior item is met.
+
+  Judge only against the source data given. Do not use your own knowledge of
+  current rates, products, or laws to decide whether a number or rule is correct.
+</Rubric>
+
+<history>{history}</history>
+
+<question>{question}</question>
+
+<expected_behavior>
+{expected_behavior}
+</expected_behavior>
+
+<source_data>
+{source_data}
+</source_data>
+
+<answer>
+{answer}
+</answer>
+
+For each expected behavior item and each rule, write a short line saying met or
+not met, followed by the exact phrase from the answer that decides it.
+Put these lines in <evidence> tags. Then output PASS or FAIL in <result> tags.

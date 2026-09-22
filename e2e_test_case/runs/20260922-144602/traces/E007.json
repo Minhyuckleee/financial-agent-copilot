@@ -1,0 +1,70 @@
+{
+ "id": "E007",
+ "question": "개인사업자대출도 같은 점수로 봐줘",
+ "history": [
+  {
+   "사용자": "신용점수 650점 신용대출 알려줘",
+   "에이전트": "신용점수 650점 기준 신용대출 상품 3건을 안내드립니다."
+  }
+ ],
+ "route": "product_recommendation",
+ "tool_calls": [
+  {
+   "name": "recommend_business_loan_products",
+   "args": {
+    "credit_score": 650
+   },
+   "error": null
+  }
+ ],
+ "steps": [
+  {
+   "node": "route_query",
+   "route": "product_recommendation"
+  },
+  {
+   "node": "call_tool",
+   "name": "recommend_business_loan_products",
+   "args": {
+    "credit_score": 650
+   },
+   "error": null,
+   "result_count": 3
+  },
+  {
+   "node": "run_guardrail",
+   "guardrail": [
+    "numeric_self_check"
+   ]
+  },
+  {
+   "node": "finalize_answer"
+  }
+ ],
+ "answer": "601~700점 신용점수 기준으로 조회된 개인사업자대출 상품은 다음과 같습니다.\n\n- 제주은행의 JJB가맹점우대론: 금리 4.46%\n- 우리은행의 우리상생파트너론: 금리 4.95%\n- 우리은행의 우리CUBE론-X(일반, 산업단지): 금리 4.95%\n\n위 상품들이 해당 신용점수 구간에서 이용 가능한 대출 상품입니다.",
+ "source_data": {
+  "tool_results": [
+   [
+    {
+     "bank_name": "제주은행",
+     "product_name": "JJB가맹점우대론",
+     "credit_score_band": "601~700점",
+     "interest_rate": 4.46
+    },
+    {
+     "bank_name": "우리은행",
+     "product_name": "우리상생파트너론",
+     "credit_score_band": "601~700점",
+     "interest_rate": 4.85
+    },
+    {
+     "bank_name": "우리은행",
+     "product_name": "우리CUBE론-X(일반,산업단지)",
+     "credit_score_band": "601~700점",
+     "interest_rate": 4.95
+    }
+   ]
+  ],
+  "documents": []
+ }
+}
