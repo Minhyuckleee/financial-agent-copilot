@@ -64,7 +64,7 @@ def run_case(graph, case) -> dict:
         history += [HumanMessage(content=turn.사용자), AIMessage(content=turn.에이전트)]
 
     steps, tool_calls = [], []
-    route, answer, chunks, tool_results = None, None, [], []
+    route, answer, draft_answer, chunks, tool_results = None, None, None, [], []
     for update in graph.stream(AgentState(query=case.question, history=history),
                                stream_mode="updates"):
         for node, change in update.items():
@@ -93,7 +93,13 @@ def run_case(graph, case) -> dict:
             elif node == "call_tool":
                 step["error"] = (change.get("error") or {}).get("type")  # no_selection
             elif node == "run_guardrail":
-                step["guardrail"] = [c["rule"] for c in change.get("guardrail_corrections", [])]
+                corrections = change.get("guardrail_corrections", [])
+                step["guardrail"] = [c["rule"] for c in corrections]
+                # 규칙 이름만 남기면 가드레일이 무엇을 무엇으로 바꿨는지 알 수 없다
+                step["guardrail_details"] = [
+                    {"rule": c["rule"], "reason": c.get("reason"), "applied_fix": c.get("applied_fix")}
+                    for c in corrections]
+                draft_answer = change.get("draft_answer")
             elif node in ("answer_tool_error", "answer_tier2_exhausted"):
                 step["low_confidence"] = change.get("low_confidence", False)
 
@@ -105,6 +111,9 @@ def run_case(graph, case) -> dict:
             "history": [t.model_dump() for t in case.history],
             "route": route, "tool_calls": tool_calls, "steps": steps,
             "answer": answer,
+            # 가드레일 전 초안. 답변 judge 에는 넘기지 않는다(최종 답변만 채점) — 실패가 LLM 탓인지
+            # 가드레일 탓인지 사후에 가르는 용도
+            "pre_guardrail_answer": draft_answer,
             # 답변 judge 가 숫자·인용을 대조할 원자료. tool 이름은 넣지 않는다
             "source_data": {"tool_results": tool_results,
                             "documents": [{"source": c.get("source"),

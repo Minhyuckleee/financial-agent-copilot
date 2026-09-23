@@ -74,7 +74,8 @@ def _trajectory_text(trace) -> str:
     if trace["history"]:
         lines.append("history:\n" + _history_text(trace["history"]))
     for s in trace["steps"]:
-        rest = {k: v for k, v in s.items() if k != "node"}
+        # guardrail_details 는 사후 분석용이다. 궤적 judge 입력을 이전 실행과 같게 유지한다
+        rest = {k: v for k, v in s.items() if k not in ("node", "guardrail_details")}
         lines.append(f"- {s['node']} {json.dumps(rest, ensure_ascii=False)}")
     lines.append(f"final output: {trace['answer']}")
     return "\n".join(lines)
