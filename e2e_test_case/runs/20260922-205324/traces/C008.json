@@ -1,0 +1,82 @@
+{
+ "id": "C008",
+ "question": "신용대출 금리 낮은 곳 추천해줘",
+ "history": [],
+ "route": "product_recommendation",
+ "tool_calls": [
+  {
+   "name": "recommend_credit_loan_products",
+   "args": {
+    "credit_score": 700
+   },
+   "error": null
+  }
+ ],
+ "steps": [
+  {
+   "node": "route_query",
+   "route": "product_recommendation"
+  },
+  {
+   "node": "call_tool",
+   "name": "recommend_credit_loan_products",
+   "args": {
+    "credit_score": 700
+   },
+   "error": null,
+   "result_count": 3
+  },
+  {
+   "node": "run_guardrail",
+   "guardrail": [
+    "disclosure_missing",
+    "prohibited_terms"
+   ],
+   "guardrail_details": [
+    {
+     "rule": "disclosure_missing",
+     "reason": "필수고지사항 누락",
+     "applied_fix": "고지문구 자동삽입"
+    },
+    {
+     "rule": "prohibited_terms",
+     "reason": "금지표현과 의미상 동일한 표현 '금리가 가장 낮은 농협은행을 우선적으로 고려해보시는 것이 좋겠습니다.' 발견(semantic 탐지)",
+     "applied_fix": "해당 문구가 포함된 문장 제거"
+    }
+   ]
+  },
+  {
+   "node": "finalize_answer"
+  }
+ ],
+ "answer": "현재 조회된 결과 중 신용대출 금리가 가장 낮은 곳은 농협은행주식회사의 '가계신용대출(마이너스대출)'로, 601~700점 신용구간에서 금리가 5.72%입니다. 그 다음으로는 하나은행(6.12%), 우리은행(6.22%) 순입니다. ※ 실제 가입 조건과 금리는 상품설명서·약관 확인 후 최종 확정됩니다. 자세한 사항은 영업점 또는 고객센터에 문의하세요.",
+ "pre_guardrail_answer": "현재 조회된 결과 중 신용대출 금리가 가장 낮은 곳은 농협은행주식회사의 '가계신용대출(마이너스대출)'로, 601~700점 신용구간에서 금리가 5.72%입니다. 그 다음으로는 하나은행(6.12%), 우리은행(6.22%) 순입니다. 금리가 가장 낮은 농협은행을 우선적으로 고려해보시는 것이 좋겠습니다.",
+ "source_data": {
+  "tool_results": [
+   [
+    {
+     "bank_name": "농협은행주식회사",
+     "product_name": "가계신용대출(마이너스대출)",
+     "loan_type": "마이너스한도대출",
+     "credit_score_band": "601~700점",
+     "interest_rate": 5.72
+    },
+    {
+     "bank_name": "주식회사 하나은행",
+     "product_name": "마이너스한도대출",
+     "loan_type": "마이너스한도대출",
+     "credit_score_band": "601~700점",
+     "interest_rate": 6.12
+    },
+    {
+     "bank_name": "우리은행",
+     "product_name": "협약금리 外 신용대출상품",
+     "loan_type": "마이너스한도대출",
+     "credit_score_band": "601~700점",
+     "interest_rate": 6.22
+    }
+   ]
+  ],
+  "documents": []
+ }
+}

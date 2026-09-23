@@ -1,0 +1,87 @@
+{
+ "id": "E002",
+ "question": "9개월짜리 정기예금 있어?",
+ "history": [],
+ "route": "product_recommendation",
+ "tool_calls": [
+  {
+   "name": "recommend_deposit_products",
+   "args": {
+    "save_term_months": 9
+   },
+   "error": "empty_result"
+  },
+  {
+   "name": "recommend_deposit_products",
+   "args": {},
+   "error": null
+  }
+ ],
+ "steps": [
+  {
+   "node": "route_query",
+   "route": "product_recommendation"
+  },
+  {
+   "node": "call_tool",
+   "name": "recommend_deposit_products",
+   "args": {
+    "save_term_months": 9
+   },
+   "error": "empty_result"
+  },
+  {
+   "node": "call_tool",
+   "name": "recommend_deposit_products",
+   "args": {},
+   "error": null,
+   "result_count": 3
+  },
+  {
+   "node": "run_guardrail",
+   "guardrail": [
+    "disclosure_missing"
+   ],
+   "guardrail_details": [
+    {
+     "rule": "disclosure_missing",
+     "reason": "필수고지사항 누락",
+     "applied_fix": "고지문구 자동삽입"
+    }
+   ]
+  },
+  {
+   "node": "finalize_answer"
+  }
+ ],
+ "answer": "9개월짜리 정기예금 상품은 조회 결과 현재 제공되고 있지 않습니다. 대신, 조건을 완화해서 전체 정기예금 상품을 조회해보니 12개월짜리 상품들만 확인되었습니다. 만약 9개월 정기예금 상품이 필요하시다면, 추후 다시 한 번 확인해보시거나 12개월 상품을 고려해보시는 것도 좋을 것 같습니다.\n\n※ 실제 가입 조건과 금리는 상품설명서·약관 확인 후 최종 확정됩니다. 자세한 사항은 영업점 또는 고객센터에 문의하세요.",
+ "pre_guardrail_answer": "9개월짜리 정기예금 상품은 조회 결과 현재 제공되고 있지 않습니다. 대신, 조건을 완화해서 전체 정기예금 상품을 조회해보니 12개월짜리 상품들만 확인되었습니다. 만약 9개월 정기예금 상품이 필요하시다면, 추후 다시 한 번 확인해보시거나 12개월 상품을 고려해보시는 것도 좋을 것 같습니다.",
+ "source_data": {
+  "tool_results": [
+   [
+    {
+     "bank_name": "광주은행",
+     "product_name": "굿스타트예금",
+     "save_term_months": 12,
+     "interest_rate": 3.45,
+     "interest_rate_preferential": 3.95
+    },
+    {
+     "bank_name": "부산은행",
+     "product_name": "더(The) 특판 정기예금",
+     "save_term_months": 12,
+     "interest_rate": 2.1,
+     "interest_rate_preferential": 3.92
+    },
+    {
+     "bank_name": "농협은행주식회사",
+     "product_name": "NH왈츠회전예금 II",
+     "save_term_months": 12,
+     "interest_rate": 3.35,
+     "interest_rate_preferential": 3.45
+    }
+   ]
+  ],
+  "documents": []
+ }
+}

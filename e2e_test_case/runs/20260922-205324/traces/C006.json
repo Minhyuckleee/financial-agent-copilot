@@ -1,0 +1,82 @@
+{
+ "id": "C006",
+ "question": "목돈 맡기려는데 이자 많이 주는 예금 어디야?",
+ "history": [],
+ "route": "product_recommendation",
+ "tool_calls": [
+  {
+   "name": "recommend_deposit_products",
+   "args": {
+    "save_term_months": 12
+   },
+   "error": null
+  }
+ ],
+ "steps": [
+  {
+   "node": "route_query",
+   "route": "product_recommendation"
+  },
+  {
+   "node": "call_tool",
+   "name": "recommend_deposit_products",
+   "args": {
+    "save_term_months": 12
+   },
+   "error": null,
+   "result_count": 3
+  },
+  {
+   "node": "run_guardrail",
+   "guardrail": [
+    "disclosure_missing",
+    "prohibited_terms"
+   ],
+   "guardrail_details": [
+    {
+     "rule": "disclosure_missing",
+     "reason": "필수고지사항 누락",
+     "applied_fix": "고지문구 자동삽입"
+    },
+    {
+     "rule": "prohibited_terms",
+     "reason": "금지표현과 의미상 동일한 표현 '가장 높은 이자를 받을 수 있습니다.' 발견(semantic 탐지)",
+     "applied_fix": "해당 문구가 포함된 문장 제거"
+    }
+   ]
+  },
+  {
+   "node": "finalize_answer"
+  }
+ ],
+ "answer": "현재 1년(12개월) 기준으로 이자를 많이 주는 예금 상품은 다음과 같습니다. ※ 실제 가입 조건과 금리는 상품설명서·약관 확인 후 최종 확정됩니다. 자세한 사항은 영업점 또는 고객센터에 문의하세요.",
+ "pre_guardrail_answer": "현재 1년(12개월) 기준으로 이자를 많이 주는 예금 상품은 다음과 같습니다.\n\n- 광주은행의 '굿스타트예금': 기본금리 3.45%, 우대금리 적용 시 최대 3.95%\n- 부산은행의 '더(The) 특판 정기예금': 기본금리 2.1%, 우대금리 적용 시 최대 3.92%\n- 농협은행의 'NH왈츠회전예금 II': 기본금리 3.35%, 우대금리 적용 시 최대 3.45%\n\n이 중에서 우대금리까지 모두 적용받을 수 있다면, 광주은행의 '굿스타트예금'이 최대 3.95%로 가장 높은 이자를 받을 수 있습니다.",
+ "source_data": {
+  "tool_results": [
+   [
+    {
+     "bank_name": "광주은행",
+     "product_name": "굿스타트예금",
+     "save_term_months": 12,
+     "interest_rate": 3.45,
+     "interest_rate_preferential": 3.95
+    },
+    {
+     "bank_name": "부산은행",
+     "product_name": "더(The) 특판 정기예금",
+     "save_term_months": 12,
+     "interest_rate": 2.1,
+     "interest_rate_preferential": 3.92
+    },
+    {
+     "bank_name": "농협은행주식회사",
+     "product_name": "NH왈츠회전예금 II",
+     "save_term_months": 12,
+     "interest_rate": 3.35,
+     "interest_rate_preferential": 3.45
+    }
+   ]
+  ],
+  "documents": []
+ }
+}

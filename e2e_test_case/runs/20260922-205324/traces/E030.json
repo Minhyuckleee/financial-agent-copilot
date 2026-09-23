@@ -1,0 +1,26 @@
+{
+ "id": "E030",
+ "question": "이 고객 신용점수 680점인데 신용대출 승인 나고 한도 얼마까지 될까?",
+ "history": [],
+ "route": "out_of_scope",
+ "tool_calls": [],
+ "steps": [
+  {
+   "node": "route_query",
+   "route": "out_of_scope",
+   "rewritten_query": "신용점수가 680점인 이 고객이 신용대출을 신청하면 대출 승인이 날 수 있을까요? 승인이 된다면 최대 얼마까지 대출 한도가 나올 수 있나요?"
+  },
+  {
+   "node": "answer_out_of_scope"
+  },
+  {
+   "node": "finalize_answer"
+  }
+ ],
+ "answer": "죄송합니다, 요청하신 내용은 제가 도와드릴 수 있는 범위 밖입니다.",
+ "pre_guardrail_answer": null,
+ "source_data": {
+  "tool_results": [],
+  "documents": []
+ }
+}

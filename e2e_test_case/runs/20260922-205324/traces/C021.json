@@ -1,0 +1,73 @@
+{
+ "id": "C021",
+ "question": "주택담보대출 금리 낮은 곳 추천해줘",
+ "history": [],
+ "route": "product_recommendation",
+ "tool_calls": [
+  {
+   "name": "recommend_mortgage_loan_products",
+   "args": {
+    "bank_name_filter": null
+   },
+   "error": null
+  }
+ ],
+ "steps": [
+  {
+   "node": "route_query",
+   "route": "product_recommendation"
+  },
+  {
+   "node": "call_tool",
+   "name": "recommend_mortgage_loan_products",
+   "args": {
+    "bank_name_filter": null
+   },
+   "error": null,
+   "result_count": 3
+  },
+  {
+   "node": "run_guardrail",
+   "guardrail": [
+    "prohibited_terms"
+   ],
+   "guardrail_details": [
+    {
+     "rule": "prohibited_terms",
+     "reason": "금지표현과 의미상 동일한 표현 '우선적으로 고려해보시는 것이 좋겠습니다.' 발견(semantic 탐지)",
+     "applied_fix": "해당 문구가 포함된 문장 제거"
+    }
+   ]
+  },
+  {
+   "node": "finalize_answer"
+  }
+ ],
+ "answer": "현재 조회된 주택담보대출 상품 중에서는 경남은행의 '집집마다 도움대출II'가 최저 금리 3.7%로 가장 낮은 금리를 제공합니다. 그 외에도 우리은행의 '우리아파트론'(최저 4.18%), 농협은행의 'NH주택담보대출'(최저 4.49%) 상품이 있습니다.",
+ "pre_guardrail_answer": "현재 조회된 주택담보대출 상품 중에서는 경남은행의 '집집마다 도움대출II'가 최저 금리 3.7%로 가장 낮은 금리를 제공합니다. 그 외에도 우리은행의 '우리아파트론'(최저 4.18%), 농협은행의 'NH주택담보대출'(최저 4.49%) 상품이 있습니다. 금리가 가장 낮은 곳을 원하신다면 경남은행 상품을 우선적으로 고려해보시는 것이 좋겠습니다.",
+ "source_data": {
+  "tool_results": [
+   [
+    {
+     "bank_name": "경남은행",
+     "product_name": "집집마다 도움대출II",
+     "lend_rate_min": 3.7,
+     "lend_rate_max": 5.51
+    },
+    {
+     "bank_name": "우리은행",
+     "product_name": "우리아파트론",
+     "lend_rate_min": 4.18,
+     "lend_rate_max": 5.28
+    },
+    {
+     "bank_name": "농협은행주식회사",
+     "product_name": "NH주택담보대출",
+     "lend_rate_min": 4.49,
+     "lend_rate_max": 6.29
+    }
+   ]
+  ],
+  "documents": []
+ }
+}

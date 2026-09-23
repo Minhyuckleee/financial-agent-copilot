@@ -1,0 +1,26 @@
+{
+ "id": "C014",
+ "question": "마이너스통장 금리 낮은 은행 어디야?",
+ "history": [],
+ "route": "out_of_scope",
+ "tool_calls": [],
+ "steps": [
+  {
+   "node": "route_query",
+   "route": "out_of_scope",
+   "rewritten_query": "마이너스통장 금리가 가장 낮은 은행이 어디인지 알려줘."
+  },
+  {
+   "node": "answer_out_of_scope"
+  },
+  {
+   "node": "finalize_answer"
+  }
+ ],
+ "answer": "죄송합니다, 요청하신 내용은 제가 도와드릴 수 있는 범위 밖입니다.",
+ "pre_guardrail_answer": null,
+ "source_data": {
+  "tool_results": [],
+  "documents": []
+ }
+}

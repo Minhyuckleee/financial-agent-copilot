@@ -1,0 +1,76 @@
+{
+ "id": "C001",
+ "question": "정기예금 금리 좋은 거 추천해줘",
+ "history": [],
+ "route": "product_recommendation",
+ "tool_calls": [
+  {
+   "name": "recommend_deposit_products",
+   "args": {
+    "save_term_months": 12
+   },
+   "error": null
+  }
+ ],
+ "steps": [
+  {
+   "node": "route_query",
+   "route": "product_recommendation"
+  },
+  {
+   "node": "call_tool",
+   "name": "recommend_deposit_products",
+   "args": {
+    "save_term_months": 12
+   },
+   "error": null,
+   "result_count": 3
+  },
+  {
+   "node": "run_guardrail",
+   "guardrail": [
+    "disclosure_missing"
+   ],
+   "guardrail_details": [
+    {
+     "rule": "disclosure_missing",
+     "reason": "필수고지사항 누락",
+     "applied_fix": "고지문구 자동삽입"
+    }
+   ]
+  },
+  {
+   "node": "finalize_answer"
+  }
+ ],
+ "answer": "현재 조회된 정기예금 상품 중에서는 광주은행의 '굿스타트예금'이 12개월 기준 기본금리 3.45%, 우대금리 적용 시 3.95%로 가장 높은 금리를 제공합니다. 그 외에도 부산은행의 '더(The) 특판 정기예금'(최대 3.92%), 농협은행의 'NH왈츠회전예금 II'(최대 3.45%) 등이 있습니다. 금리와 우대조건을 비교해보시고 선택하시면 좋을 것 같습니다.\n\n※ 실제 가입 조건과 금리는 상품설명서·약관 확인 후 최종 확정됩니다. 자세한 사항은 영업점 또는 고객센터에 문의하세요.",
+ "pre_guardrail_answer": "현재 조회된 정기예금 상품 중에서는 광주은행의 '굿스타트예금'이 12개월 기준 기본금리 3.45%, 우대금리 적용 시 3.95%로 가장 높은 금리를 제공합니다. 그 외에도 부산은행의 '더(The) 특판 정기예금'(최대 3.92%), 농협은행의 'NH왈츠회전예금 II'(최대 3.45%) 등이 있습니다. 금리와 우대조건을 비교해보시고 선택하시면 좋을 것 같습니다.",
+ "source_data": {
+  "tool_results": [
+   [
+    {
+     "bank_name": "광주은행",
+     "product_name": "굿스타트예금",
+     "save_term_months": 12,
+     "interest_rate": 3.45,
+     "interest_rate_preferential": 3.95
+    },
+    {
+     "bank_name": "부산은행",
+     "product_name": "더(The) 특판 정기예금",
+     "save_term_months": 12,
+     "interest_rate": 2.1,
+     "interest_rate_preferential": 3.92
+    },
+    {
+     "bank_name": "농협은행주식회사",
+     "product_name": "NH왈츠회전예금 II",
+     "save_term_months": 12,
+     "interest_rate": 3.35,
+     "interest_rate_preferential": 3.45
+    }
+   ]
+  ],
+  "documents": []
+ }
+}

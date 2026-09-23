@@ -1,0 +1,61 @@
+{
+ "id": "C030",
+ "question": "자영업자 대출 금리 비교해줘",
+ "history": [],
+ "route": "product_recommendation",
+ "tool_calls": [
+  {
+   "name": "recommend_business_loan_products",
+   "args": {},
+   "error": null
+  }
+ ],
+ "steps": [
+  {
+   "node": "route_query",
+   "route": "product_recommendation"
+  },
+  {
+   "node": "call_tool",
+   "name": "recommend_business_loan_products",
+   "args": {},
+   "error": null,
+   "result_count": 3
+  },
+  {
+   "node": "run_guardrail",
+   "guardrail": [],
+   "guardrail_details": []
+  },
+  {
+   "node": "finalize_answer"
+  }
+ ],
+ "answer": "현재 601~700점 신용점수 구간에서 자영업자 대출 금리는 다음과 같이 비교할 수 있습니다.\n\n- 제주은행의 'JJB가맹점우대론' : 연 4.46%\n- 우리은행의 '우리상생파트너론' : 연 4.85%\n- 우리은행의 '우리CUBE론-X(일반,산업단지)' : 연 4.95%\n\n따라서, 같은 신용점수 구간에서는 제주은행의 'JJB가맹점우대론'이 가장 낮은 금리(4.46%)를 제공합니다.",
+ "pre_guardrail_answer": "현재 601~700점 신용점수 구간에서 자영업자 대출 금리는 다음과 같이 비교할 수 있습니다.\n\n- 제주은행의 'JJB가맹점우대론' : 연 4.46%\n- 우리은행의 '우리상생파트너론' : 연 4.85%\n- 우리은행의 '우리CUBE론-X(일반,산업단지)' : 연 4.95%\n\n따라서, 같은 신용점수 구간에서는 제주은행의 'JJB가맹점우대론'이 가장 낮은 금리(4.46%)를 제공합니다.",
+ "source_data": {
+  "tool_results": [
+   [
+    {
+     "bank_name": "제주은행",
+     "product_name": "JJB가맹점우대론",
+     "credit_score_band": "601~700점",
+     "interest_rate": 4.46
+    },
+    {
+     "bank_name": "우리은행",
+     "product_name": "우리상생파트너론",
+     "credit_score_band": "601~700점",
+     "interest_rate": 4.85
+    },
+    {
+     "bank_name": "우리은행",
+     "product_name": "우리CUBE론-X(일반,산업단지)",
+     "credit_score_band": "601~700점",
+     "interest_rate": 4.95
+    }
+   ]
+  ],
+  "documents": []
+ }
+}

@@ -1,0 +1,89 @@
+{
+ "id": "E012",
+ "question": "그럼 정기예금 추천해줘",
+ "history": [
+  {
+   "사용자": "예금거래기본약관은 언제 볼 수 있어?",
+   "에이전트": "영업점에서 영업시간 중 볼 수 있습니다."
+  }
+ ],
+ "route": "product_recommendation",
+ "tool_calls": [
+  {
+   "name": "recommend_deposit_products",
+   "args": {
+    "save_term_months": 12,
+    "bank_name_filter": null
+   },
+   "error": null
+  }
+ ],
+ "steps": [
+  {
+   "node": "route_query",
+   "route": "product_recommendation"
+  },
+  {
+   "node": "call_tool",
+   "name": "recommend_deposit_products",
+   "args": {
+    "save_term_months": 12,
+    "bank_name_filter": null
+   },
+   "error": null,
+   "result_count": 3
+  },
+  {
+   "node": "run_guardrail",
+   "guardrail": [
+    "disclosure_missing",
+    "prohibited_terms"
+   ],
+   "guardrail_details": [
+    {
+     "rule": "disclosure_missing",
+     "reason": "필수고지사항 누락",
+     "applied_fix": "고지문구 자동삽입"
+    },
+    {
+     "rule": "prohibited_terms",
+     "reason": "금지표현과 의미상 동일한 표현 '가장 유리합니다' 발견(semantic 탐지)",
+     "applied_fix": "해당 문구가 포함된 문장 제거"
+    }
+   ]
+  },
+  {
+   "node": "finalize_answer"
+  }
+ ],
+ "answer": "현재 가입할 수 있는 정기예금 상품 중에서는 다음과 같은 상품들을 추천드릴 수 있습니다. 1. 광주은행의 '굿스타트예금'은 12개월 만기에 기본 금리 3.45%, 우대금리 적용 시 최대 3.95%의 금리를 제공합니다. 2. 부산은행의 '더(The) 특판 정기예금'은 12개월 만기에 기본 금리 2.1%, 우대금리 적용 시 최대 3.92%의 금리를 받을 수 있습니다. 3. 농협은행의 'NH왈츠회전예금 II'는 12개월 만기에 기본 금리 3.35%, 우대금리 적용 시 최대 3.45%입니다. 각 상품의 우대금리 조건을 확인하신 후 본인에게 맞는 상품을 선택하시면 좋겠습니다. ※ 실제 가입 조건과 금리는 상품설명서·약관 확인 후 최종 확정됩니다. 자세한 사항은 영업점 또는 고객센터에 문의하세요.",
+ "pre_guardrail_answer": "현재 가입할 수 있는 정기예금 상품 중에서는 다음과 같은 상품들을 추천드릴 수 있습니다.\n\n1. 광주은행의 '굿스타트예금'은 12개월 만기에 기본 금리 3.45%, 우대금리 적용 시 최대 3.95%의 금리를 제공합니다.\n2. 부산은행의 '더(The) 특판 정기예금'은 12개월 만기에 기본 금리 2.1%, 우대금리 적용 시 최대 3.92%의 금리를 받을 수 있습니다.\n3. 농협은행의 'NH왈츠회전예금 II'는 12개월 만기에 기본 금리 3.35%, 우대금리 적용 시 최대 3.45%입니다.\n\n가장 높은 우대금리를 원하신다면 광주은행의 '굿스타트예금'이 가장 유리합니다. 각 상품의 우대금리 조건을 확인하신 후 본인에게 맞는 상품을 선택하시면 좋겠습니다.",
+ "source_data": {
+  "tool_results": [
+   [
+    {
+     "bank_name": "광주은행",
+     "product_name": "굿스타트예금",
+     "save_term_months": 12,
+     "interest_rate": 3.45,
+     "interest_rate_preferential": 3.95
+    },
+    {
+     "bank_name": "부산은행",
+     "product_name": "더(The) 특판 정기예금",
+     "save_term_months": 12,
+     "interest_rate": 2.1,
+     "interest_rate_preferential": 3.92
+    },
+    {
+     "bank_name": "농협은행주식회사",
+     "product_name": "NH왈츠회전예금 II",
+     "save_term_months": 12,
+     "interest_rate": 3.35,
+     "interest_rate_preferential": 3.45
+    }
+   ]
+  ],
+  "documents": []
+ }
+}

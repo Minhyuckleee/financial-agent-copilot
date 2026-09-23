@@ -1,0 +1,76 @@
+{
+ "id": "C010",
+ "question": "신용점수 600점대 초반인데 받을 수 있는 신용대출 금리 알려줘",
+ "history": [],
+ "route": "product_recommendation",
+ "tool_calls": [
+  {
+   "name": "recommend_credit_loan_products",
+   "args": {
+    "credit_score": 600
+   },
+   "error": null
+  }
+ ],
+ "steps": [
+  {
+   "node": "route_query",
+   "route": "product_recommendation"
+  },
+  {
+   "node": "call_tool",
+   "name": "recommend_credit_loan_products",
+   "args": {
+    "credit_score": 600
+   },
+   "error": null,
+   "result_count": 3
+  },
+  {
+   "node": "run_guardrail",
+   "guardrail": [
+    "disclosure_missing"
+   ],
+   "guardrail_details": [
+    {
+     "rule": "disclosure_missing",
+     "reason": "필수고지사항 누락",
+     "applied_fix": "고지문구 자동삽입"
+    }
+   ]
+  },
+  {
+   "node": "finalize_answer"
+  }
+ ],
+ "answer": "신용점수가 600점대 초반이라면, 받을 수 있는 신용대출 금리는 다음과 같습니다.\n\n- 우리은행: 연 7.25%\n- 신한은행: 연 7.45%\n- 농협은행: 연 8.1%\n\n모두 501~600점 구간에 해당하는 금리입니다.\n\n※ 실제 가입 조건과 금리는 상품설명서·약관 확인 후 최종 확정됩니다. 자세한 사항은 영업점 또는 고객센터에 문의하세요.",
+ "pre_guardrail_answer": "신용점수가 600점대 초반이라면, 받을 수 있는 신용대출 금리는 다음과 같습니다.\n\n- 우리은행: 연 7.25%\n- 신한은행: 연 7.45%\n- 농협은행: 연 8.1%\n\n모두 501~600점 구간에 해당하는 금리입니다.",
+ "source_data": {
+  "tool_results": [
+   [
+    {
+     "bank_name": "우리은행",
+     "product_name": "협약금리 外 신용대출상품",
+     "loan_type": "일반신용대출",
+     "credit_score_band": "501~600점",
+     "interest_rate": 7.25
+    },
+    {
+     "bank_name": "신한은행",
+     "product_name": "개인신용대출(일반신용대출)",
+     "loan_type": "일반신용대출",
+     "credit_score_band": "501~600점",
+     "interest_rate": 7.45
+    },
+    {
+     "bank_name": "농협은행주식회사",
+     "product_name": "가계신용대출(일반)",
+     "loan_type": "일반신용대출",
+     "credit_score_band": "501~600점",
+     "interest_rate": 8.1
+    }
+   ]
+  ],
+  "documents": []
+ }
+}

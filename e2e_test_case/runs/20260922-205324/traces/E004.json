@@ -1,0 +1,53 @@
+{
+ "id": "E004",
+ "question": "토스뱅크 전세자금대출 금리 알려줘",
+ "history": [],
+ "route": "product_recommendation",
+ "tool_calls": [
+  {
+   "name": "recommend_jeonse_loan_products",
+   "args": {
+    "bank_name_filter": "토스뱅크"
+   },
+   "error": null
+  }
+ ],
+ "steps": [
+  {
+   "node": "route_query",
+   "route": "product_recommendation"
+  },
+  {
+   "node": "call_tool",
+   "name": "recommend_jeonse_loan_products",
+   "args": {
+    "bank_name_filter": "토스뱅크"
+   },
+   "error": null,
+   "result_count": 1
+  },
+  {
+   "node": "run_guardrail",
+   "guardrail": [],
+   "guardrail_details": []
+  },
+  {
+   "node": "finalize_answer"
+  }
+ ],
+ "answer": "토스뱅크의 전세자금대출 상품인 '전월세보증금대출 플러스'의 금리는 연 4.36%입니다.",
+ "pre_guardrail_answer": "토스뱅크의 전세자금대출 상품인 '전월세보증금대출 플러스'의 금리는 연 4.36%입니다.",
+ "source_data": {
+  "tool_results": [
+   [
+    {
+     "bank_name": "토스뱅크 주식회사",
+     "product_name": "전월세보증금대출 플러스",
+     "lend_rate_min": 4.36,
+     "lend_rate_max": 4.36
+    }
+   ]
+  ],
+  "documents": []
+ }
+}

@@ -1,0 +1,73 @@
+{
+ "id": "C019",
+ "question": "전세대출 제일 싼 곳 하나만 딱 찍어줘",
+ "history": [],
+ "route": "product_recommendation",
+ "tool_calls": [
+  {
+   "name": "recommend_jeonse_loan_products",
+   "args": {
+    "bank_name_filter": null
+   },
+   "error": null
+  }
+ ],
+ "steps": [
+  {
+   "node": "route_query",
+   "route": "product_recommendation"
+  },
+  {
+   "node": "call_tool",
+   "name": "recommend_jeonse_loan_products",
+   "args": {
+    "bank_name_filter": null
+   },
+   "error": null,
+   "result_count": 3
+  },
+  {
+   "node": "run_guardrail",
+   "guardrail": [
+    "prohibited_terms"
+   ],
+   "guardrail_details": [
+    {
+     "rule": "prohibited_terms",
+     "reason": "금지표현과 의미상 동일한 표현 '가장 낮은 곳' 발견(semantic 탐지)",
+     "applied_fix": "해당 문구가 포함된 문장 제거"
+    }
+   ]
+  },
+  {
+   "node": "finalize_answer"
+  }
+ ],
+ "answer": "두 상품 모두 최저 금리가 3.69%로 가장 저렴합니다.",
+ "pre_guardrail_answer": "현재 조회 결과 기준으로 전세대출 금리가 가장 낮은 곳은 농협은행주식회사의 'NH전세대출(서울보증보험)'과 'NH전세대출(주택금융공사)'입니다. 두 상품 모두 최저 금리가 3.69%로 가장 저렴합니다.",
+ "source_data": {
+  "tool_results": [
+   [
+    {
+     "bank_name": "농협은행주식회사",
+     "product_name": "NH전세대출(서울보증보험)",
+     "lend_rate_min": 3.69,
+     "lend_rate_max": 6.39
+    },
+    {
+     "bank_name": "농협은행주식회사",
+     "product_name": "NH전세대출(주택금융공사)",
+     "lend_rate_min": 3.69,
+     "lend_rate_max": 6.39
+    },
+    {
+     "bank_name": "농협은행주식회사",
+     "product_name": "NH전세대출(주택도시보증공사)",
+     "lend_rate_min": 3.7,
+     "lend_rate_max": 6.4
+    }
+   ]
+  ],
+  "documents": []
+ }
+}

@@ -1,0 +1,59 @@
+{
+ "id": "C022",
+ "question": "신한은행 주담대 금리 알려줘",
+ "history": [],
+ "route": "product_recommendation",
+ "tool_calls": [
+  {
+   "name": "recommend_mortgage_loan_products",
+   "args": {
+    "bank_name_filter": "신한"
+   },
+   "error": null
+  }
+ ],
+ "steps": [
+  {
+   "node": "route_query",
+   "route": "product_recommendation"
+  },
+  {
+   "node": "call_tool",
+   "name": "recommend_mortgage_loan_products",
+   "args": {
+    "bank_name_filter": "신한"
+   },
+   "error": null,
+   "result_count": 2
+  },
+  {
+   "node": "run_guardrail",
+   "guardrail": [],
+   "guardrail_details": []
+  },
+  {
+   "node": "finalize_answer"
+  }
+ ],
+ "answer": "신한은행의 주택담보대출(주담대) 금리는 상품에 따라 다르며, 현재 조회된 결과에 따르면 다음과 같습니다.\n\n- 신한주택대출(아파트): 연 4.29% ~ 5.69%\n- 신한주택대출: 연 4.39% ~ 5.79%\n\n실제 적용 금리는 대출 조건이나 신용도 등에 따라 달라질 수 있으니 참고하시기 바랍니다.",
+ "pre_guardrail_answer": "신한은행의 주택담보대출(주담대) 금리는 상품에 따라 다르며, 현재 조회된 결과에 따르면 다음과 같습니다.\n\n- 신한주택대출(아파트): 연 4.29% ~ 5.69%\n- 신한주택대출: 연 4.39% ~ 5.79%\n\n실제 적용 금리는 대출 조건이나 신용도 등에 따라 달라질 수 있으니 참고하시기 바랍니다.",
+ "source_data": {
+  "tool_results": [
+   [
+    {
+     "bank_name": "신한은행",
+     "product_name": "신한주택대출(아파트)",
+     "lend_rate_min": 4.29,
+     "lend_rate_max": 5.69
+    },
+    {
+     "bank_name": "신한은행",
+     "product_name": "신한주택대출",
+     "lend_rate_min": 4.39,
+     "lend_rate_max": 5.79
+    }
+   ]
+  ],
+  "documents": []
+ }
+}

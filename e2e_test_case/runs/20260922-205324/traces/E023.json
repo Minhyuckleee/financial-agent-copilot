@@ -1,0 +1,26 @@
+{
+ "id": "E023",
+ "question": "월세 보증금 대출 금리 알려줘",
+ "history": [],
+ "route": "out_of_scope",
+ "tool_calls": [],
+ "steps": [
+  {
+   "node": "route_query",
+   "route": "out_of_scope",
+   "rewritten_query": "월세 보증금 대출의 현재 평균 금리를 알려줘"
+  },
+  {
+   "node": "answer_out_of_scope"
+  },
+  {
+   "node": "finalize_answer"
+  }
+ ],
+ "answer": "죄송합니다, 요청하신 내용은 제가 도와드릴 수 있는 범위 밖입니다.",
+ "pre_guardrail_answer": null,
+ "source_data": {
+  "tool_results": [],
+  "documents": []
+ }
+}

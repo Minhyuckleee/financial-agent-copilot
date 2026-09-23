@@ -1,0 +1,65 @@
+{
+ "id": "E021",
+ "question": "전세대출 말고 주담대 금리만 보여줘",
+ "history": [],
+ "route": "product_recommendation",
+ "tool_calls": [
+  {
+   "name": "recommend_mortgage_loan_products",
+   "args": {
+    "bank_name_filter": null
+   },
+   "error": null
+  }
+ ],
+ "steps": [
+  {
+   "node": "route_query",
+   "route": "product_recommendation"
+  },
+  {
+   "node": "call_tool",
+   "name": "recommend_mortgage_loan_products",
+   "args": {
+    "bank_name_filter": null
+   },
+   "error": null,
+   "result_count": 3
+  },
+  {
+   "node": "run_guardrail",
+   "guardrail": [],
+   "guardrail_details": []
+  },
+  {
+   "node": "finalize_answer"
+  }
+ ],
+ "answer": "주택담보대출(주담대) 금리는 다음과 같습니다.\n\n- 경남은행 '집집마다 도움대출II': 3.7% ~ 5.51%\n- 우리은행 '우리아파트론': 4.18% ~ 5.28%\n- 농협은행 'NH주택담보대출': 4.49% ~ 6.29%\n\n전세대출 금리는 포함하지 않았습니다.",
+ "pre_guardrail_answer": "주택담보대출(주담대) 금리는 다음과 같습니다.\n\n- 경남은행 '집집마다 도움대출II': 3.7% ~ 5.51%\n- 우리은행 '우리아파트론': 4.18% ~ 5.28%\n- 농협은행 'NH주택담보대출': 4.49% ~ 6.29%\n\n전세대출 금리는 포함하지 않았습니다.",
+ "source_data": {
+  "tool_results": [
+   [
+    {
+     "bank_name": "경남은행",
+     "product_name": "집집마다 도움대출II",
+     "lend_rate_min": 3.7,
+     "lend_rate_max": 5.51
+    },
+    {
+     "bank_name": "우리은행",
+     "product_name": "우리아파트론",
+     "lend_rate_min": 4.18,
+     "lend_rate_max": 5.28
+    },
+    {
+     "bank_name": "농협은행주식회사",
+     "product_name": "NH주택담보대출",
+     "lend_rate_min": 4.49,
+     "lend_rate_max": 6.29
+    }
+   ]
+  ],
+  "documents": []
+ }
+}

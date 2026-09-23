@@ -1,0 +1,26 @@
+{
+ "id": "E019",
+ "question": "요즘 수익률 좋은 펀드 추천해줘",
+ "history": [],
+ "route": "out_of_scope",
+ "tool_calls": [],
+ "steps": [
+  {
+   "node": "route_query",
+   "route": "out_of_scope",
+   "rewritten_query": "요즘 수익률이 좋은 펀드 상품을 추천해줘."
+  },
+  {
+   "node": "answer_out_of_scope"
+  },
+  {
+   "node": "finalize_answer"
+  }
+ ],
+ "answer": "죄송합니다, 요청하신 내용은 제가 도와드릴 수 있는 범위 밖입니다.",
+ "pre_guardrail_answer": null,
+ "source_data": {
+  "tool_results": [],
+  "documents": []
+ }
+}

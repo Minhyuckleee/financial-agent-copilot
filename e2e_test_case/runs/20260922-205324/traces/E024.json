@@ -1,0 +1,76 @@
+{
+ "id": "E024",
+ "question": "사업도 하긴 하는데 이번엔 개인 신용대출로 알아볼래",
+ "history": [],
+ "route": "product_recommendation",
+ "tool_calls": [
+  {
+   "name": "recommend_credit_loan_products",
+   "args": {
+    "credit_score": 700
+   },
+   "error": null
+  }
+ ],
+ "steps": [
+  {
+   "node": "route_query",
+   "route": "product_recommendation"
+  },
+  {
+   "node": "call_tool",
+   "name": "recommend_credit_loan_products",
+   "args": {
+    "credit_score": 700
+   },
+   "error": null,
+   "result_count": 3
+  },
+  {
+   "node": "run_guardrail",
+   "guardrail": [
+    "disclosure_missing"
+   ],
+   "guardrail_details": [
+    {
+     "rule": "disclosure_missing",
+     "reason": "필수고지사항 누락",
+     "applied_fix": "고지문구 자동삽입"
+    }
+   ]
+  },
+  {
+   "node": "finalize_answer"
+  }
+ ],
+ "answer": "현재 조회된 결과를 보면, 사업을 하시더라도 이번에는 개인 신용대출(마이너스한도대출)로 알아보실 수 있습니다. 신용점수 601~700점 구간 기준으로,\n\n- 농협은행의 '가계신용대출(마이너스대출)'은 금리가 5.72%입니다.\n- 하나은행의 '마이너스한도대출'은 금리가 6.12%입니다.\n- 우리은행의 '협약금리 外 신용대출상품'은 금리가 6.22%입니다.\n\n이 중에서 선택하실 수 있습니다. 추가로 궁금한 점이 있으시면 말씀해 주세요.\n\n※ 실제 가입 조건과 금리는 상품설명서·약관 확인 후 최종 확정됩니다. 자세한 사항은 영업점 또는 고객센터에 문의하세요.",
+ "pre_guardrail_answer": "현재 조회된 결과를 보면, 사업을 하시더라도 이번에는 개인 신용대출(마이너스한도대출)로 알아보실 수 있습니다. 신용점수 601~700점 구간 기준으로,\n\n- 농협은행의 '가계신용대출(마이너스대출)'은 금리가 5.72%입니다.\n- 하나은행의 '마이너스한도대출'은 금리가 6.12%입니다.\n- 우리은행의 '협약금리 外 신용대출상품'은 금리가 6.22%입니다.\n\n이 중에서 선택하실 수 있습니다. 추가로 궁금한 점이 있으시면 말씀해 주세요.",
+ "source_data": {
+  "tool_results": [
+   [
+    {
+     "bank_name": "농협은행주식회사",
+     "product_name": "가계신용대출(마이너스대출)",
+     "loan_type": "마이너스한도대출",
+     "credit_score_band": "601~700점",
+     "interest_rate": 5.72
+    },
+    {
+     "bank_name": "주식회사 하나은행",
+     "product_name": "마이너스한도대출",
+     "loan_type": "마이너스한도대출",
+     "credit_score_band": "601~700점",
+     "interest_rate": 6.12
+    },
+    {
+     "bank_name": "우리은행",
+     "product_name": "협약금리 外 신용대출상품",
+     "loan_type": "마이너스한도대출",
+     "credit_score_band": "601~700점",
+     "interest_rate": 6.22
+    }
+   ]
+  ],
+  "documents": []
+ }
+}

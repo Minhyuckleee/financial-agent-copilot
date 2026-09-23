@@ -1,0 +1,69 @@
+{
+ "id": "C011",
+ "question": "카카오뱅크 신용대출 금리 알려줘",
+ "history": [],
+ "route": "product_recommendation",
+ "tool_calls": [
+  {
+   "name": "recommend_credit_loan_products",
+   "args": {
+    "bank_name_filter": "카카오뱅크"
+   },
+   "error": null
+  }
+ ],
+ "steps": [
+  {
+   "node": "route_query",
+   "route": "product_recommendation"
+  },
+  {
+   "node": "call_tool",
+   "name": "recommend_credit_loan_products",
+   "args": {
+    "bank_name_filter": "카카오뱅크"
+   },
+   "error": null,
+   "result_count": 2
+  },
+  {
+   "node": "run_guardrail",
+   "guardrail": [
+    "disclosure_missing"
+   ],
+   "guardrail_details": [
+    {
+     "rule": "disclosure_missing",
+     "reason": "필수고지사항 누락",
+     "applied_fix": "고지문구 자동삽입"
+    }
+   ]
+  },
+  {
+   "node": "finalize_answer"
+  }
+ ],
+ "answer": "카카오뱅크의 신용대출 금리는 신용점수 601~700점 기준으로 일반신용대출은 연 7.93%, 마이너스한도대출은 연 8.65%입니다.\n\n※ 실제 가입 조건과 금리는 상품설명서·약관 확인 후 최종 확정됩니다. 자세한 사항은 영업점 또는 고객센터에 문의하세요.",
+ "pre_guardrail_answer": "카카오뱅크의 신용대출 금리는 신용점수 601~700점 기준으로 일반신용대출은 연 7.93%, 마이너스한도대출은 연 8.65%입니다.",
+ "source_data": {
+  "tool_results": [
+   [
+    {
+     "bank_name": "주식회사 카카오뱅크",
+     "product_name": "일반신용대출",
+     "loan_type": "일반신용대출",
+     "credit_score_band": "601~700점",
+     "interest_rate": 7.93
+    },
+    {
+     "bank_name": "주식회사 카카오뱅크",
+     "product_name": "마이너스한도대출",
+     "loan_type": "마이너스한도대출",
+     "credit_score_band": "601~700점",
+     "interest_rate": 8.65
+    }
+   ]
+  ],
+  "documents": []
+ }
+}

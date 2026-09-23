@@ -1,0 +1,73 @@
+{
+ "id": "C028",
+ "question": "신용점수 800점 개인사업자인데 대출 금리 어디가 낮아?",
+ "history": [],
+ "route": "product_recommendation",
+ "tool_calls": [
+  {
+   "name": "recommend_business_loan_products",
+   "args": {
+    "credit_score": 800
+   },
+   "error": null
+  }
+ ],
+ "steps": [
+  {
+   "node": "route_query",
+   "route": "product_recommendation"
+  },
+  {
+   "node": "call_tool",
+   "name": "recommend_business_loan_products",
+   "args": {
+    "credit_score": 800
+   },
+   "error": null,
+   "result_count": 3
+  },
+  {
+   "node": "run_guardrail",
+   "guardrail": [
+    "prohibited_terms"
+   ],
+   "guardrail_details": [
+    {
+     "rule": "prohibited_terms",
+     "reason": "금지표현과 의미상 동일한 표현 '금리가 가장 낮습니다' 발견(semantic 탐지)",
+     "applied_fix": "해당 문구가 포함된 문장 제거"
+    }
+   ]
+  },
+  {
+   "node": "finalize_answer"
+  }
+ ],
+ "answer": "조회 결과에 따르면, 신용점수 800점인 개인사업자에게 적용되는 대출 금리는 우리은행의 B2B 대출과 우리 지역선도기업 대출이 각각 연 4.85%로 가장 낮습니다. 우리 첨단선도기업대출은 연 4.86%입니다.",
+ "pre_guardrail_answer": "조회 결과에 따르면, 신용점수 800점인 개인사업자에게 적용되는 대출 금리는 우리은행의 B2B 대출과 우리 지역선도기업 대출이 각각 연 4.85%로 가장 낮습니다. 우리 첨단선도기업대출은 연 4.86%입니다. 따라서 우리은행의 B2B 대출 또는 우리 지역선도기업 대출이 금리가 가장 낮습니다.",
+ "source_data": {
+  "tool_results": [
+   [
+    {
+     "bank_name": "우리은행",
+     "product_name": "B2B 대출",
+     "credit_score_band": "701~800점",
+     "interest_rate": 4.85
+    },
+    {
+     "bank_name": "우리은행",
+     "product_name": "우리 지역선도기업 대출",
+     "credit_score_band": "701~800점",
+     "interest_rate": 4.85
+    },
+    {
+     "bank_name": "우리은행",
+     "product_name": "우리 첨단선도기업대출",
+     "credit_score_band": "701~800점",
+     "interest_rate": 4.86
+    }
+   ]
+  ],
+  "documents": []
+ }
+}
