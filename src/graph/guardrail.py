@@ -204,28 +204,49 @@ def _extract_reported_number(text: str, route: str | None) -> float | None:
 _RATE_PATTERN = re.compile(r"(\d+\.?\d*)\s*%")
 
 
+def _rate_values(entry: dict) -> list[float]:
+    """상품 항목에서 금리 필드(interest_rate, interest_rate_preferential, lend_rate_min/max)만
+    뽑는다. `_flatten_numbers`로 항목 전체를 훑으면 예금의 save_term_months(12) 같은
+    비금리 숫자까지 "가장 가까운 값" 후보에 섞인다."""
+    return [
+        float(v) for k, v in entry.items()
+        if "rate" in k and isinstance(v, (int, float)) and not isinstance(v, bool)
+    ]
+
+
 def _check_product_rates(text: str, tool_result: list[dict]) -> tuple[str, list[GuardrailCorrection]]:
     if not tool_result:
         return text, []
 
-    mentions = []
+    # 은행 단위로 묶는다. 예전엔 항목마다 text.find(은행명)으로 위치를 잡아서, 같은 은행
+    # 상품이 여러 개면 전부 같은 위치에 걸렸다 — 첫 항목 구간은 길이 0이라 건너뛰고,
+    # 두 번째 항목이 첫 상품 금리와 대조돼 LLM이 맞게 쓴 값을 자기 금리로 덮어썼다
+    # (e2e C012: 신한 마통 6.52% → 일반신용대출 7.36%로 교체, 상품추천 답변 실패 23건 중
+    # 11건이 이 패턴). 답변은 상품명을 줄여 쓰는 경우가 많아("마이너스한도대출(마통)")
+    # 상품명으로 위치를 잡을 수도 없으므로, 그 은행 모든 상품의 금리를 허용값으로 본다.
+    rates_by_bank: dict[str, list[float]] = {}
     for entry in tool_result:
         bank = entry.get("bank_name")
-        pos = text.find(bank) if bank else -1
+        if bank:
+            rates_by_bank.setdefault(bank, []).extend(_rate_values(entry))
+
+    mentions = []
+    for bank in rates_by_bank:
+        pos = text.find(bank)
         if pos != -1:
-            mentions.append((pos, bank, entry))
+            mentions.append((pos, bank))
     mentions.sort(key=lambda m: m[0])
 
     corrections: list[GuardrailCorrection] = []
     edits: list[tuple[int, int, str]] = []
-    for i, (pos, bank, entry) in enumerate(mentions):
+    for i, (pos, bank) in enumerate(mentions):
         segment_end = mentions[i + 1][0] if i + 1 < len(mentions) else len(text)
         rate_match = _RATE_PATTERN.search(text, pos, segment_end)
         if not rate_match:
             continue
 
         reported = float(rate_match.group(1))
-        actual_values = _flatten_numbers(entry)
+        actual_values = rates_by_bank[bank]
         if not actual_values:
             continue
         if any(round(reported, _NUMERIC_TOLERANCE_DECIMALS) == round(a, _NUMERIC_TOLERANCE_DECIMALS) for a in actual_values):
@@ -333,6 +354,7 @@ def _check_citation_grounding(text: str, retrieved_chunks: list[dict]) -> tuple[
 
 def run_guardrail(state: AgentState) -> dict:
     text = state.answer if state.answer is not None else _draft_answer(state)
+    draft = text
     all_corrections: list[GuardrailCorrection] = []
 
     text, corrections = _mask_pii(text)
@@ -350,4 +372,4 @@ def run_guardrail(state: AgentState) -> dict:
     text, corrections = _check_citation_grounding(text, state.retrieved_chunks)
     all_corrections.extend(corrections)
 
-    return {"answer": text, "guardrail_corrections": all_corrections}
+    return {"answer": text, "draft_answer": draft, "guardrail_corrections": all_corrections}

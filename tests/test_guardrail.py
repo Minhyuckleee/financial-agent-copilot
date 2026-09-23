@@ -1,7 +1,7 @@
 """노드 함수 경계 테스트 — 가드레일. 전량검사(여러 규칙 동시 적용) + 자동교정 검증."""
 from dotenv import load_dotenv
 
-from graph.guardrail import _extract_reported_number, run_guardrail
+from graph.guardrail import _check_product_rates, _extract_reported_number, run_guardrail
 from graph.state import AgentState
 
 load_dotenv()
@@ -59,6 +59,45 @@ def test_product_rate_misattribution_caught_by_bank_segmentation():
     assert "국민은행" in numeric_corrections[0].reason
     assert "우리은행 정기예금B 금리는 3.9%입니다" in result["answer"]  # 원래 맞는 값은 안 건드림
     assert "국민은행 정기예금A 금리는 3.8%" in result["answer"]  # 오귀속된 값만 3.5/3.8 중 최근접(3.8)으로 교정
+
+
+_SHINHAN_CREDIT_LOANS = [
+    {"bank_name": "신한은행", "product_name": "개인신용대출(마이너스한도대출)", "loan_type": "마이너스한도대출",
+     "credit_score_band": "701~800점", "interest_rate": 6.52},
+    {"bank_name": "신한은행", "product_name": "개인신용대출(일반신용대출)", "loan_type": "일반신용대출",
+     "credit_score_band": "701~800점", "interest_rate": 7.36},
+]
+
+
+def test_same_bank_products_correct_rates_not_overwritten():
+    """e2e C012 재현. 같은 은행 상품이 둘이면 은행명 위치가 하나라, 예전엔 두 번째 항목이
+    첫 상품 금리와 대조돼 LLM이 맞게 쓴 6.52%를 7.36%로 덮어썼다."""
+    answer = "신한은행에서 신용점수 750점이면 마이너스한도대출(마통)은 6.52%, 일반신용대출은 7.36%입니다."
+    text, corrections = _check_product_rates(answer, _SHINHAN_CREDIT_LOANS)
+
+    assert corrections == []
+    assert text == answer
+
+
+def test_same_bank_products_still_catch_rate_not_in_source():
+    """은행 단위로 묶어도, 그 은행 어느 상품에도 없는 금리는 여전히 잡아야 한다."""
+    answer = "신한은행 마이너스한도대출 금리는 5.10%입니다."
+    text, corrections = _check_product_rates(answer, _SHINHAN_CREDIT_LOANS)
+
+    assert len(corrections) == 1
+    assert "6.52%" in text  # 5.10과 가장 가까운 신한 금리
+
+
+def test_non_rate_numeric_field_not_used_as_correction_target():
+    """save_term_months(12) 같은 비금리 숫자는 교정 후보가 아니다. 예전엔 `_flatten_numbers`로
+    항목 전체를 훑어 11.9%가 12로 '교정'될 수 있었다."""
+    tool_result = [{"bank_name": "국민은행", "product_name": "정기예금", "save_term_months": 12,
+                    "interest_rate": 3.5, "interest_rate_preferential": 3.8}]
+    text, corrections = _check_product_rates("국민은행 정기예금 금리는 11.9%입니다.", tool_result)
+
+    assert len(corrections) == 1
+    assert "3.8%" in text
+    assert "12%" not in text
 
 
 def test_clean_answer_produces_no_corrections():

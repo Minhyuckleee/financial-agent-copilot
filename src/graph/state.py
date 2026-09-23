@@ -86,3 +86,6 @@ class AgentState(BaseModel):
 
     # --- 4. answer ---
     answer: str | None = None
+    # 가드레일 적용 전 LLM 초안. 동작에는 안 쓰고 관측용 — 이게 없어서 가드레일이 맞는
+    # 값을 틀리게 덮어쓴 버그(e2e C012)를 trace만으로 증명할 수 없었다.
+    draft_answer: str | None = None
